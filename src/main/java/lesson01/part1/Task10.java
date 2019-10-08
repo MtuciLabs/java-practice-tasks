@@ -16,6 +16,8 @@ public class Task10 {
 
     public static void main(String[] args) {
         int secondsAfter15 = 0;
+        int time = 30*60;
+        secondsAfter15 = time;
         System.out.println(secondsAfter15);
     }
 }

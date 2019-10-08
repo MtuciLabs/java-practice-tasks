@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import static java.lang.System.out;
+
 public class Task12 {
 
     /**
@@ -21,5 +23,7 @@ public class Task12 {
         String peach = "Персик";
 
         //напишите тут ваш код
+        System.out.println(apple);
+        System.out.println(peach);
     }
 }
