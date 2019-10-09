@@ -27,6 +27,6 @@ public class Task01 {
         String name ="Mans";
         int age = 10;
         int weight = 150;
-        int money = -10;
+        int money = 10;
     }
 }
