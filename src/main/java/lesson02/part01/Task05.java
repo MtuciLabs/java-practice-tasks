@@ -1,5 +1,7 @@
 package lesson02.part01;
 
+import static java.lang.System.out;
+
 /**
  * Вывести на экран дату своего рождения в виде: MAY 1 2012
  * <p>
@@ -13,7 +15,7 @@ package lesson02.part01;
 
 public class Task05 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+       System.out.print(0);
 
     }
 }
