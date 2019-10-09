@@ -15,6 +15,8 @@ package lesson02.part02;
 public class Task06 {
 
     public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.setName("Васян","Петрович");
 
     }
 
@@ -25,6 +27,8 @@ public class Task06 {
             String fullName = firstName + " " + lastName;
 
             //напишите тут ваш код
+            this.fullName = fullName;
+            System.out.println(fullName);
         }
     }
 }

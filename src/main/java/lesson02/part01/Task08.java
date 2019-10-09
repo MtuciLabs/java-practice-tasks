@@ -15,6 +15,13 @@ package lesson02.part01;
 public class Task08 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        long div = 1;
+        int x;
+        for (x = 10; x != 0; x--) {
+            div = div * x;
 
+
+        }
+        System.out.println(div);
     }
 }

@@ -27,6 +27,8 @@ public class Task02 {
 
         public static void addPrice(int applesPrice) {
             //напишите тут ваш код
+            Apple apple = new Apple();
+            apple.applesPrice = apple.applesPrice+applesPrice;
 
         }
     }

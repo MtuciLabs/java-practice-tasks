@@ -21,6 +21,14 @@ import java.util.*;
 public class Task18 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String name = reader.readLine();
+        String num1 = reader.readLine();int number1 = Integer.parseInt(num1);
+        String num2 = reader.readLine();int number2 = Integer.parseInt(num2);
+
+
+        System.out.println(name+" получает "+number1+" через "+number2+" лет.");
+
 
     }
 }
