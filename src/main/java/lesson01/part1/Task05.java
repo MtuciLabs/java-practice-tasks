@@ -23,7 +23,7 @@ public class Task05 {
         //System.out.print(a);
         System.out.print("три");
         //System.out.print(" не ");
-        System.out.print("будет ");
+        //System.out.print("будет ");
         System.out.print(" равно ");
         //System.out.print("пятнадцать");
         //System.out.print(21);
