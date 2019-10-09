@@ -20,10 +20,13 @@ public class Task01 {
      */
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Person person = new Person();
     }
 
     public static class Person {
-        //напишите тут ваш код
+        String name ="Mans";
+        int age = 10;
+        int weight = 150;
+        int money = -10;
     }
 }
