@@ -10,13 +10,17 @@ package lesson02.part01;
  * 3.	Метод printString должен быть static.
  * 4.	Метод printString должен быть public.
  * 5.	Метод printString должен выводить переданный текст на экран.
- * 6.	Программа должна вывести "Hello, Amigo;".
+ * 6.	Программа должна вывести "Hello, Amigo!".
  */
 
 public class Task02 {
+
     // напишите тут ваш код
+    public static void printString(String a) {
+        System.out.println(a);
+    }
 
     public static void main(String[] args) {
-        printString("Hello, Amigo!");
+//        printString("Hello, Amigo!");
     }
 }
