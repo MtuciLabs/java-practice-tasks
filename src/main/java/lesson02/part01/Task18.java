@@ -15,11 +15,18 @@ package lesson02.part01;
  * 6.	Выведенный тест должен полностью соответствовать заданию.
  */
 
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите имя:");
+        String name = scanner.nextLine();
+        System.out.println("Введите первое число:");
+        int num1 = scanner.nextInt();
+        System.out.println("Введите второе число:");
+        int num2 = scanner.nextInt();
+        System.out.print(name + " получает " + num1 + " через " + num2 + " лет ");
         //напишите тут ваш код
 
     }
