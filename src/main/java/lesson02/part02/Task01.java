@@ -25,7 +25,6 @@ public class Task01 {
 
     public static class Person {
         public int age = 20;
-
         public void adjustAge(int age) {
             age = age + 20;
             System.out.println("Age in adjustAge() is: " + age);

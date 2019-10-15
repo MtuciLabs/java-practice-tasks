@@ -2,7 +2,7 @@ package lesson02.part01;
 
 /**
  * Ввести с клавиатуры число и имя, вывести на экран строку:
- * «имя» захватит мир через «число» лет. Му-ха-ха!
+ * «имя» завхатит мир через «число» лет. Му-ха-ха!
  * Пример: Вася захватит мир через 8 лет. Му-ха-ха!
  * <p>
  * Последовательность вводимых данных имеет большое значение.
@@ -20,8 +20,16 @@ import java.io.*;
 import java.util.*;
 
 public class Task17 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+    public static void main(String[] args) throws IOException {
 
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введи имя");
+        String name = reader.readLine(); //Если ввести имя на русском, то программа выводит "ромбики".
+        //Если на английском - всё нормально. Что-то еще нужно прописать?
+        System.out.println("Введи число");
+        String year = reader.readLine();
+
+        System.out.println(name + " захватит мир через " + year + " лет. Му-ха-ха!");
     }
 }
