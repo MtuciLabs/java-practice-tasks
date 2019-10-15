@@ -17,10 +17,19 @@ package lesson02.part01;
 
 import java.io.*;
 import java.util.*;
+import lesson02.part01.Task14.Indigo;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String name = bufferedReader.readLine();
+        String sAge1 = bufferedReader.readLine();
+        String sAge2= bufferedReader.readLine();
+        int age1 = Integer.parseInt(sAge1);
+        int age2= Integer.parseInt(sAge2);
+        System.out.println(name+" получает "+age1+" через "+age2+" лет");
 
     }
 }
