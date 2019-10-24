@@ -21,7 +21,6 @@ package lesson02.part02;
 
 public class Task32 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
     }
 }

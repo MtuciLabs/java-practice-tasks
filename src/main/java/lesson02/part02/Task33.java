@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Вывести на экран квадрат из 10х10 букв S используя цикл while.
  * Буквы в каждой строке не разделять.
@@ -25,7 +28,9 @@ package lesson02.part02;
 
 public class Task33 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число a");
+        String as = reader.readLine();
 
     }
 }
