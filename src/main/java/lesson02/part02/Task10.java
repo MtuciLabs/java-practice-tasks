@@ -26,6 +26,11 @@ public class Task10 {
     }
 
     public static void checkInterval(int a) {
+        if ((a>=50) & (a<=100))
+            System.out.println("Число " +a + " сожержится в инетервале");
+        else
+            System.out.println("Число " +a + " не сожержится в инетервале");
+
         //напишите тут ваш код
 
     }
