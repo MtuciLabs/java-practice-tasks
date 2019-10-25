@@ -21,6 +21,19 @@ import java.util.*;
 
 public class Task24 {
     public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число a");
+        int a= scanner.nextInt();
+        System.out.println("Введите число b");
+        int b= scanner.nextInt();
+        System.out.println("Введите число c");
+        int c= scanner.nextInt();
+        if (a==b)
+            System.out.println(3);
+        else if(a==c)
+            System.out.println(2);
+        else if (b==c)
+            System.out.println(1);
         //напишите тут ваш код
 
     }
