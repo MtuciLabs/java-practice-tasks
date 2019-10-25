@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import javax.swing.*;
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры число. Если число положительное, то увеличить его в два раза. Если число отрицательное, то прибавить единицу.
  * Если введенное число равно нулю, необходимо вывести ноль.
@@ -16,6 +19,19 @@ package lesson02.part02;
 
 public class Task12 {
     public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число:");
+        int a = scanner.nextInt();
+        if (a>0) {
+            a = a * 2;
+            System.out.println(a);
+        }
+        else if (a<0) {
+            a = a + 1;
+            System.out.println(a);
+        }
+        else
+            System.out.println(0);
         //напишите тут ваш код
 
     }
