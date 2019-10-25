@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры три целых числа. Вывести на экран количество положительных чисел среди этих трех.
  * Примеры:
@@ -35,6 +37,21 @@ package lesson02.part02;
 
 public class Task28 {
     public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner (System.in);
+        System.out.println("a:");
+        int a = scanner.nextInt();
+        System.out.println("b:");
+        int b = scanner.nextInt();
+        System.out.println("c:");
+        int c = scanner.nextInt();
+        int k=0;
+        if (a>0)
+            k=k+1;
+        if (b>0)
+            k=k+1;
+        if (c>0)
+            k=k+1;
+        System.out.println("k=" + k);
         //напишите тут ваш код
 
     }
