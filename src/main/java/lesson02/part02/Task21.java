@@ -19,7 +19,11 @@ import java.util.*;
 
 public class Task21 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        String a = in.nextLine();
+        String b = in.nextLine();
+        if (a==b) System.out.println("Имена идентичны");
+        if (a.length()==b.length()) System.out.println(a.length());
 
     }
 }

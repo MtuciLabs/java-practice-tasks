@@ -16,7 +16,14 @@ package lesson02.part02;
 
 public class Task38 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+int i;
+int j;
+for(i=1;i<=10;i++){
+    System.out.print(8);
+}
+        for(j=0;j<=10;j++){
+            System.out.println(8);
+        }
 
     }
 }

@@ -19,10 +19,10 @@ public class Task03 {
     }
 
     public static class Cat {
-        private String name = "безымянный кот";
+        private static String name = "безымянный кот";
 
         public void setName(String name) {
-            //напишите тут ваш код
+            Cat.name =name;
 
         }
     }

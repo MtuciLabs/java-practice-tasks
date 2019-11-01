@@ -28,7 +28,13 @@ import java.util.*;
 
 public class Task26 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+       if (a>0 && a%2==0) System.out.println("Проложителное четное число");
+       if (a>0 && a%2!=0) System.out.println("Проложителное нечетное число");
+        if (a<0 && a%2==0) System.out.println("Отрицательное четное число");
+        if (a<0 && a%2!=0) System.out.println("Отрицательное нечетное число");
+
 
     }
 }

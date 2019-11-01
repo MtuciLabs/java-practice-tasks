@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Работа светофора для пешеходов запрограммирована следующим образом: в начале каждого часа в течение трех минут горит зелёный сигнал,
  * затем в течение одной минуты — жёлтый, а потом в течение одной минуты — красный, затем опять зелёный горит три минуты и т. д.
@@ -27,7 +29,17 @@ package lesson02.part02;
 
 public class Task16 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in=new Scanner(System.in);
+        float t=in.nextFloat();
+        if (t%5>=8 && t%5<=9.9999) {
+            System.out.println("красный");
+        }
+        if (t%5>=0 && t%5<=6) {
+            System.out.println("зеленый");
+        }
+        if (t%5>6 && t%5<8) {
+            System.out.println("желтый");
+        }
 
     }
 }

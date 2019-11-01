@@ -1,5 +1,7 @@
 package lesson02.part01;
 
+import java.util.Scanner;
+
 /**
  * Добавь метод public static int convertToSeconds(int hour) который будет конвертировать часы в секунды.
  * Вызови его дважды в методе main с любыми параметрами. Результаты выведи на экран, каждый раз с новой строки.
@@ -17,7 +19,17 @@ public class Task11 {
     //напишите тут ваш код
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        int i;
+        for (i = 0; i < 2; i++) {
+            Scanner in = new Scanner(System.in);
+            int ch = in.nextInt();
+            System.out.println(convertToSeconds(ch));
 
+
+        }
+
+        }
+        public static int convertToSeconds(int hour){
+            return hour*3600;
+        }
     }
-}

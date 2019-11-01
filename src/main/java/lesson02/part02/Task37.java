@@ -24,7 +24,13 @@ package lesson02.part02;
 
 public class Task37 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        String s="";
+        int i;
+        for (i=1;i<=10;i++) {
+            String r="8";
+            s=s+r;
+            System.out.println(s);
+        }
 
     }
 }

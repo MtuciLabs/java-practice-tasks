@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры три целых числа. Определить, имеется ли среди них хотя бы одна пара равных между собой чисел.
  * Если такая пара существует, вывести на экран числа через пробел. Если все три числа равны между собой, то вывести все три.
@@ -29,7 +31,21 @@ package lesson02.part02;
 
 public class Task17 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        if (a == b) {
+            System.out.printf("%d %d", a, b);
+        }
+        if (a == c) {
+            System.out.printf("%d %d", a, c);
+        }
+        if (c == b) {
+            System.out.printf("%d %d", c, b);
+        }
+        if (a == b && a == c) {
+            System.out.printf("%d %d %d", a, b, c);
+        }
     }
 }
