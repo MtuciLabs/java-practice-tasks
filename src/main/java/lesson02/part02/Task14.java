@@ -34,14 +34,11 @@ public class Task14 {
 
         if (god % 400 == 0) {
             System.out.println("Високосный");
-        }
-        else if ((god % 400 == 0)&(god % 100 == 0)) {
+        } else if ((god % 400 == 0) & (god % 100 == 0)) {
             System.out.println("Високосный");
-        }
-        else if ((god % 400 == 0)&(god % 100 == 0)&(god % 4 ==0)) {
+        } else if ((god % 400 == 0) & (god % 100 == 0) & (god % 4 == 0)) {
             System.out.println("Високосный");
-        }
-        else
+        } else
             System.out.println("Не високосный");
 
     }

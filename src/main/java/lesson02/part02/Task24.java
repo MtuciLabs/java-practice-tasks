@@ -21,7 +21,20 @@ import java.util.*;
 
 public class Task24 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Введите элементы массива");
+        int array[] = new int[3];
+        for (int i = 0; i < 3; i++) {
+            array[i] = input.nextInt();
+        }
+        if (array[0] == array[1]) {
+            System.out.println(3);
+        } else if (array[0] == array[2]) {
+            System.out.println(2);
+        } else
+            System.out.println(1);
     }
+
 }
+
