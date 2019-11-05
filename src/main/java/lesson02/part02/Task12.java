@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры число. Если число положительное, то увеличить его в два раза. Если число отрицательное, то прибавить единицу.
  * Если введенное число равно нулю, необходимо вывести ноль.
@@ -17,6 +20,17 @@ package lesson02.part02;
 public class Task12 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String num1 = reader.readLine();
+        int num = Integer.parseInt(num1);
+        if (num > 0){
+            System.out.println( num*2);
+        }
+        else if (num < 0){
+            System.out.println(num+1);
+        }else {
+            System.out.println(0);
+        }
 
     }
 

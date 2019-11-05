@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры два числа m и n.
  * Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
@@ -18,6 +21,14 @@ package lesson02.part02;
 public class Task36 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer m = Integer.parseInt(reader.readLine());
+        Integer n = Integer.parseInt(reader.readLine());
+        for (int x = 0; x < m; x++){
+            for (int y = 0; y < n; y++){
+                System.out.print("8");
+            }
+            System.out.println("");
+        }
     }
 }
