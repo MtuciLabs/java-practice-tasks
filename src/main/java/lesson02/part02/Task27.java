@@ -33,7 +33,29 @@ import java.util.*;
 
 public class Task27 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String number = bufferedReader.readLine();
+        int a = Integer.parseInt(number);
+        if ((a>=1)&(a<=999))
+            if ((a < 10) & (a % 2 == 0)) {
+                System.out.println("Chetnoe odnoznachnoe chislo");
+            }
+            else if ((a < 10) & (a % 2 != 0)) {
+                System.out.println("Nechetnoe odnoznachnoe chislo");
+            }
+            else if ((a >= 10) & (a < 100) & (a % 2 == 0)) {
+                System.out.println("Chetnoe dvuznachnoe chislo");
+            }
+            else if ((a >= 10) & (a < 100) & (a % 2 != 0)) {
+                System.out.println("Nechetnoe dvuznachnoe chislo");
+            }
+            else if ((a >= 100) & (a <= 999) & (a % 2 == 0)) {
+                System.out.println("Chetnoe trehznachnoe chislo");
+            } else {
+                System.out.println("Nechetnoe trehznachnoe chislo");
+            }
 
     }
 }
