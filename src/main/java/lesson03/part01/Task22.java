@@ -1,5 +1,7 @@
 package lesson03.part01;
 
+import java.util.Scanner;
+
 /**
  * Сделать класс ConsoleReader, у которого будут 4 статических метода:
  * String readString() - читает с клавиатуры строку
@@ -27,23 +29,27 @@ public class Task22 {
   public static class ConsoleReader {
 
     public static String readString() throws Exception {
-      //напишите тут ваш код
-      return null;
+      Scanner scn=new Scanner(System.in);
+      String str=scn.next();
+      return str;
     }
 
     public static int readInt() throws Exception {
-      //напишите тут ваш код
-      return 0;
+      Scanner scn=new Scanner(System.in);
+      int ch=scn.nextInt();
+      return ch;
     }
 
     public static double readDouble() throws Exception {
-      //напишите тут ваш код
-      return 0.0;
+      Scanner scn=new Scanner(System.in);
+      double ves=scn.nextDouble();
+      return ves;
     }
 
     public static boolean readBoolean() throws Exception {
-      //напишите тут ваш код
-      return false;
+      Scanner scn=new Scanner(System.in);
+      Boolean a=scn.nextBoolean();
+      return a;
     }
   }
 
