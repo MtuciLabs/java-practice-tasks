@@ -1,4 +1,5 @@
 package lesson02.part02;
+import java.io.*;
 
 /**
  * Ввести с клавиатуры два числа m и n.
@@ -16,8 +17,22 @@ package lesson02.part02;
  */
 
 public class Task36 {
+
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String mS = bufferedReader.readLine();
+        String nS = bufferedReader.readLine();
+        int m = Integer.parseInt(mS);
+        int n = Integer.parseInt(nS);
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(8);
+            }
+            System.out.println();
 
+        }
     }
 }

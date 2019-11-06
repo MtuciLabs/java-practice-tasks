@@ -20,12 +20,19 @@ public class Task09 {
         displayClosestToTen(7, 14);
     }
 
-    public static void displayClosestToTen(int a, int b) {
-        // напишите тут ваш код
+    private static void displayClosestToTen(int a, int b) {
 
+        int c = a - 10;
+        int d = b - 10;
+        if (abs(c)<abs(d)) {
+            System.out.println(a);
+        }
+        else
+            System.out.println(b);
     }
 
-    public static int abs(int a) {
+
+    private static int abs(int a) {
         if (a < 0) {
             return -a;
         } else {

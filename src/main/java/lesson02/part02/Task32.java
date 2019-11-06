@@ -1,4 +1,5 @@
 package lesson02.part02;
+import java.io.*;
 
 /**
  * Ввести с клавиатуры строку и число N больше 0.
@@ -22,6 +23,17 @@ package lesson02.part02;
 public class Task32 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String string = bufferedReader.readLine();
+        String n = bufferedReader.readLine();
+        int N = Integer.parseInt(n);
+        int i = 0;
+        while (i<N) {
+            System.out.println(string);
+            i++;
+        }
 
     }
 }
