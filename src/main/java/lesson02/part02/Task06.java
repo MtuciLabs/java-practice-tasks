@@ -23,8 +23,8 @@ public class Task06 {
 
         public void setName(String firstName, String lastName) {
             String fullName = firstName + " " + lastName;
+            this.fullName = fullName;
 
-            //напишите тут ваш код
         }
     }
 }
