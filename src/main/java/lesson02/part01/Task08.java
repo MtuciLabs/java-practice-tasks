@@ -14,12 +14,10 @@ package lesson02.part01;
 
 public class Task08 {
     public static void main(String[] args) {
-        public static int calculateFactorial(int n){
-            int result = 1;
-            for (int i = 1; i <=n; i ++){
-                result = result*i;
-            }
-            return result;
+        int a=1;
+        for (int i=1; i<=10; i++)
+            a=a*i;
+        System.out.println(a);
 
     }
 }
