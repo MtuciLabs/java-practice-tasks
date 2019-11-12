@@ -20,10 +20,16 @@ public class Task01 {
      */
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Person person = new Person();
+        System.out.println(person.weight);
+        System.out.println(person.age);
+        System.out.println(person.money);
     }
 
     public static class Person {
-        //напишите тут ваш код
+        String name = "gg";
+        int age = 99;
+        int weight = 98;
+        int money = 97;
     }
 }
