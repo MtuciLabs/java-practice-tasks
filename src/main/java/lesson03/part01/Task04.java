@@ -16,6 +16,12 @@ package lesson03.part01;
 public class Task04 {
 
     public static void main(String[] args) {
+        Cat cat1 = new Cat("Tom",1,1,1);
+        Cat cat2 = new Cat("Barsik",2,2,2);
+        Cat cat3 = new Cat("Semon",3,3,3);
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat2.fight(cat3));
+        System.out.println(cat3.fight(cat1));
         //напишите тут ваш код
     }
 
