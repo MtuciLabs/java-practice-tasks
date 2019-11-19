@@ -16,9 +16,19 @@ package lesson03.part01;
 
 public class Task26 {
 
-  public static void main(String[] args) {
-//    printIdea(new Idea());
+  public static class Idea {
+    public String getDescription() {
+      return "Hello";
+    }
   }
+    public static void printIdea(Idea idea) {
+      System.out.println(idea.getDescription());
+    }
 
-  //напишите тут ваш код
-}
+
+    public static void main(String[] args) {
+      printIdea(new Idea());
+    }
+
+    //напишите тут ваш код
+  }
