@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры три целых числа. Вывести на экран количество положительных и количество отрицательных чисел в исходном наборе,
  * в следующем виде:
@@ -36,6 +39,26 @@ package lesson02.part02;
 public class Task29 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer num1 = Integer.parseInt(reader.readLine());
+        Integer num2 = Integer.parseInt(reader.readLine());
+        Integer num3 = Integer.parseInt(reader.readLine());
+        if (num1>0 && num2>0 && num3>0) {
+            System.out.println("количество отрицательных чисел: 0");
+            System.out.println("количество положительных чисел: 3");
+        }
+        else if (num1 > 0 && num2 > 0 || num2 > 0 && num3 > 0 || num1 > 0 && num3 > 0){
+            System.out.println("количество отрицательных чисел: 1");
+            System.out.println("количество положительных чисел: 2");
+        }
+        else if (num1 > 0 || num2 > 0 || num3 > 0) {
+            System.out.println("количество отрицательных чисел: 2");
+            System.out.println("количество положительных чисел: 1");
+        }
+        else {
+            System.out.println("количество отрицательных чисел: 3");
+            System.out.println("количество положительных чисел: 0");
+        }
 
     }
 }

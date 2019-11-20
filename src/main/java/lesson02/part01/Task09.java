@@ -14,6 +14,7 @@ package lesson02.part01;
  * <p>
  * <p>
  * Требования:
+ *
  * 1.	Программа должна выводить текст.
  * 2.	Выведенный текст должен содержать 5 строк.
  * 3.	Число в каждой новой строке должно быть больше предыдущего.
@@ -23,6 +24,12 @@ package lesson02.part01;
 public class Task09 {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        int i;
+        int sum;
+        sum = 0;
+        for(i=1;i!=4;i++) {
+            sum = sum + i;
+            System.out.println(sum);
+        }
     }
 }

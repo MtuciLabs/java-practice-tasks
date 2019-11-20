@@ -15,6 +15,11 @@ package lesson02.part01;
 public class Task08 {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        long p = 1;
+        int i;
+        for(i =1; i!=11;i++){
+            p =p*i;
+        }
+        System.out.println(p);
     }
 }

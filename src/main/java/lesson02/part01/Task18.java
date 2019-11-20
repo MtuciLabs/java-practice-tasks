@@ -20,7 +20,17 @@ import java.util.*;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String name = bufferedReader.readLine();
+        String number1 = bufferedReader.readLine();
+        int a = Integer.parseInt(number1);
+        String number2 = bufferedReader.readLine();
+        int b = Integer.parseInt(number2);
+        System.out.println(name+" получает "+a+" через "+b);
         //напишите тут ваш код
+
 
     }
 }
