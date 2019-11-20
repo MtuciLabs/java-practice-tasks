@@ -17,9 +17,22 @@ public class Task01 {
 
     public static void main(String[] args) {
 
+        Cat cat = new Cat("Barsik", 5, 7, 100 );
+
     }
 
     public static class Cat{
-        //напишите тут ваш код
+        String name;
+        int age;
+        int weight;
+        int strength;
+
+        Cat(String name, int age, int weight, int strength){
+            this.name = name;
+            this.age = age;
+            this.weight = weight;
+            this.strength = strength;
+        }
+
     }
 }

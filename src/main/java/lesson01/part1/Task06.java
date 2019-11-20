@@ -1,6 +1,7 @@
 package lesson01.part1;
+import java.util.Scanner;
 
-public class Task06 {
+public class Task06<Rad> {
 
     /**
      * Выведи на экран длину окружности, рассчитанную по формуле: L = 2 * Pi * radius.
@@ -15,11 +16,14 @@ public class Task06 {
      * 4. Программа должна выводить длину окружности с радиусом 5.
      */
 
+
     public static void main(String[] args) {
         printCircleLength(5);
     }
 
     public static void printCircleLength(int radius) {
-        //напишите тут ваш код
+        double Pi = 3.14;
+        double L = 2 * Pi * radius;
+        System.out.print(L);
     }
 }

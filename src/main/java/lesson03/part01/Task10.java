@@ -34,14 +34,16 @@ package lesson03.part01;
  * вес, цвет, адрес и инициализирующий все переменные класса, кроме имени.
  */
 
+
 public class Task10 {
 
-    public static void main(String[] args) {
+   // public static void main(String[] args) {
 
-    }
+    //}
 
-    public static class Cat {
-        //напишите тут ваш код
+    public static class Cat1 extends Task09.Cat {
+        Cat1 cat2 = new Cat1();
+
     }
 
 }

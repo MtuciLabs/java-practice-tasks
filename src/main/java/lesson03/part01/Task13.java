@@ -21,11 +21,35 @@ package lesson03.part01;
 public class Task13 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+        Friend mike = new Friend("Mike", 25,  'M');
+        Friend ann = new Friend("Ann", 'F');
+
     }
 
     public static class Friend {
-        //напишите тут ваш код
+        private String name;
+        private int age;
+        private char sex;
+
+
+        public Friend(String name){
+
+            this.name = name;
+        }
+        public Friend(String name, int age){
+            this.name = name;
+            this.age = age;
+        }
+        public Friend(String name, int age, char sex){
+            this.name = name;
+            this.age =age;
+            this.sex =sex;
+        }
+        public Friend(String name, char sex){
+            this.name = name;
+            this.sex =sex;
+        }
     }
 
 }

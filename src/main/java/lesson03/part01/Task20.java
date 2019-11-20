@@ -16,8 +16,18 @@ public class Task20 {
 
   //напишите тут ваш код
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-  }
+    }
+
+    public static class Cat{
+        int catCount = 0;
+        public Cat(){
+            this.catCount++ ;
+        }
+
+
+    }
+
 
 }

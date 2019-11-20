@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import java.util.Scanner;
+
 public class Task13 {
 
     /**
@@ -25,11 +27,14 @@ public class Task13 {
      */
 
     public static void main(String[] args) {
-        System.out.println(getWeight(888));
+        Scanner in = new Scanner(System.in);
+        int erthWeigt = in.nextInt();
+
+        System.out.println(getWeight(erthWeigt));
     }
 
     public static double getWeight(int earthWeight) {
-        //напишите тут ваш код
-        return 0D;
+        earthWeight *= 0.17d;
+        return earthWeight;
     }
 }

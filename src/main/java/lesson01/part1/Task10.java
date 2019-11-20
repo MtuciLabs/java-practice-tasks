@@ -16,6 +16,14 @@ public class Task10 {
 
     public static void main(String[] args) {
         int secondsAfter15 = 0;
+        int one_minute = 60;
+        int minutesAfter15 = 0;
+
+        while (minutesAfter15 < 30){
+            secondsAfter15 += one_minute;
+            minutesAfter15++;
+        }
+
         System.out.println(secondsAfter15);
     }
 }

@@ -17,7 +17,21 @@ package lesson02.part01;
 
 public class Task12 {
     public static void main(String[] args) {
-        //напишите тут ваш код
 
+        String[] array = new String[] { "Мама", "Мыла", "Раму" };
+
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                for(int k = 0; k < 3; k++){
+                    if(i!=k && i!=j && j!=k)
+                        System.out.println(array[i]+ array[j]+ array[k]);
+
+                }
+            }
+
+
+
+        }
+        System.out.println();
     }
 }

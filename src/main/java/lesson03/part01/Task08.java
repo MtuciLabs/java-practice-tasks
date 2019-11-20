@@ -24,11 +24,35 @@ package lesson03.part01;
 public class Task08 {
 
     public static void main(String[] args) {
+        Friend mike = new Friend();
+        Friend ann = new Friend();
 
+        mike.initialize("Mike", 25,  'M');
+        ann.initialize("Ann", 'F');
     }
 
     public static class Friend {
-        //напишите тут ваш код
+        private String name;
+        private int age;
+        private char sex;
+
+
+        public void initialize(String name){
+            this.name = name;
+        }
+        public void initialize(String name, int age){
+            this.name = name;
+            this.age = age;
+        }
+        public void initialize(String name, int age, char sex){
+            this.name = name;
+            this.age =age;
+            this.sex =sex;
+        }
+        public void initialize(String name, char sex){
+            this.name = name;
+            this.sex =sex;
+        }
     }
 
 }

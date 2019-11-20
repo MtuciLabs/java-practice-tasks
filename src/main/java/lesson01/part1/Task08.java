@@ -23,12 +23,17 @@ public class Task08 {
      */
 
     public static void main(String[] args) {
-        System.out.println(getMetreFromCentimetre(243));
+
+        System.out.print(getMetreFromCentimetre(243));
+        System.out.print(" cm");
+
     }
 
-    public static int getMetreFromCentimetre(int centimetre) {
-        //напишите тут ваш код
+    public static float getMetreFromCentimetre(int centimetre) {
 
-        return 0;
+        double meter = centimetre;
+        meter /=100;
+
+        return (float) meter;
     }
 }

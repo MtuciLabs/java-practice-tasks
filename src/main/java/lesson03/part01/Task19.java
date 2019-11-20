@@ -32,17 +32,29 @@ import java.io.InputStreamReader;
 
 public class Task19 {
 
-  public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
     BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
     double weight = Double.parseDouble(bis.readLine());
     double height = Double.parseDouble(bis.readLine());
 
     Body.calculateMassIndex(weight, height);
-  }
-
-  public static class Body {
-    public static void calculateMassIndex(double weight, double height) {
-      // напишите тут ваш код
     }
-  }
+
+    public static class Body {
+        public static void calculateMassIndex(double weight, double height) {
+            double massIndex =  weight/(height*height) ;
+            if(massIndex < 18.5){
+                System.out.println("Недовес");
+            }
+            else if(massIndex >= 18.5 && massIndex < 25){
+                System.out.println("Нормальный");
+            }
+            else if( massIndex >= 25 && massIndex < 30){
+                System.out.println("Избыточный вес");
+            }
+            else if(massIndex >= 30){
+               System.out.println("Ожирение");
+            }
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package lesson03.part01;
 
+import java.util.Scanner;
+
 /**
  * Создать class Person. У человека должно быть имя String name, возраст int age,
  * адрес String address, пол char sex.
@@ -16,11 +18,28 @@ package lesson03.part01;
 public class Task05 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Person Jonny = new Person();
+        System.out.println(Jonny.name + Jonny.age + Jonny.address + Jonny.sex);
     }
 
     public static class Person {
-        //напишите тут ваш код
+        private String name;
+        private int  age;
+        private String address;
+        private char sex;
+
+        Person(){
+            Scanner in = new Scanner(System.in);
+            String name = in.next();
+            int age = in.nextInt();
+            String address = in.next();
+            char sex =in.next().charAt(0);
+
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.sex = sex;
+        }
 
     }
 

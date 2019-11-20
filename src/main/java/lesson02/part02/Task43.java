@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры строку name.
  * Ввести с клавиатуры дату рождения (три числа): y, m, d.
@@ -21,7 +23,15 @@ package lesson02.part02;
 
 public class Task43 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int y = in.nextInt();
+        int m = in.nextInt();
+        int d = in.nextInt();
+        String name = in.next();
+
+        System.out.println("my name is "+ name);
+        System.out.println("I was born " + y +'.'+ m + '.' + d);
+
 
     }
 }
