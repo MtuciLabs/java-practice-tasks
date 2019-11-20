@@ -22,7 +22,7 @@ public class Task01 {
   public static void main(String[] args) throws Exception {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     String[] array = new String[10];
-    for (int i = 0; i < 8; i++) array[i] = reader.readLine();
-    for (int x = 9; x >= 0; x--) System.out.println(array[x]);
+    for (int i = 0; i < 8; i++) {array[i] = reader.readLine();}
+    for (int x = 9; x >= 0; x--){ System.out.println(array[x]);}
   }
 }
