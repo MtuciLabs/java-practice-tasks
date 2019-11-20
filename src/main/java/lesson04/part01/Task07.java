@@ -31,9 +31,8 @@ public class Task07 {
         printValues(map);
     }
     public static void printValues(Map<String, String> map) {
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            String value = entry.getValue();
-            System.out.println(value);
+        for (Map.Entry<String, String> e : map.entrySet()) {
+            System.out.println(e.getValue());
         }
     }
 }
