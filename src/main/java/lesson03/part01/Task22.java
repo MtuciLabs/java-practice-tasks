@@ -1,5 +1,6 @@
 package lesson03.part01;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Сделать класс ConsoleReader, у которого будут 4 статических метода:
  * String readString() - читает с клавиатуры строку
@@ -20,30 +21,31 @@ package lesson03.part01;
 
 public class Task22 {
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
 
   }
 
   public static class ConsoleReader {
 
+
     public static String readString() throws Exception {
-      //напишите тут ваш код
-      return null;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      return reader.readLine();
     }
 
     public static int readInt() throws Exception {
-      //напишите тут ваш код
-      return 0;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      return Integer.parseInt(reader.readLine());
     }
 
     public static double readDouble() throws Exception {
-      //напишите тут ваш код
-      return 0.0;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      return Double.parseDouble(reader.readLine());
     }
 
     public static boolean readBoolean() throws Exception {
-      //напишите тут ваш код
-      return false;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      return Boolean.parseBoolean(reader.readLine());
     }
   }
 

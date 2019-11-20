@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 /**
  * Программа должна считывать введенные пользователем вес в килограммах и рост в метрах и выводить на экран сообщение о индексе массы тела.
  * Реализуй статический метод класса Body. Метод должен определить индекс массы тела, и вывести на экран сообщение:
@@ -30,7 +31,8 @@ import java.io.InputStreamReader;
  * "Ожирение: 30 или больше" на экран, если индекс массы тела 30 или больше.
  */
 
-public class Task19 {
+public class
+Task19 {
 
   public static void main(String[] args) throws IOException {
     BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
@@ -41,8 +43,20 @@ public class Task19 {
   }
 
   public static class Body {
-    public static void calculateMassIndex(double weight, double height) {
-      // напишите тут ваш код
+    static void calculateMassIndex(double weight, double height) {
+      double res = weight/(height*height);
+      if (res<18.5){
+        System.out.println("Недовес: меньше чем 18.5");
+      }
+      if ((res>=18.5)&&(res<=25)){
+        System.out.println("Нормальный: между 18.5 и 25");
+      }
+      if ((res>25)&&(res<30)){
+        System.out.println("Избыточный вес: между 25 и 30");
+      }
+      if (res>=30){
+        System.out.println("Ожирение: 30 или больше");
+      }
     }
   }
 }
