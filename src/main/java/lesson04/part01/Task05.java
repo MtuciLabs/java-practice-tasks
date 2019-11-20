@@ -23,9 +23,9 @@ import java.util.ArrayList;
 public class Task05 {
     public static void main(String[] args) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            list.add(r.readLine());
+            list.add(Integer.parseInt(r.readLine()));
         }
         for (int i = list.size() - 1; i >= 0; i--) {
             System.out.println(list.get(i));
