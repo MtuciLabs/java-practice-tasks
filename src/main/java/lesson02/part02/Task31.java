@@ -15,6 +15,15 @@ package lesson02.part02;
 public class Task31 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        int zf=10;
+        while (true){
+            System.out.println(zf);
+            zf=zf-1;
+            if (zf<1){
+                break;
+            }
+        }
+
 
     }
 }

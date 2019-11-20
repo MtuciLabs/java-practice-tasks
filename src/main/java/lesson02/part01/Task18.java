@@ -20,6 +20,12 @@ import java.util.*;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+        String name = in.next();
+        int num1 = in.nextInt();
+        int num2 = in.nextInt();
+        System.out.println(name + " получает " + num1 + " через " + num2 + " лет ");
+
         //напишите тут ваш код
 
     }
