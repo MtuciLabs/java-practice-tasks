@@ -1,5 +1,6 @@
 package lesson04.part01;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -7,7 +8,7 @@ import java.util.Set;
  * 2. В методе main удалите одного кота из Set cats.
  * 3. Реализовать метод printCats, он должен вывести на экран всех котов, которые остались во множестве.
  * Каждый кот с новой строки.
- *
+ * <p>
  * Требования:
  * 1.	Программа должна выводить текст на экран.
  * 2.	Внутри класса должен быть public static класс Cat с конструктором по умолчанию.
@@ -17,27 +18,35 @@ import java.util.Set;
  * 5.	Метод main() должен один раз вызывать метод createCats().
  * 6.	Метод main() должен вызывать метод printCats().
  * 7.	Метод main() должен удалять одного кота из множества котов.
- *
  */
 
 public class Task10 {
 
-  public static void main(String[] args) {
-    Set<Cat> cats = createCats();
+    public static void main(String[] args) {
+        Set<Cat> cats = createCats();
 
-    //напишите тут ваш код. step 2 - пункт 2
+        cats.remove(1);
 
-    printCats(cats);
-  }
+        printCats(cats);
+    }
 
-  public static Set<Cat> createCats() {
-    //напишите тут ваш код. step 1 - пункт 1
-    return null;
-  }
+    public static Set<Cat> createCats() {
+        HashSet<Cat> cats = new HashSet(3);
+        Cat Barsuk = new Cat();
+        Cat Prosha = new Cat();
+        Cat Mysh = new Cat();
+        cats.add(Barsuk);
+        cats.add(Prosha);
+        cats.add(Mysh);
+        return cats;
+    }
 
-  public static void printCats(Set<Cat> cats) {
-    // step 3 - пункт 3
-  }
+    public static void printCats(Set<Cat> cats) {
+        for (int i = 0; i < 2; i++) {
+            System.out.println(cats);
+        }
+    }
 
-  public static class Cat {}
+    public static class Cat {
+    }
 }

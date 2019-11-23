@@ -3,7 +3,7 @@ package lesson04.part02;
 /**
  * Создай метод public static void divideByZero, в котором подели любое число на ноль и выведи на экран результат деления.
  * Оберни вызов метода divideByZero в try..catch. Выведи стек-трейс исключения используя метод exception.printStackTrace()
- *
+ * <p>
  * Требования:
  * 1.	В классе должен быть метод public static void divideByZero().
  * 2.	Метод divideByZero должен содержать операцию деления любого целого числа на ноль.
@@ -15,7 +15,16 @@ package lesson04.part02;
 
 public class Task34 {
 
-  public static void main(String[] args) {
-//    divideByZero();
-  }
+    public static void main(String[] args) {
+        try {
+            divideByZero(100);
+
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void divideByZero(int i) {
+        System.out.println(i / 0);
+    }
 }

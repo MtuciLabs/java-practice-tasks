@@ -19,7 +19,19 @@ import java.util.ArrayList;
 
 public class Task04 {
 
-  public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList array_list = new ArrayList();
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Введите строку");
+            array_list.add(reader.readLine());
+        }
+        for (int j = 0; j < 13; j++) {
+            array_list.add(0, array_list.get(4));
+            array_list.remove(4);
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println(array_list.get(i));
+        }
+    }
 }
