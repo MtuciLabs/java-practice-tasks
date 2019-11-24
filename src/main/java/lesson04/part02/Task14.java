@@ -22,13 +22,12 @@ package lesson04.part02;
 
 public class Task14 {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     for (int i = 30; i >= 0; i--) {
+      Thread.sleep(100);
       System.out.println(i);
-
-      //напишите тут ваш код
     }
-
+    Thread.sleep(100);
     System.out.println("Бум!");
   }
 }

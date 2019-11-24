@@ -28,6 +28,25 @@ import java.io.InputStreamReader;
 public class Task03 {
 
   public static void main(String[] args) throws IOException {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int [] array = new int [15];
+    int i;
+    int stCh = 0;
+    int stNch = 0;
+    for (i=0; i<=14; i++){
+      array[i] = Integer.parseInt(reader.readLine());
+    }
+    for (i=0; i<=14; i++){
+      if (i%2==0) {
+        stCh=stCh+array[i];
+      } else {
+        stNch=stNch+array[i];
+      }
+    }
+    if (stCh>stNch){
+      System.out.println("В домах с четными номерами проживает больше жителей");
+    } else {
+      System.out.println("В домах с нечетными номерами проживает больше жителей");
+    }
   }
 }

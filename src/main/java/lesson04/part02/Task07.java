@@ -24,10 +24,41 @@ import java.util.ArrayList;
 
 public class Task07 {
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList <Integer> mainList = new ArrayList();
+    ArrayList <Integer> div3 = new ArrayList<>();
+    ArrayList <Integer> div2 = new ArrayList<>();
+    ArrayList <Integer> rest = new ArrayList<>();
+
+    int i;
+    for(i=0; i<=19; i++){
+      mainList.add(Integer.parseInt(reader.readLine()));
+    }
+
+    for(i=0; i<=19; i++){
+      if ((mainList.get(i)%3==0)||(mainList.get(i)%2==0)){
+        if (mainList.get(i)%3==0){
+          div3.add(mainList.get(i));
+        }
+        if (mainList.get(i)%2==0){
+          div2.add(mainList.get(i));
+        }
+      } else {
+        rest.add(mainList.get(i));
+      }
+
+    }
+    printList(div2);
+    System.out.println();
+    printList(div3);
+    System.out.println();
+    printList(rest);
   }
 
   public static void printList(ArrayList<Integer> list) {
-    //напишите тут ваш код
+    int i;
+    for (i=0; i<=list.size()-1; i++){
+      System.out.print(list.get(i)+" ");
+    }
   }
 }

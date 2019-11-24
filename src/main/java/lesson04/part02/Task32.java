@@ -2,6 +2,7 @@ package lesson04.part02;
 
 import java.io.CharConversionException;
 import java.io.IOException;
+import java.lang.reflect.Executable;
 import java.nio.file.FileSystemException;
 
 /**
@@ -34,12 +35,25 @@ public class Task32 {
   public static StatelessBean BEAN = new StatelessBean();
 
   public static void main(String[] args) {
-    handleExceptions();
+    try{
+      handleExceptions();
+    } catch (Exception exception){
+      BEAN.log(exception);
+    }
+
   }
 
-  public static void handleExceptions() {
-    // Раскомментируй
-//    BEAN.methodThrowExceptions();
+  public static void handleExceptions() throws FileSystemException{
+    try {
+      BEAN.methodThrowExceptions();
+    } catch (FileSystemException exception) {
+      BEAN.log(exception);
+      throw exception;
+    } catch (CharConversionException exception) {
+      BEAN.log(exception);
+    } catch (IOException exception) {
+      BEAN.log(exception);
+    }
   }
 
   public static class StatelessBean {
@@ -59,3 +73,4 @@ public class Task32 {
     }
   }
 }
+
