@@ -1,5 +1,5 @@
 package lesson02.part02;
-
+import java.util.*;
 /**
  * Ввести с клавиатуры три числа, вывести на экран среднее из них. Т.е. не самое большое и не самое маленькое.
  * Если все числа равны, вывести любое из них.
@@ -16,6 +16,16 @@ package lesson02.part02;
 public class Task41 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
 
+        int[] array = new int[]{ a, b, c };
+
+        Arrays.sort(array);
+
+
+        System.out.println(array[1]);
     }
 }

@@ -1,5 +1,5 @@
 package lesson02.part02;
-
+import java.util.Scanner;
 /**
  * Ввести с клавиатуры два целых числа, которые будут координатами точки, не лежащей на координатных осях OX и OY.
  * Вывести на экран номер координатной четверти, в которой находится данная точка.
@@ -30,6 +30,21 @@ import java.util.*;
 public class Task25 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+        int y = in.nextInt();
 
+        if(x > 0 && y > 0){
+            System.out.println("I");
+        }
+        else if(x < 0 && y > 0){
+            System.out.println("II");
+        }
+        else if(x < 0 && y < 0){
+            System.out.println("III");
+        }
+        else if( x > 0 && y < 0){
+            System.out.println("IV");
+        }
     }
 }

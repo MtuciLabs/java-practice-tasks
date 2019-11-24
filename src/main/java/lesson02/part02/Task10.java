@@ -26,6 +26,12 @@ public class Task10 {
     }
 
     public static void checkInterval(int a) {
+        if(a > 50 && a < 100) {
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("No");
+        }
         //напишите тут ваш код
 
     }
