@@ -16,22 +16,37 @@ package lesson05.part02;
  */
 
 public class Task15 {
-    public static void main(String[] args) {
 
+  public static void main(String[] args) {
+
+  }
+
+  public static abstract class Pet {
+
+    public abstract String getName();
+
+    public abstract Pet getChild();
+  }
+
+  public static class Cat {
+
+    public String getName() {
+      return "Барсик";
     }
 
-    public static abstract class Pet {
-        public abstract String getName();
+    public String getChild() {
+      return "Котенок";
+    }
+  }
 
-        public abstract Pet getChild();
+  public static class Dog {
+
+    public String getName() {
+      return "Шарик";
     }
 
-    public static class Cat {
-
+    public String getChild() {
+      return "Щенок";
     }
-
-    public static class Dog {
-
-    }
-
+  }
 }

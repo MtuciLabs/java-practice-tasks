@@ -20,7 +20,7 @@ public class Task22 {
         boolean isMovable = cat instanceof CanMove;
         boolean isTom = cat instanceof TomCat;
 
-        if (isCat && isMovable && isTom) System.out.println("Bingo!");
+        if (isCat && isMovable && isTom) System.out.println ("Bingo!");
     }
 
     interface CanMove {

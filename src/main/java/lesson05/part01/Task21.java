@@ -13,7 +13,8 @@ package lesson05.part01;
  * 5. Программа должна вывести правильный результат.
  * 6. Метод getMinimumAndMaximum не должен изменять массив inputArray.
  */
-public class Task21 {
+public class
+Task21 {
     public static void main(String[] args) {
         int[] data = new int[]{1, 2, 3, 5, -2, -8, 0, 77, 5, 5};
 
@@ -24,13 +25,23 @@ public class Task21 {
     }
 
     public static Pair<Integer, Integer> getMinimumAndMaximum(int[] inputArray) {
+        int i;
+        int max = inputArray[1];
+        int min = inputArray[1];
         if (inputArray == null || inputArray.length == 0) {
             return new Pair<Integer, Integer>(null, null);
+        } else {
+          for (i=0; i<inputArray.length; i++){
+            if (inputArray[i]>max){
+              max = inputArray[i];
+            }
+            if (inputArray[i]<min){
+              min = inputArray[i];
+            }
+          }
         }
 
-        // напишите тут ваш код
-
-        return new Pair<Integer, Integer>(0, 0);
+        return new Pair<Integer, Integer>(min,max);
     }
 
     public static class Pair<X, Y> {
