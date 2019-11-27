@@ -42,6 +42,30 @@ public class Task09 {
 
     public static class Cat {
         //напишите тут ваш код
-    }
+        String name;
+        int age;
+        int weight;
+        String address;
+        String color;
 
+        public void initialize(String name) {
+            this.name = name;
+        }
+
+        public void initialize(int age) {
+            this.age = age;
+        }
+
+        public void initialize(int weight) {
+            this.weight = weight;
+        }
+
+        public void initialize(String address) {
+            this.address = address;
+        }
+
+        public void initialize(String color) {
+            this.color = color;
+        }
+    }
 }

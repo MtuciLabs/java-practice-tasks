@@ -1,6 +1,7 @@
 package lesson03.part01;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.InputStreamReader;
 
 /**
@@ -49,7 +50,20 @@ import java.io.InputStreamReader;
 public class Task06 {
 
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        int schetchik = 0;
+        float summa = 0;
+        System.out.println("Vvedite chislo: ");
+        while(true) {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            int number = Integer.parseInt(reader.readLine());
+            if (number == -1){
+                System.out.println(summa/(schetchik);
+                break;
+            } else {
+                schetchik = schetchik + 1;
+                summa = summa + number;
+            }
+        }
     }
 
 }
