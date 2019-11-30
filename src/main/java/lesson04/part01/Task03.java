@@ -3,6 +3,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * 1. Создать массив на 15 целых чисел.
@@ -28,6 +29,19 @@ import java.io.InputStreamReader;
 public class Task03 {
 
   public static void main(String[] args) throws IOException {
-    //напишите тут ваш код
+    int[] doma=new int[15];
+    int s2=0;
+    int s1=0;
+    Scanner in=new Scanner(System.in);
+    int i;
+    for(i=0;i<15;i++){
+      doma[i]=in.nextInt();
+      if(i==0) s2=s2+doma[i];
+      if (i!=0 && i%2==0){ s2=s2+doma[i];}
+      if (i!=0 && i%2!=0){ s1=s1+doma[i];}
+    }
+    if(s1>s2) System.out.println("В домах с нечетными номерами проживает больше жителей.");
+    else if(s1<s2) System.out.println("В домах с четными номерами проживает больше жителей.");
+    else System.out.println("В домах  проживает равное количество жителей.");
   }
 }

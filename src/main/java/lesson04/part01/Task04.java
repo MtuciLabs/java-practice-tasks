@@ -3,7 +3,8 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-
+import java.util.Scanner;
+import java.util.Vector;
 /**
  * 1. Создай список строк.
  * 2. Добавь в него 5 строк с клавиатуры.
@@ -19,7 +20,20 @@ import java.util.ArrayList;
 
 public class Task04 {
 
+
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    Scanner in=new Scanner(System.in);
+    ArrayList<String> mas= new ArrayList<String>();
+    int i;
+    for(i=0;i<5;i++) {
+      String q = in.nextLine();
+      mas.add(q);
+    }
+    for(i=0;i<13;i++) {
+      mas.add(0,mas.remove(mas.size()-1));
+    }
+    for (String string : mas){
+      System.out.println(string);
+    }
   }
 }
