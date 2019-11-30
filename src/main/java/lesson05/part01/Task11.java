@@ -14,7 +14,7 @@ package lesson05.part01;
  * 5. Класс Eve должен быть унаследован от класса Adam.
  */
 
-public class Task11 {
+public class  Task11 {
     public static void main(String[] args) {
     }
 
@@ -24,7 +24,7 @@ public class Task11 {
     }
 
     //Ева
-    public class Eve {
+    public class Eve extends Adam{
 
     }
 }

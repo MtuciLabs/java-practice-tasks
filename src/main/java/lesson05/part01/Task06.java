@@ -17,10 +17,10 @@ public class Task06 {
     public static void main(String[] args) {
     }
 
-    public class Cat {
-        public String name;
-        public int age;
-        public int weight;
+    public class  Cat {
+        private String name;
+        private int age;
+        private int weight;
 
         public Cat() {
         }

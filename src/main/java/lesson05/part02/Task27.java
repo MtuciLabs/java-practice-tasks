@@ -22,11 +22,13 @@ public class Task27 {
     public static void main(String[] args) {
         Integer i = 5;
         int x = transformValue(i);
+        int y= s(x);
 
-        System.out.println(x);
+        System.out.println(y);
     }
 
     public static int transformValue(int i) {
         return i * i;
     }
+    public static int s(int i){return i-15;}
 }

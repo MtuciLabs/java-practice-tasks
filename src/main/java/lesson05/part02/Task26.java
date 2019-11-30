@@ -22,18 +22,43 @@ package lesson05.part02;
 public class Task26 {
 
     public static void main(String[] args) {
-
     }
+        public interface CanFly {
+            public void fly();
+        }
+        public interface CanRun {
+            public void run();
+        }
+        public interface CanClimb {
+            public void climb();
+        }
 
-    public class Cat {
-    }
+        public class Cat implements CanRun, CanClimb {
+            public void run() {
+            }
 
-    public class Dog {
-    }
+            public void climb() {
+            }
 
-    public class Tiger extends Cat {
-    }
+            public class Dog implements CanRun {
+                public void run() {
+                }
+            }
 
-    public class Duck {
+            class Tiger extends Cat implements CanRun, CanClimb {
+                public void run() {
+                }
+
+                public void climb() {
+                }
+
+                public class Duck implements CanRun, CanFly {
+                    public void run() {
+                    }
+
+                    public void fly() {
+                    }
+                }
+            }
+        }
     }
-}

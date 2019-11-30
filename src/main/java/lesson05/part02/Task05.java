@@ -25,7 +25,18 @@ public class Task05 {
     }
 
     public static String getObjectType(Object o) {
-        //Напишите тут ваше решение
+        if(o instanceof Cow){
+            return "Корова";
+        }
+        if(o instanceof Dog){
+            return "Cобака";
+        }
+        if(o instanceof Whale){
+            return "Кит";
+        }
+        if(o instanceof Pig){
+            return "Свинья";
+        }
 
         return "Неизвестное животное";
     }
