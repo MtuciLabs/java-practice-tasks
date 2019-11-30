@@ -14,10 +14,18 @@ package lesson03.part01;
 
 public class Task20 {
 
-  //напишите тут ваш код
+  public static class Cat{
+    static int catCount;
+    public int Cat(int catCount){
+      this.catCount=catCount++;
+      return catCount;
+    }
+  }
 
   public static void main(String[] args) {
-
+    Cat p=new Cat();
+     int s =p.Cat(5);
+System.out.println(s);
   }
 
 }
