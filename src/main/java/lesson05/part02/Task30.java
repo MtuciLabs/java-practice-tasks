@@ -22,7 +22,7 @@ public class Task30 {
         //  printName(woman);
     }
 
-    public static void printName(Human human) {
+    public static void printName(Man man) {
 
     }
 
@@ -30,11 +30,11 @@ public class Task30 {
 
     }
 
-    public static class Man extends Human{
+    public static class Man {
 
     }
 
-    public static class Woman extends Human {
+    public static class Woman {
 
     }
 }

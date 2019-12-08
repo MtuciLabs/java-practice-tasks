@@ -16,15 +16,6 @@ package lesson04.part02;
 public class Task34 {
 
   public static void main(String[] args) {
-    try {
-      divideByZero();
-    } catch(Throwable e){
-      e.printStackTrace();
-    }
-  }
-  public static void divideByZero(){
-    int a=140/0;
-    System.out.println(a);
-    System.out.print(a);
+//    divideByZero();
   }
 }

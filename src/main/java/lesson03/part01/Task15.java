@@ -39,7 +39,6 @@ public class Task15 {
     }
 
     public Circle(double x, double y) {
-      new Circle(x, y, 10);
       //напишите тут ваш код
     }
 

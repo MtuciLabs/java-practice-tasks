@@ -28,10 +28,6 @@ public class Task29 {
         }
     }
 
-
-    public static class Pegasus extends Horse implements CanFly {
-        public void fly(){
-
-        }
+    public static class Pegasus {
     }
 }

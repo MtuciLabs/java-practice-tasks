@@ -20,11 +20,11 @@ public class Task04 {
     public static void main(String[] args) {
     }
 
-    public class Manager extends Employee {
+    public class Manager {
 
     }
 
-    public class Chief extends Employee {
+    public class Chief {
 
     }
 
@@ -32,7 +32,7 @@ public class Task04 {
 
     }
 
-    public class Secretary extends Employee {
+    public class Secretary {
 
     }
 }

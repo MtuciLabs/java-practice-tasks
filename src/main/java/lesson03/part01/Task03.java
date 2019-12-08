@@ -16,9 +16,6 @@ package lesson03.part01;
 public class Task03 {
 
     public static void main(String[] args) {
-        Cat cat1=new Cat("Барсик", 3, 5,77);
-        Cat cat2=new Cat("Мурзик", 2, 6,57);
-        Cat cat3=new Cat("Маркиз", 1, 4,67);
         //напишите тут ваш код
     }
 

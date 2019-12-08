@@ -18,9 +18,9 @@ public class Task06 {
     }
 
     public class Cat {
-        private String name;
-        private int age;
-        private int weight;
+        public String name;
+        public int age;
+        public int weight;
 
         public Cat() {
         }

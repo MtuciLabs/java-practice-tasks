@@ -24,21 +24,15 @@ public class Task21 {
     private static int catCount = 0;
 
     public Cat() {
-
       catCount++;
     }
 
     public static int getCatCount() {
       //напишите тут ваш код
-
-      return catCount;
+      return 0;
     }
 
     public static void setCatCount(int catCount) {
-
-       Cat.catCount=catCount;
-
-
       //напишите тут ваш код
     }
   }

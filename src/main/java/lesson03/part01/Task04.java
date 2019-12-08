@@ -1,7 +1,5 @@
 package lesson03.part01;
 
-import org.w3c.dom.ls.LSOutput;
-
 /**
  * Создать три кота используя класс Cat.
  * Провести три боя попарно между котами.
@@ -18,12 +16,6 @@ import org.w3c.dom.ls.LSOutput;
 public class Task04 {
 
     public static void main(String[] args) {
-        Cat cat1=new Cat("Барсик", 3,8,100);
-        Cat cat2=new Cat("Мурзик", 4,11,101);
-        Cat cat3=new Cat("Маркиз", 1,10,93);
-        System.out.println(cat1.fight(cat2));
-        System.out.println(cat1.fight(cat3));
-        System.out.println(cat2.fight(cat3));
         //напишите тут ваш код
     }
 

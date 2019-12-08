@@ -22,11 +22,11 @@ public class Task14 {
 
     }
 
-    public class Christianity extends Judaism{
+    public class Christianity {
 
     }
 
-    public class Islam extends Christianity {
+    public class Islam {
 
     }
 

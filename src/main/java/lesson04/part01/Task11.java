@@ -1,7 +1,5 @@
 package lesson04.part01;
 
-import java.util.Stack;
-
 /**
  * Написать пять методов, которые вызывают друг друга.
  * Каждый метод должен возвращать свой StackTrace.
@@ -21,35 +19,30 @@ public class Task11 {
 
   public static StackTraceElement[] method1() {
     method2();
-    StackTraceElement[] StackTrace=Thread.currentThread().getStackTrace();
     //напишите тут ваш код
-    return StackTrace;
+    return null;
   }
 
   public static StackTraceElement[] method2() {
     method3();
-    StackTraceElement[] StackTrace=Thread.currentThread().getStackTrace();
     //напишите тут ваш код
-    return StackTrace;
+    return null;
   }
 
   public static StackTraceElement[] method3() {
     method4();
-    StackTraceElement[] StackTrace=Thread.currentThread().getStackTrace();
     //напишите тут ваш код
     return null;
   }
 
   public static StackTraceElement[] method4() {
     method5();
-    StackTraceElement[] StackTrace=Thread.currentThread().getStackTrace();
     //напишите тут ваш код
-    return StackTrace;
+    return null;
   }
 
   public static StackTraceElement[] method5() {
-    StackTraceElement[] StackTrace=Thread.currentThread().getStackTrace();
     //напишите тут ваш код
-    return StackTrace;
+    return null;
   }
 }

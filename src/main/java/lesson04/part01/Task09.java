@@ -24,13 +24,12 @@ public class Task09 {
   }
 
   public static long getInsertTimeInMs(List list) {
-      long start=System.currentTimeMillis();
     // напишите тут ваш код
 
     insert10000(list);
-    long time=System.currentTimeMillis()-start;
+
     // напишите тут ваш код
-    return time;
+    return 0;
   }
 
   public static void insert10000(List list) {

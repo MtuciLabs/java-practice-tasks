@@ -24,15 +24,15 @@ public class Task13 {
 
     }
 
-    public class Animal extends Fish {
+    public class Animal {
 
     }
 
-    public class Ape extends Animal{
+    public class Ape {
 
     }
 
-    public class Human extends Ape {
+    public class Human {
 
     }
 

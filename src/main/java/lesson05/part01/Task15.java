@@ -24,15 +24,15 @@ public class Task15 {
 
     }
 
-    public class Student extends Schoolboy {
+    public class Student {
 
     }
 
-    public class Worker extends Student {
+    public class Worker {
 
     }
 
-    public class Slave extends Worker{
+    public class Slave {
 
     }
 

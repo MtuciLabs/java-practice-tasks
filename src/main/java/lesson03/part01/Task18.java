@@ -1,7 +1,7 @@
 package lesson03.part01;
 
 import java.io.IOException;
-import java.util.*;
+
 /**
  * Ввести с клавиатуры число. Определить, сколько в введенном числе четных цифр, а сколько нечетных.
  * Если число делится без остатка на 2 (т. е. остаток равен нулю), значит оно четное.
@@ -26,17 +26,6 @@ public class Task18 {
   public static int odd;
 
   public static void main(String[] args) throws IOException {
-    Scanner in=new Scanner(System.in);
-    int chislo=in.nextInt();
-    while(chislo>=1){
-      int ch=chislo%10;
-      if(ch%2==0){
-        even++;
-      } else odd++;
-      chislo/=10;
-    }
-    System.out.println("Четные числа: " + even + " Нечетные: " + odd );
-
     //напишите тут ваш код
   }
 }

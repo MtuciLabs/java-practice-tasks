@@ -28,15 +28,6 @@ public class Task24 {
     }
 
     public static String getObjectType(Object o) {
-        if(o instanceof Cat ){
-            return "Кот";
-        } else if(o instanceof Tiger ){
-            return "Тигр";
-        }else if(o instanceof Lion ){
-            return "Лев";
-        }else if(o instanceof Bull ){
-            return "Бык";
-        }
         //напишите тут ваш код
 
         return "Животное";

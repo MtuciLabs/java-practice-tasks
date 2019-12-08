@@ -16,7 +16,7 @@ package lesson05.part02;
  * 6. Метод main() должен выводить на экран результат вызова метода getName().
  */
 
-public class  Task01 {
+public class Task01 {
     public static void main(String[] args) {
         Cow cow = new Whale();
 
@@ -30,10 +30,6 @@ public class  Task01 {
     }
 
     public static class Whale extends Cow {
-        public String getName(){
-            return "Я не корова, Я - кит.";
-
-        }
 
     }
 }

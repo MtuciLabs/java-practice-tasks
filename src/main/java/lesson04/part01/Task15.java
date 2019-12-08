@@ -24,13 +24,9 @@ public class Task15 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
-try {
-  method1();
-}catch(NullPointerException e){
 
-}catch(FileNotFoundException a){
+    method1();
 
-}
     //напишите тут ваш код
   }
 

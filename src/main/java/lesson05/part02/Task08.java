@@ -16,21 +16,6 @@ public class Task08 {
     public static void main(String[] args) {
 
     }
-    public int print(int a){
-        return a;
-    }
-    public float print(float a){
-        return a;
-    }
-    public String print(String a){
-        return a;
-    }
-    public char print(char a){
-        return a;
-    }
-    public Integer print(Integer a){
-        return a;
-    }
 
     //Напишите тут ваши методы
 }

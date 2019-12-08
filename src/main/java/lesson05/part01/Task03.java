@@ -28,23 +28,23 @@ public class Task03 {
 
     }
 
-    public class Cow extends Animal {
+    public class Cow {
 
     }
 
-    public class Pig extends Animal {
+    public class Pig {
 
     }
 
-    public class Sheep extends Animal {
+    public class Sheep {
 
     }
 
-    public class Bull extends Animal {
+    public class Bull {
 
     }
 
-    public class Goat extends Animal {
+    public class Goat {
 
     }
 

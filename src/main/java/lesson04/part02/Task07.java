@@ -3,7 +3,6 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * 1. Введи с клавиатуры 20 чисел, сохрани их в список и рассортируй по трём другим спискам:
@@ -25,38 +24,10 @@ import java.util.Scanner;
 
 public class Task07 {
   public static void main(String[] args) throws Exception {
-    Scanner in=new Scanner(System.in) ;
-    ArrayList<Integer> armain=new ArrayList<>();
-    ArrayList<Integer> ar1=new ArrayList<>();
-    ArrayList<Integer> ar2=new ArrayList<>();
-    ArrayList<Integer> ar3=new ArrayList<>();
-    for(int i=0;i<20;i++){
-      armain.add(in.nextInt());
-    }
-    for(int i=0;i<20;i++){
-      if(armain.get(i)%3==0 && armain.get(i)%2==0){
-        ar1.add(armain.get(i));
-        ar2.add(armain.get(i));
-      } else if(armain.get(i)%3==0){
-        ar1.add(armain.get(i));
-      } else if(armain.get(i)%2==0){
-        ar2.add(armain.get(i));
-      } else{
-        ar3.add(armain.get(i));
-      }
-    }
-
-    printList(ar1);
-    printList(ar2);
-    printList(ar3);
-
     //напишите тут ваш код
   }
 
   public static void printList(ArrayList<Integer> list) {
-    for(Integer i:list) {
-      System.out.println(i);
-    }
     //напишите тут ваш код
   }
 }

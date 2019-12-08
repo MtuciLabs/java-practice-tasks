@@ -20,17 +20,6 @@ import java.util.ArrayList;
 public class Task08 {
 
   public static void main(String[] args) {
-    ArrayList<String> ar=new ArrayList<>();
-    ar.add("мама");
-    ar.add("мыла");
-    ar.add("раму");
-    for(int i=0;i<6;i++){
-      if(i==1 || i==3 || i==5){
-        ar.add(i,"именно");
-
-      }
-      System.out.println(ar.get(i));
-    }
     //напишите тут ваш код
   }
 }

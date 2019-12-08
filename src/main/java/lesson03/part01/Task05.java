@@ -16,21 +16,10 @@ package lesson03.part01;
 public class Task05 {
 
     public static void main(String[] args) {
-        Person person=new Person("Вася",18,"Улица 1", 'м');
         //напишите тут ваш код
     }
 
-    public static class Person{
-        String name;
-        int age;
-        String addres;
-        char sex;
-        Person(String name,int age,String addres, char sex){
-            this.name = name;
-            this.age = age;
-            this.addres = addres;
-            this.sex = sex;
-        }
+    public static class Person {
         //напишите тут ваш код
 
     }

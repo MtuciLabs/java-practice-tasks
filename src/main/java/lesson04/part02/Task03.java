@@ -19,16 +19,6 @@ import java.util.ArrayList;
 public class Task03 {
 
   public static void main(String[] args) {
-    ArrayList<String> ar=new ArrayList<>();
-    ar.add("1mcodnjksd");
-    ar.add("2mcodnjksd");
-    ar.add("3mcodnjksd");
-    ar.add("4mcodnjksd");
-    ar.add("5mcodnjksd");
-    System.out.println(ar.size());
-    for(int i=0;i<5;i++){
-      System.out.println(ar.get(i));
-    }
     //напишите тут ваш код
   }
 }

@@ -21,15 +21,15 @@ public class Task19 {
 
     }
 
-    public class Cat extends Pet {
+    public class Cat extends Airplane {
 
     }
 
-    public class Dog extends Pet {
+    public class Dog extends Cat {
 
     }
 
-    public class House  {
+    public class House extends Dog {
 
     }
 

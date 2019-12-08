@@ -21,14 +21,8 @@ import java.util.ArrayList;
 
 public class Task13 {
   public static void main(String[] args) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-      ArrayList<String> list = new ArrayList<>();
-      for (String s = reader.readLine(); !s.equals("end"); s = reader.readLine())
-        list.add(s);
-      for (String s : list) {
-        System.out.println(s);
-      }
-    }
+    //напишите тут ваш код
   }
-
+}
