@@ -21,6 +21,21 @@ public class Task10 {
     public static void main(String[] args) {
 
     }
+    public static int max(int a, int b){
+        int max=a;
+        if(max<b) max=b;
+        return max;
+    }
+    public static long max(long a, long b){
+        long max=a;
+        if(max<b) max=b;
+        return max;
+    }
+    public static double min(double a, double b){
+        double max=a;
+        if(max<b) max=b;
+        return max;
+    }
 
     //Напишите тут ваши методы
 }

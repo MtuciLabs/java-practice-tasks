@@ -16,6 +16,15 @@ package lesson05.part02;
 
 public class Task07 {
     public static void main(String[] args) {
+        int l=5;
+        Integer f=9;
+        print(l);
+        print(f);
+    }
+    public static void print(int a){
+
+    }
+    public static void print(Integer a){
 
     }
 

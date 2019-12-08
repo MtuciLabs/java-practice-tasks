@@ -13,10 +13,19 @@ package lesson03.part01;
  */
 
 public class Task20 {
+  public static class Cat{
+    static int catCount;
+    public int Cat(int catCount){
+      this.catCount=catCount++;
+      return catCount;
+    }
+  }
 
   //напишите тут ваш код
 
   public static void main(String[] args) {
+    Cat cat1=new Cat();
+    System.out.println(cat1.Cat(10));
 
   }
 

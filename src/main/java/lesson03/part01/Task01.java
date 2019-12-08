@@ -16,10 +16,22 @@ package lesson03.part01;
 public class Task01 {
 
     public static void main(String[] args) {
-
+        Cat cat =new Cat("Барсик", 3, 6, 95);
     }
 
     public static class Cat{
         //напишите тут ваш код
+        String name;
+        int age;
+        int weight;
+        int strength;
+
+        Cat(String name, int age, int weight, int strength){
+            this.name = name;
+            this.age = age;
+            this.weight = weight;
+            this.strength = strength;
+        }
+
     }
 }
