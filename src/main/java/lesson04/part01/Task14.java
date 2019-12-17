@@ -1,5 +1,6 @@
 package lesson04.part01;
 
+import java.sql.SQLOutput;
 import java.util.HashMap;
 
 /**
@@ -19,12 +20,15 @@ import java.util.HashMap;
 public class Task14 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    try {
 
-    HashMap<String, String> map = new HashMap<String, String>(null);
-    map.put(null, null);
-    map.remove(null);
+      HashMap<String, String> map = new HashMap<String, String>(null);
+      map.put(null, null);
+      map.remove(null);
 
-    //напишите тут ваш код
+    } catch (NullPointerException exception){
+      System.out.println(exception.getMessage());
+      System.out.println("Null pointer exception processed");
+    }
   }
 }
