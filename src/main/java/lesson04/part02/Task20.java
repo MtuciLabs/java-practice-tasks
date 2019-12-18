@@ -38,21 +38,33 @@ public class Task20 {
 
   public static void insert10000(List list) {
     //напишите тут ваш код
-
+    int i;
+    for (i=0; i<=9999; i++){
+      list.add("element");
+    }
   }
 
   public static void get10000(List list) {
     //напишите тут ваш код
-
+    int i;
+    for (i=0; i<=9999; i++){
+      list.get(i);
+    }
   }
 
   public static void set10000(List list) {
     //напишите тут ваш код
-
+    int i;
+    for (i=0; i<=9999; i++){
+      list.set(i,"element");
+    }
   }
 
   public static void remove10000(List list) {
     //напишите тут ваш код
-
+    int i;
+    for (i=0; i<=9999; i++){
+      list.remove(i);
+    }
   }
 }
