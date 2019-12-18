@@ -23,4 +23,31 @@ public class Task09 {
     }
 
     //Напишите тут ваши методы
+    public static int min(int a, int b){
+        int res;
+        if (a<b){
+            res = a;
+        } else {
+            res=b;
+        }
+        return res;
+    }
+    public static long min(long a, long b) {
+        long res;
+        if (a < b) {
+            res = a;
+        } else {
+            res = b;
+        }
+        return res;
+    }
+    public static double min(double a, double b){
+        double res;
+        if (a<b) {
+            res=a;
+        } else {
+            res=b;
+        }
+        return res;
+    }
 }

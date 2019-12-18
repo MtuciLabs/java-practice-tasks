@@ -20,11 +20,11 @@ public class Task12 {
 
     }
 
-//    public static class Pet {
-//        public String getName() {
-//            return "Я - котенок";
-//        }
+private abstract class Pet {
+        public String getName() {
+           return "Я - котенок";
+       }
 //
-//        public abstract Pet getChild();
-//    }
+        public abstract Pet getChild();
+   }
 }

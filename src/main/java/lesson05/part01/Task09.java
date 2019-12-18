@@ -16,8 +16,8 @@ package lesson05.part01;
 
 public class Task09 {
     public static void main(String[] args) {
-        Cat cat = new Cat("Vaska", 5);
-        Dog dog = new Dog("Sharik", 4);
+        Cat cat = new Cat("Viskas", 5);
+        Dog dog = new Dog("Shrek", 4);
 
         cat.isDogNear(dog);
         dog.isCatNear(cat);
@@ -25,15 +25,15 @@ public class Task09 {
 }
 
 class Cat {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Cat(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
@@ -47,15 +47,15 @@ class Cat {
 }
 
 class Dog {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Dog(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 

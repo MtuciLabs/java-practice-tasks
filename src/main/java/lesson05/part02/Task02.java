@@ -22,9 +22,7 @@ public class Task02 {
     }
 
     public static class Cow {
-        public String getName() {
-            return "Я - корова";
-        }
+         public String getName(){return" ";}
     }
 
     public static class Whale extends Cow {
