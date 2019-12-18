@@ -14,10 +14,17 @@ package lesson03.part01;
 
 public class Task20 {
 
-  //напишите тут ваш код
+  public static class Cat{
+    int catCount=0;
+    public Cat(){
+      System.out.println("Конструктор");
+      catCount++;
+    }
 
+  }
   public static void main(String[] args) {
-
+    Cat cat1 = new Cat();
+    System.out.println(cat1.catCount);
   }
 
 }

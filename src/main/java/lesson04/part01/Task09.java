@@ -1,6 +1,7 @@
 package lesson04.part01;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -19,22 +20,25 @@ import java.util.List;
 public class Task09 {
 
   public static void main(String[] args) {
-    System.out.println(getInsertTimeInMs(new ArrayList()));
+    System.out.println(getInsertTimeInMs(new ArrayList(200000)));
     System.out.println(getInsertTimeInMs(new LinkedList()));
   }
 
   public static long getInsertTimeInMs(List list) {
-    // напишите тут ваш код
-
+    long time1 = System.currentTimeMillis();
+ //   Date currentTime = new Date();
+  //  long time1 = currentTime.getTime();
     insert10000(list);
-
-    // напишите тут ваш код
-    return 0;
+   // Date newDate = new Date();
+   // long time2 = newDate.getTime();
+    long time2 = System.currentTimeMillis();
+    long Goal=time2-time1;
+    return Goal;
   }
 
   public static void insert10000(List list) {
-    for (int i = 0; i < 10000; i++) {
-      list.add(0, new Object());
+    for (int i = 0; i < 200000; i++) {
+      list.add(0,new Object());
     }
   }
 }

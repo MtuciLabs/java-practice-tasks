@@ -31,7 +31,8 @@ public class Task10 {
   }
 
   public static Set<Cat> createCats() {
-    //напишите тут ваш код. step 1 - пункт 1
+    Cat cat = new Cat();
+
     return null;
   }
 

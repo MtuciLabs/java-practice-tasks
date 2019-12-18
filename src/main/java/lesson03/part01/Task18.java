@@ -1,6 +1,8 @@
 package lesson03.part01;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Ввести с клавиатуры число. Определить, сколько в введенном числе четных цифр, а сколько нечетных.
@@ -22,10 +24,21 @@ import java.io.IOException;
 
 public class Task18 {
 
-  public static int even;
-  public static int odd;
+  public static int even=0;
+  public static int odd=0;
 
   public static void main(String[] args) throws IOException {
-    //напишите тут ваш код
+    Scanner scan1 = new Scanner(System.in);
+    int chislo=scan1.nextInt();
+    while(chislo != 0){
+      int ch=chislo % 10;
+      if (ch%2==0){
+        even+=1;
+      } else {
+        odd+=1;
+      }
+      chislo=chislo/10;
+    }
+  System.out.println("Even: "+ even + " Odd: "+ odd);
   }
 }

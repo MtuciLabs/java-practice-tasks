@@ -17,16 +17,22 @@ import java.util.LinkedList;
 public class Task08 {
 
   public static Object createArrayList() {
-    //напишите тут ваш код
-    return null;
+    ArrayList<String> list = new ArrayList<String>();
+    list.add("sasd");
+    list.add("asd123");
+    return list;
   }
 
   public static Object createLinkedList() {
-    //напишите тут ваш код
-    return null;
+    LinkedList<String> list1 = new LinkedList<String>();
+    list1.add("werwer");
+    list1.add("qwe123");
+    return list1;
   }
 
   public static void main(String[] args) {
+      System.out.println(createArrayList());
+      createLinkedList();
 
   }
 }
