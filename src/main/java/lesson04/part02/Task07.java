@@ -24,10 +24,42 @@ import java.util.ArrayList;
 
 public class Task07 {
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    ArrayList<Integer> list3 = new ArrayList<Integer>();
+    ArrayList<Integer> list2 = new ArrayList<Integer>();
+    ArrayList<Integer> list1 = new ArrayList<Integer>();
+    for (int i = 0; i < 20; i++) {
+      int s = Integer.parseInt(reader.readLine());
+      list.add(s);
+      if (s % 3 != 0 && s % 2 != 0) {
+        list3.add(s);
+      } else {
+        if (s % 3 == 0) {
+          list1.add(s);
+        }
+        if (s % 2 == 0) {
+          list2.add(s);
+        } else {
+          if (s % 3 == 0 && s % 2 == 0) {
+            list1.add(s);
+            list2.add(s);
+          }
+
+        }
+
+      }
+
+    }
+    printList(list1);
+    printList(list2);
+    printList(list3);
   }
 
   public static void printList(ArrayList<Integer> list) {
+    for (int number: list) {
+      System.out.println(number);
+    }
     //напишите тут ваш код
   }
 }
