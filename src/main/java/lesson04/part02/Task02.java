@@ -2,6 +2,7 @@ package lesson04.part02;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * 1. Создать массив на 10 чисел.
@@ -18,6 +19,13 @@ import java.io.InputStreamReader;
 public class Task02 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    int arrI[] = new int[10];
+    Scanner scn = new Scanner(System.in);
+    for (int i=0;i<10;i++){
+      arrI[i]=scn.nextInt();
+    }
+    for(int j=9 ; j>=0; j--){
+      System.out.println(arrI[j]);
+    }
   }
 }
