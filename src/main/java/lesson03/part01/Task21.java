@@ -28,12 +28,12 @@ public class Task21 {
     }
 
     public static int getCatCount() {
-      //напишите тут ваш код
-      return 0;
+      return Cat.catCount;
     }
 
-    public static void setCatCount(int catCount) {
-      //напишите тут ваш код
+    public  void setCatCount(int catCount) {
+      this.catCount=catCount;
+
     }
   }
 }

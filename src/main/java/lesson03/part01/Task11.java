@@ -7,7 +7,7 @@ package lesson03.part01;
  * Вызови метод initialize с любыми значениями.
  *
  * Требования:
- * 1.	Класс Task11 должен содержать класс Person.
+ * 1.	Класс задачи должен содержать класс Person.
  * 2.	У класса Person должна быть переменная name с типом String.
  * 3.	У класса Person должна быть переменная age с типом int.
  * 4.	У класса Person должен быть метод initialize, принимающий в качестве параметра
@@ -19,11 +19,17 @@ package lesson03.part01;
 public class Task11 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Person p=new Person();
+        p.initialize("vasy",25);
     }
 
     static class Person {
-        //напишите тут ваш код
+        private String name;
+        private int age;
+        public void initialize(String name, int age){
+            this.name=name;
+            this.age=age;
+        }
     }
 
 }
