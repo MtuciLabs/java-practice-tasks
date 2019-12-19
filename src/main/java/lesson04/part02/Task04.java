@@ -3,6 +3,7 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * 1. Создай список строк.
@@ -23,6 +24,26 @@ public class Task04 {
   private static ArrayList<String> strings;
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    Scanner in=new Scanner(System.in);
+    ArrayList strings=new ArrayList();
+    int i;
+    String s=null;
+    strings.add(in.nextLine());
+    strings.add(in.nextLine());
+    strings.add(in.nextLine());
+    strings.add(in.nextLine());
+    strings.add(in.nextLine());
+    int max=strings.get(0).toString().length();
+    for (i=1;i<5;i++) {
+      if (max < strings.get(i).toString().length()) {
+        max = strings.get(i).toString().length();
+      }
+    }
+    for (i = 0; i < 5; i++) {
+      if (max == strings.get(i).toString().length()) {
+        System.out.println(strings.get(i));
+      }
+
+    }
   }
 }
