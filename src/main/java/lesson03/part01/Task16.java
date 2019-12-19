@@ -28,6 +28,7 @@ public class Task16 {
     public Color color;
 
     public void Circle() {
+
       color = new Color();
     }
 
@@ -36,10 +37,12 @@ public class Task16 {
       String description;
 
       public String getDescription() {
+
         return description;
       }
 
       public void setDescription(String description) {
+
         this.description = description;
       }
     }

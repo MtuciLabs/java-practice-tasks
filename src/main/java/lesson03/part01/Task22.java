@@ -1,4 +1,5 @@
 package lesson03.part01;
+import java.util.Scanner;
 
 /**
  * Сделать класс ConsoleReader, у которого будут 4 статических метода:
@@ -27,23 +28,27 @@ public class Task22 {
   public static class ConsoleReader {
 
     public static String readString() throws Exception {
-      //напишите тут ваш код
-      return null;
+      Scanner in=new Scanner(System.in);
+      String str=in.nextLine();
+      return str;
     }
 
     public static int readInt() throws Exception {
-      //напишите тут ваш код
-      return 0;
+      Scanner in=new Scanner(System.in);
+      int i=in.nextInt();
+      return i;
     }
 
     public static double readDouble() throws Exception {
-      //напишите тут ваш код
-      return 0.0;
+      Scanner in=new Scanner(System.in);
+      Double d=in.nextDouble();
+      return d;
     }
 
     public static boolean readBoolean() throws Exception {
-      //напишите тут ваш код
-      return false;
+      Scanner in=new Scanner(System.in);
+      Boolean b=in.nextBoolean();
+      return b;
     }
   }
 

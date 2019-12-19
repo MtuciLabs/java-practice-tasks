@@ -25,6 +25,13 @@ package lesson02.part02;
 public class Task37 {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        int count =0;
+        for(int i = 0; i < 10; i++) {
+            count += 1;
+            for (int j = 0; j < count; j++) {
+                System.out.print(8);
+            }
+            System.out.println(" ");
+        }
     }
 }
