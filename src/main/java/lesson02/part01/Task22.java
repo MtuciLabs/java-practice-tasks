@@ -14,9 +14,15 @@ package lesson02.part01;
  * 4.	Выведенный тест должен полностью соответствовать заданию.
  */
 
+import java.io.*;
+import java.util.*;
+
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner s = new Scanner(System.in);
+        String n;
+        n = s.nextLine();
+        System.out.println("Я буду зарабатывать $"+n+" в час");
 
     }
 }

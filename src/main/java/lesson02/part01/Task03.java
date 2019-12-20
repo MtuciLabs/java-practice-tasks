@@ -3,7 +3,8 @@ package lesson02.part01;
 /**
  * Напиши код метода convertEurToUsd, который переводит евро в доллары по заданному курсу.
  * Для возврата результата из метода convertEurToUsd используй оператор return. Пример: return 123*435;
- * Вызови метод convertEurToUsd дважды в методе main с любыми параметрами. Результаты выведи на экран, каждый раз с новой строки.
+ * Вызови метод convertEurToUsd дважды в методе main с любыми параметрами.
+ * Результаты выведи на экран, каждый раз с новой строки.
  * Подсказка:
  * Расчет выполняется по формуле: долларСША = евро * курс
  * <p>
@@ -16,13 +17,15 @@ package lesson02.part01;
  */
 
 public class Task03 {
-    public static void main(String[] args) {
-        //напишите тут ваш код
-
-    }
+    public static void main(String [] args) {
+        convertEurToUsd(1,1.1);
+        convertEurToUsd(2,1.1);
+        System.out.println(convertEurToUsd(1,1.1));
+        System.out.println(convertEurToUsd(2,1.1));
+        }
 
     public static double convertEurToUsd(int eur, double course) {
-        //напишите тут ваш код
-        return 0d;
+        double usd=eur*course;
+        return usd;
     }
 }

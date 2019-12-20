@@ -27,9 +27,24 @@ package lesson02.part02;
  * 5.	Если нет равных чисел, ничего не выводить.
  */
 
+import java.io.*;
+import java.util.*;
+
 public class Task17 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner s = new Scanner(System.in);
+        Integer num1, num2, num3;
+        num1=s.nextInt();
+        num2=s.nextInt();
+        num3=s.nextInt();
+        if (num1 == num2 && num1 == num3)
+            System.out.println(num1+" "+num2+" "+num3);
+        else if (num1 == num2)
+            System.out.println(num1+" "+num2);
+        else if (num2 == num3)
+            System.out.println(num2+" "+num3);
+        else if (num1 == num3)
+            System.out.println(num1+" "+num3);
 
     }
 }
