@@ -17,9 +17,22 @@ package lesson02.part02;
  * 4.	Если треугольник с такими сторонами не может существовать, необходимо вывести текст: "Треугольник не существует."
  */
 
+import java.io.*;
+import java.util.*;
+
 public class Task15 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner s = new Scanner(System.in);
+        Double a, b, c;
+        a=s.nextDouble();
+        b=s.nextDouble();
+        c=s.nextDouble();
+        if (a+b>c || a+c>b || b+c>a){
+            System.out.println("треугольник существует");
+        }
+        else {
+            System.out.println("треугольник не существует");
+        }
 
     }
 }

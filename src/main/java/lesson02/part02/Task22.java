@@ -11,9 +11,17 @@ package lesson02.part02;
  * 4.	Если возраст больше либо равно 18 ничего не выводить.
  */
 
+import java.util.*;
+import java.io.*;
+
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner s = new Scanner(System.in);
+        String name = s.nextLine();
+        Integer age = s.nextInt();
+        if (age<18) {
+            System.out.println("Подрасти ещё");
+        }
 
     }
 }

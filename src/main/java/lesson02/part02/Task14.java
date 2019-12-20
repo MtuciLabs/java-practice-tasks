@@ -20,10 +20,19 @@ package lesson02.part02;
  * 4.	Если введенный год не является високосным, необходимо вывести текст: "количество дней в году: 365".
  */
 
+import java.io.*;
+import java.util.*;
 
 public class Task14 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner s = new Scanner(System.in);
+        Integer num;
+        num=s.nextInt();
+        if (num%400==0 || num%4==0 && num%100>0){
+            System.out.println("Количество дней в году: 366");
+        } else {
+            System.out.println("Количество дней в году: 365");
+        }
 
     }
 }
