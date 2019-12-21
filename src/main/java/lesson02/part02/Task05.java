@@ -18,10 +18,11 @@ public class Task05 {
     }
 
     public static class Cat {
+
         private static int catsCount = 0;
 
         public static void setCatsCount(int catsCount) {
-            //напишите тут ваш код
+            Cat.catsCount=Cat.catsCount+catsCount;
 
         }
     }

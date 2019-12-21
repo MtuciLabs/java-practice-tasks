@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры номер дня недели, в зависимости от номера вывести название
  * «понедельник», «вторник», «среда», «четверг», «пятница», «суббота», «воскресенье»,
@@ -19,7 +22,35 @@ package lesson02.part02;
 
 public class Task13 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число");
+        String Veld = reader.readLine();
+        int sVeld = Integer.parseInt(Veld);
 
+
+        if (sVeld == 1){
+            System.out.println("понедельник");
+        }
+        if (sVeld == 2){
+            System.out.println("вторник");
+        }
+        if (sVeld == 3){
+            System.out.println("среда");
+        }
+        if (sVeld == 4){
+            System.out.println("четверг");
+        }
+        if (sVeld == 5){
+            System.out.println("пятница");
+        }
+        if (sVeld == 6){
+            System.out.println("суббота");
+        }
+        if (sVeld == 7){
+            System.out.println("воскресенье");
+        }
+        else if (sVeld <= 0 || sVeld >7 ) {
+            System.out.println("такого дня недели не существует");
+        }
     }
 }
