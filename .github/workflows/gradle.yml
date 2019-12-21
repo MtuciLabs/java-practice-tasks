@@ -1,4 +1,4 @@
-name: Java CI
+name: Run build
 
 on:
   pull_request:
