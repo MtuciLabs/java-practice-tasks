@@ -33,6 +33,9 @@ public class Task07 {
   }
 
   public static void printValues(Map<String, String> map) {
-    //напишите тут ва
+    for (Map.Entry<String, String> pair : map.entrySet()) {
+      String vol = pair.getValue();
+      System.out.println(vol);
+    }
   }
 }

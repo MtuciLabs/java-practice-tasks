@@ -26,6 +26,15 @@ public class Task10 {
     ArrayList<String> list = null;
 
     ArrayList<String> result = doubleValues(list);
+    int i;
+    for(i=0; i<=0; i++){
+      aList.add(reader.readLine());
+    }
+    ArrayList<String> result = doubleValues(aList);
+
+    for (i=0; i<=result.size()-1;i++){
+      System.out.println(result.get(i));
+    }
 
     int i;
     for(i=0; i<=0; i++){
