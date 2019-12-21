@@ -1,39 +1,37 @@
 package lesson02.part01;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  * @author Azamat_Abidokov Date: 09-Oct-19
  */
-class Task02Test {
+public class Task02Test {
 
   private static final PrintStream originalOut = System.out;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
 
-  @BeforeAll
-  static void setUp() {
+  @BeforeClass
+  public static void setUp() {
     System.setOut(new PrintStream(fakeOut));
   }
 
-  @AfterAll
-  static void restore() {
+  @AfterClass
+  public static void restore() {
     System.setOut(originalOut);
   }
 
   @Test
-  @DisplayName("Проверка существования метода")
-  void printString_IsExist() {
+  public void printString_IsExist() {
     try {
       Task02.class.getDeclaredMethod("printString", String.class);
     } catch (Exception e) {
@@ -42,45 +40,43 @@ class Task02Test {
   }
 
   @Test
-  @DisplayName("Проверка возвращаемого типа")
-  void printString_ValidateReturnType() {
+  public void printString_ValidateReturnType() {
     try {
       Method printString = Task02.class.getDeclaredMethod("printString", String.class);
       Class<?> returnType = printString.getReturnType();
-      assertEquals(void.class, returnType, "Возвращаемый тип должен быть void");
-    } catch (Exception e) {}
+      assertEquals("Возвращаемый тип должен быть void", void.class, returnType);
+    } catch (Exception ignored) {}
   }
 
   @Test
-  @DisplayName("Проверка модификаторов")
-  void printString_ValidateModifiers() {
+  public void printString_ValidateModifiers() {
     try {
       Method printString = Task02.class.getDeclaredMethod("printString", String.class);
       int modifiers = printString.getModifiers();
-      assertTrue(Modifier.isStatic(modifiers), "Метод printString должен быть static");
-      assertTrue(Modifier.isPublic(modifiers), "Метод printString должен быть public");
+      assertTrue("Метод printString должен быть static", Modifier.isStatic(modifiers));
+      assertTrue("Метод printString должен быть public", Modifier.isPublic(modifiers));
     } catch (Exception e) {}
   }
 
   @Test
-  @DisplayName("Проверка модификаторов")
-  void printString_ValidateOutput() {
+//  @DisplayName("Проверка модификаторов")
+  public void printString_ValidateOutput() {
     try {
       Method printString = Task02.class.getDeclaredMethod("printString", String.class);
       String testText = "random$text";
       printString.invoke(null, testText);
-      assertEquals(testText, fakeOut.toString().strip(),
+      assertEquals(testText, fakeOut.toString().trim(),
           "Метод printString должен выводить переданный текст на экран.");
     } catch (Exception e) {}
   }
 
   @Test
-  @DisplayName("Проверка модификаторов")
-  void main() {
+//  @DisplayName("Проверка модификаторов")
+  public void main() {
     try {
       Method main = Task02.class.getDeclaredMethod("main", String[].class);
-      main.invoke(null, null);
-      assertEquals("Hello, Amigo!", fakeOut.toString().strip(), "Программа должна вывести \"Hello, Amigo!\"");
+      main.invoke(null, (Object[]) null);
+      assertEquals("Hello, Amigo!", fakeOut.toString().trim(), "Программа должна вывести \"Hello, Amigo!\"");
     } catch (Exception e) {}
   }
 }

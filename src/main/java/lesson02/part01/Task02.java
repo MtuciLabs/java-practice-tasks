@@ -16,9 +16,9 @@ package lesson02.part01;
 public class Task02 {
 
     // напишите тут ваш код
-    public static void printString(String a) {
-        System.out.println(a);
-    }
+//    public static void printString(String a) {
+//        System.out.println(a);
+//    }
 
     public static void main(String[] args) {
 //        printString("Hello, Amigo!");

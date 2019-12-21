@@ -1,33 +1,34 @@
 package lesson01.part1;
 
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.Assert.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-class Task05Test {
+public class Task05Test {
 
   private static final PrintStream originalOut = System.out;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
 
-  @BeforeAll
-  static void setUp() {
+  @BeforeClass
+  public static void setUp() {
     System.setOut(new PrintStream(fakeOut));
   }
 
-  @AfterAll
-  static void restore() {
+  @AfterClass
+  public static void restore() {
     System.setOut(originalOut);
   }
 
   @Test
-  void main_ConsoleOutput() {
+  public void main_ConsoleOutput() {
     // when
     Task05.main(null);
 
