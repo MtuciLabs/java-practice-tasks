@@ -17,6 +17,11 @@ public class Task06 {
     public static void main(String[] args) {
 
     }
-
+    public static int Print(int i){
+        return i;
+    }
+    public static String Print(String a){
+        return a;
+    }
     //Напишите тут ваши методы
 }

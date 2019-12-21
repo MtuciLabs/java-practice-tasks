@@ -27,10 +27,21 @@ public class Task15 {
     }
 
     public static class Cat {
-
+        public String getName(){
+            return "Бася";
+        }
+        public String getChild(){
+            return "Котёнок";
+        }
     }
 
     public static class Dog {
+        public String getName() {
+            return "Тор";
+        }
+        public String getChild() {
+            return "Щенок";
+        }
 
     }
 

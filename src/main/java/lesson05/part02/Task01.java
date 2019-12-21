@@ -31,5 +31,8 @@ public class Task01 {
 
     public static class Whale extends Cow {
 
-    }
-}
+        public String getName() {
+            return "Я не корова, Я - кит";
+
+        }
+    }}

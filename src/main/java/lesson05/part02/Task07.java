@@ -17,7 +17,15 @@ package lesson05.part02;
 public class Task07 {
     public static void main(String[] args) {
 
+        int num = 1;
+        Integer NUM = 2;
+        System.out.println(Print(num));
+        System.out.println(Print(NUM));
     }
-
-    //Напишите тут ваши методы
+        public static int Print(int i){
+            return i;
+        }
+        public static Integer Print(Integer I){
+            return I;
+        }
 }

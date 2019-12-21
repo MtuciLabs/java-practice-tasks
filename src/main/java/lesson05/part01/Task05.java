@@ -33,35 +33,35 @@ public class Task05 {
 
     }
 
-    public class Clerk {
+    public class Clerk extends Worker{
 
     }
 
-    public class IT {
+    public class IT extends Worker{
 
     }
 
-    public class Programmer {
+    public class Programmer extends Worker{
 
     }
 
-    public class ProjectManager {
+    public class ProjectManager extends Worker{
 
     }
 
-    public class CTO {
+    public class CTO extends Worker{
 
     }
 
-    public class OfficeManager {
+    public class OfficeManager extends Worker{
 
     }
 
-    public class HR {
+    public class HR extends Worker{
 
     }
 
-    public class Cleaner {
+    public class Cleaner extends Worker{
 
     }
 }
