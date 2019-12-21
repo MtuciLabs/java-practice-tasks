@@ -26,11 +26,23 @@ public class Task15 {
         public abstract Pet getChild();
     }
 
-    public static class Cat {
+    public static class Cat{
+    public String getName(){
+        return "Пушок";
+    }
+    public String getChild(){
+        return "Котёнок";
+    }
 
     }
 
     public static class Dog {
+        public String getName() {
+            return "Мухтар";
+        }
+        public String getChild() {
+            return "Щенок";
+        }
 
     }
 
