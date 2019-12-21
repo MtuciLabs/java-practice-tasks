@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры четыре числа, и вывести максимальное из них. Если числа равны между собой, необходимо вывести любое.
  * <p>
@@ -13,7 +15,22 @@ package lesson02.part02;
 
 public class Task19 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scn = new Scanner(System.in);
+        int a = scn.nextInt();
+        int b = scn.nextInt();
+        int c = scn.nextInt();
+        int d = scn.nextInt();
+        int max=a;
+        if (b>max){
+            max=b;
+        }
+        if(c>max){
+            max=c;
+        }
+        if(d>max){
+            max=d;
+        }
+        System.out.println(max);
 
     }
 }

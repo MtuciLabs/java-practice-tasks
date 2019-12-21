@@ -14,8 +14,30 @@ package lesson02.part01;
 
 public class Task07 {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        Zerg zerg= new Zerg();
+        Zerg zerg2= new Zerg();
+        Zerg zerg3= new Zerg();
+        Zerg zerg4= new Zerg();
+        Zerg zerg5= new Zerg();
+        zerg.name = "Mansur";
+        zerg2.name = "Misha";
+        zerg3.name = "Egor";
+        zerg4.name = "Maksim";
+        zerg5.name = "Dima";
+        Protoss protoss=new Protoss();
+        Protoss protoss2=new Protoss();
+        Protoss protoss3=new Protoss();
+        Protoss protoss4=new Protoss();
+        protoss.name="Mans";
+        protoss2.name="Abc";
+        protoss3.name="Abcd";
+        protoss4.name="Dcba";
+        Terran terran=new Terran();
+        Terran terran2=new Terran();
+        Terran terran3=new Terran();
+        terran.name="A";
+        terran2.name="B";
+        terran3.name="C";
     }
 
     public static class Zerg {
