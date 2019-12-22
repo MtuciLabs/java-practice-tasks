@@ -1,4 +1,5 @@
 package lesson04.part02;
+import java.io.IOException;
 
 /**
  * Есть четыре класса MyException, MyException2, MyException3, MyException4.
@@ -20,15 +21,15 @@ public class Task33 {
   public static void main(String[] args) {
   }
 
-  static class MyException {
+  static class MyException extends Exception{
   }
 
-  static class MyException2 {
+  static class MyException2 extends IOException {
   }
 
-  static class MyException3 {
+  static class MyException3 extends RuntimeException  {
   }
 
-  static class MyException4 {
+  static class MyException4 extends IndexOutOfBoundsException{
   }
 }

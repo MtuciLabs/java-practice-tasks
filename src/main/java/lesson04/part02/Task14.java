@@ -21,14 +21,14 @@ package lesson04.part02;
  */
 
 public class Task14 {
+    public static void main (String[]args) throws InterruptedException {
+      for (int i = 30; i >= 0; i--) {
+        Thread.sleep(100);
+        System.out.println(i);
 
-  public static void main(String[] args) {
-    for (int i = 30; i >= 0; i--) {
-      System.out.println(i);
+      }
+      Thread.sleep(100);
 
-      //напишите тут ваш код
+      System.out.println("Бум!");
     }
-
-    System.out.println("Бум!");
   }
-}
