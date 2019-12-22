@@ -23,6 +23,20 @@ package lesson02.part01;
 
 public class Task14 {
     public static void main(String[] args) {
+        Red red=new Red();
+        red.Red();
+        Orange orange = new Orange();
+        orange.Orange();
+        Yellow yellow = new Yellow();
+        yellow.Yellow();
+        Green green = new Green();
+        green.Green();
+        Blue blue = new Blue();
+        blue.Blue();
+        Indigo indigo = new Indigo();
+        indigo.Indigo();
+        Violet violet = new Violet();
+        violet.Violet();
         //напишите тут ваш код
 
     }
