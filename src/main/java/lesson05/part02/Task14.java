@@ -23,7 +23,12 @@ public class Task14 {
         public abstract String getName();
     }
 
-    public static class Cow {
+    public static class Cow extends Animal {
+
+        public String getName() {
+            return "Зорька";
+        }
+
     }
 
 }
