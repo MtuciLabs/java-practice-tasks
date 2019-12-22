@@ -16,21 +16,25 @@ public class Task09 {
      * 1. Программа не должна считывать данные с клавиатуры.
      * 2. Метод sumDigitsInNumber(int) должен быть публичным и статическим.
      * 3. Метод sumDigitsInNumber должен возвращать значение типа int.
-            * 4. Метод sumDigitsInNumber не должен ничего выводить на экран.
-            * 5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
+     * 4. Метод sumDigitsInNumber не должен ничего выводить на экран.
+     * 5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
      * 6. Что будет если написать sout и нажать tab?
-            */
+     */
 
     public static void main(String[] args) {
-        System.out.println(sumDigitsInNumber(123));
+        System.out.println(sumDigitsInNumber(546));
     }
 
-    public static int sumDigitsInNumber(int number)   {
-        int n1, n2, n3;
-        n3 = number % 10;
-        n2 = (number % 100 - n3) / 10;
-        n1 = (number - n3 - n2 ) / 100;
-        number = n1 + n2 + n3;
-        return number;
+    public static int sumDigitsInNumber(int number) {
+        int sum = 0;
+        for (int i=1;i<=3;i++){
+            int k=number%10;
+            sum=sum+k;
+            number=number/10;
+
+        }
+        //напишите тут ваш код
+
+        return sum;
     }
 }

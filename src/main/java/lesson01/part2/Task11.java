@@ -18,15 +18,14 @@ public class Task11 {
      */
 
     public static int min(int a, int b, int c) {
-        int minim;
-        if(a < b && a < c) {
-            minim = a;
-        } else if(b < a && b < c) {
-            minim = b;
-        } else {
-            minim = c;
-        }
-        return minim;
+        //напишите тут ваш код
+        int m;
+        m=a;
+        if (m>b)
+            m=b;
+        if (m>c)
+            m=c;
+        return m;
     }
 
     public static void main(String[] args) {
