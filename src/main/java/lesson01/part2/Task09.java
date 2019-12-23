@@ -17,18 +17,25 @@ public class Task09 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat Vasya = new Cat();
+        Fish Oleg = new Fish();
+        Dog Andrew = new Dog();
+        Andrew.Sveta = new Woman();
+        Oleg.Alice = new Woman();
+        Vasya.Mila = new Woman();
+
     }
 
     public static class Cat {
-        public Woman owner;
+        public Woman Mila;
     }
 
     public static class Dog {
-        public Woman owner;
+        public Woman Sveta;
     }
 
     public static class Fish {
-        public Woman owner;
+        public Woman Alice;
     }
 
     public static class Woman {

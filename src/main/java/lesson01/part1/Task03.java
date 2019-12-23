@@ -16,5 +16,7 @@ public class Task03 {
 
     public static void main(String[] args) {
         // Напишите здесь ваш код
+        int god = 2019 - 98;
+        System.out.println(god);
     }
 }
