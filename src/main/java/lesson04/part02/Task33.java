@@ -8,7 +8,7 @@ import java.io.IOException;
  * Изучи внимательно классы Exception1, Exception2, Exception3 из второй задачи этого блока.
  *
  * Требования:
- * 1.	В классе Solution должно быть 4 вложенных класса: MyException, MyException2, MyException3 и MyException4.
+ * 1.	В классе задачи должно быть 4 вложенных класса: MyException, MyException2, MyException3 и MyException4.
  * 2.	Все вложенные классы должны быть унаследованы от классов исключений.
  * 3.	Два класса из четырех должны быть checked исключениями.
  * 4.	Два класса из четырех должны быть unchecked исключениями.
