@@ -16,5 +16,9 @@ public class Task01 {
 
     public static void main(String[] args) {
         // Напишите здесь ваш код
+<<<<<<< HEAD
+=======
+        System.out.println("Hello world!");
+>>>>>>> remotes/upstreamм/but1801/Shestakov-Fedor
     }
 }

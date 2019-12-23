@@ -18,6 +18,7 @@ public class Task08 {
         //напишите тут ваш код
         Cat cat8 = new Cat();
         Cat cat9;
+
         //напишите тут ваш код
     }
 
