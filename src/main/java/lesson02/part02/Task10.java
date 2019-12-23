@@ -19,6 +19,7 @@ package lesson02.part02;
  */
 
 public class Task10 {
+
     public static void main(String[] args) {
         checkInterval(60);
         checkInterval(112);
@@ -27,6 +28,17 @@ public class Task10 {
 
     public static void checkInterval(int a) {
         //напишите тут ваш код
-
+        public static void main (String[] args){
+            checkInterval(60);
+            checkInterval(112);
+            checkInterval(10);
+            public static void checkInterval ( int a){
+                if (a >= 50 && a <= 100) {
+                    System.out.println("Число содержится в интервале");
+                } else {
+                    System.out.println("Число не содержится в интервале");
+                }
+            }
+        }
     }
 }

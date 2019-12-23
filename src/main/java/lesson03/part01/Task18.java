@@ -19,7 +19,9 @@ import java.io.IOException;
  * 4.	Программа должна выводить текст на экран.
  * 5.	Выведенный текст должен соответствовать заданию.
  */
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class Task18 {
 
   public static int even;
@@ -27,5 +29,17 @@ public class Task18 {
 
   public static void main(String[] args) throws IOException {
     //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int x = Integer.parseInt(reader.readLine());
+    while (x > 0) {
+      if (x % 2 == 0) {
+        even++;
+      } else {
+        odd++;
+      }
+      x /= 10;
+    }
+    System.out.println("Even: " + even + " Odd: " + odd);
+  }
   }
 }

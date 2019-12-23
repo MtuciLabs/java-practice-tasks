@@ -16,12 +16,15 @@ package lesson03.part01;
 public class Task05 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+
     }
 
     public static class Person {
         //напишите тут ваш код
-
+        String name;
+        int age;
+        char sex;
+    }
     }
 
 }

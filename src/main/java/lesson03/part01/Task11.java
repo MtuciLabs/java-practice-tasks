@@ -20,10 +20,24 @@ public class Task11 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        public static void main(String[] args) {
+            Person  person = new Person();
+            person.initialize("Tom", 20);
+        }
+
+        static class Person {
+
+            String name;
+            int age;
     }
 
     static class Person {
         //напишите тут ваш код
+        public void initialize(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+    }
     }
 
 }

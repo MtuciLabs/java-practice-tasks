@@ -29,6 +29,8 @@ public class Task11 {
         public long getVolume(int a, int b, int c) {
             //напишите тут ваш код
             return 0;
+            int v=a*b*c;
+            return v;
         }
 
     }

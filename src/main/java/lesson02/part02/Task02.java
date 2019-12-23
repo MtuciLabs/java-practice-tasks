@@ -14,6 +14,7 @@ package lesson02.part02;
  */
 
 public class Task02 {
+
     public static void main(String[] args) {
         Apple apple = new Apple();
         apple.addPrice(50);
@@ -23,11 +24,11 @@ public class Task02 {
     }
 
     public static class Apple {
+
         public static int applesPrice = 0;
 
         public static void addPrice(int applesPrice) {
-            //напишите тут ваш код
-
+            Apple.applesPrice = Apple.applesPrice + applesPrice;
         }
     }
 }

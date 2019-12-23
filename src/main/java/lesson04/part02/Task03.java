@@ -20,5 +20,15 @@ public class Task03 {
 
   public static void main(String[] args) {
     //напишите тут ваш код
+    ArrayList<String> list = new ArrayList<>();
+    list.add("one");
+    list.add("two");
+    list.add("three");
+    list.add("four");
+    list.add("five");
+    for (int i = 0; i < 5; i++) {
+      System.out.println(list.get(i));
+    }
+    System.out.println(list.size());
   }
 }

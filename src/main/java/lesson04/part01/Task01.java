@@ -3,7 +3,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.Arrays;
 /**
  * 1. В методе initializeArray():
  * 1.1. Создайте массив на 20 чисел
@@ -26,12 +26,18 @@ public class Task01 {
   }
 
   public static int[] initializeArray() throws IOException {
-    // создай и заполни массив
-    return null;
+    int[] arr = new int[20];
+    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+    for (int i = 0; i < 20; i++) {
+      arr[i] = Integer.parseInt(r.readLine());
+    }
+    System.out.println(Arrays.toString(arr));
+    return arr;
+  }
   }
 
   public static int max(int[] array) {
-    // найди максимальное значение
-    return 0;
+    Arrays.sort(array, 0, 20);
+    return array[19];
   }
 }

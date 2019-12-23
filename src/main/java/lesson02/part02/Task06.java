@@ -13,18 +13,17 @@ package lesson02.part02;
  */
 
 public class Task06 {
-
     public static void main(String[] args) {
-
+        Cat cat = new Cat();
+        cat.setName("Васька", "Барсик");
+        System.out.println(cat.fullName);
     }
 
     public static class Cat {
         private String fullName;
-
         public void setName(String firstName, String lastName) {
             String fullName = firstName + " " + lastName;
-
-            //напишите тут ваш код
+            this.fullName = fullName;
         }
     }
 }

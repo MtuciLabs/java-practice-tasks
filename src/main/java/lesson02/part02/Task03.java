@@ -11,7 +11,6 @@ package lesson02.part02;
  * 4.	Метод setName класса Cat должен устанавливать значение переменной private String name равным переданному параметру String name.
  */
 public class Task03 {
-
     public static void main(String[] args) {
         Cat cat = new Cat();
         cat.setName("Жужик");
@@ -20,10 +19,8 @@ public class Task03 {
 
     public static class Cat {
         private String name = "безымянный кот";
-
         public void setName(String name) {
-            //напишите тут ваш код
-
+            this.name = name;
         }
     }
 }
