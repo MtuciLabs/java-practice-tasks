@@ -19,10 +19,12 @@ package lesson04.part02;
 public class Task27 {
 
   public static void main(String[] args) {
+
     log("In main method");
   }
 
   public static void log(String s) {
+    System.out.println(Thread.currentThread().getStackTrace()[2].getClassName()+": "+Thread.currentThread().getStackTrace()[2].getMethodName()+": "+s);
     //напишите тут ваш код
   }
 }

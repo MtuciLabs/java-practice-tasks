@@ -1,8 +1,8 @@
 package lesson04.part02;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Введи с клавиатуры 5 слов в список строк. Удали 3 - ий элемент списка,
@@ -18,6 +18,16 @@ import java.util.ArrayList;
 
 public class Task06 {
   public static void main(String[] args) throws Exception {
+    Scanner in=new Scanner(System.in);
+
+    ArrayList<String> ar=new ArrayList<>();
+   for(int i=0;i<5;i++){
+     ar.add(in.next());
+   }
+   ar.remove(2);
+   for(int i=3;i>=0;i--){
+     System.out.println(ar.get(i));
+   }
     //напишите тут ваш код
   }
 }

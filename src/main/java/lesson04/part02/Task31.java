@@ -1,5 +1,7 @@
 package lesson04.part02;
 
+import java.util.concurrent.ExecutionException;
+
 /**
  * 1. Есть три исключения последовательно унаследованные от Exception:
  * 2. class Exception1 extends Exception
@@ -21,9 +23,11 @@ public class Task31 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
-
-    method1();
-
+try {
+  method1();
+} catch(Exception e){
+  System.out.println(e);
+}
     //напишите тут ваш код
 
   }

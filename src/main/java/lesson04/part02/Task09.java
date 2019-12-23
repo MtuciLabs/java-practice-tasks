@@ -44,7 +44,18 @@ public class Task09 {
   }
 
   public static ArrayList<String> fix(ArrayList<String> strings) {
+     for (int i = 0; i < strings.size(); ) {
+      String s = strings.get(i);
+      if (s.contains("р") && !s.contains("л"))
+        strings.remove(i);
+      else if (!s.contains("р") && s.contains("л")) {
+        strings.add(i, s);
+        i += 2;
+      }
+      else
+        i++;
+    }
     //напишите тут ваш код
-    return null;
+    return strings;
   }
 }

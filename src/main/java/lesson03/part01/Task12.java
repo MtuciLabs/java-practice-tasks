@@ -14,6 +14,8 @@ package lesson03.part01;
 public class Task12 {
 
     public static void main(String[] args) {
+        Person person = new Person();
+        person.initialize("Mike",75,'M',50,24);
         //напишите тут ваш код
     }
 
@@ -24,16 +26,8 @@ public class Task12 {
         int weight;
         double size;
 
-        public void initialize(String name) {
-            this.name = name;
-        }
 
-        public void initialize(String name, char sex) {
-            this.name = name;
-            this.sex = sex;
-        }
-
-        public void initialize(String name, int money, char sex) {
+            public void initialize(String name, int money, char sex, int weight, double size) {
             this.name = name;
             this.money = money;
             this.sex = sex;

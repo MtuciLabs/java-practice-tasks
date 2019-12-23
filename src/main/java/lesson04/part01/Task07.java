@@ -33,6 +33,16 @@ public class Task07 {
   }
 
   public static void printValues(Map<String, String> map) {
+    System.out.println(map.get("Sim"));
+    System.out.println(map.get("Tom"));
+    System.out.println(map.get("Arbus"));
+    System.out.println(map.get("Baby"));
+    System.out.println(map.get("Cat"));
+    System.out.println(map.get("Dog"));
+    System.out.println(map.get("Eat"));
+    System.out.println(map.get("Food"));
+    System.out.println(map.get("Gevey"));
+    System.out.println(map.get("Hugs"));
     //напишите тут ваш код
   }
 }
