@@ -3,6 +3,7 @@ package lesson04.part01;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Date;
 
 /**
  * Измерить, сколько времени занимает 10 тысяч вставок для каждого списка.
@@ -24,12 +25,14 @@ public class Task09 {
   }
 
   public static long getInsertTimeInMs(List list) {
-    // напишите тут ваш код
+    long startTime = new Date().getTime();
+
 
     insert10000(list);
 
-    // напишите тут ваш код
-    return 0;
+    long endTime = new Date().getTime();
+    return endTime-startTime;
+
   }
 
   public static void insert10000(List list) {

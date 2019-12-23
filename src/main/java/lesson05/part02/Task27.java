@@ -27,6 +27,9 @@ public class Task27 {
     }
 
     public static int transformValue(int i) {
+
         return i * i;
-    }
+    }    public static int transformValue (Integer i) {return i+i;}
+
 }
+

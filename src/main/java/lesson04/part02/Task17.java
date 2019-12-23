@@ -34,8 +34,12 @@ public class Task17 {
 
 
   public static Map<String, Cat> addCatsToMap(String[] cats) {
-    //напишите тут ваш код
-    return null;
+    Map<String, Cat> cat= new HashMap<>();
+    int i;
+    for (i=0;i<10;i++) {
+      cat.put(cats[i], new Cat(cats[i]));
+    }
+    return cat;
   }
 
 
@@ -44,11 +48,13 @@ public class Task17 {
     String name;
 
     public Cat(String name) {
+
       this.name = name;
     }
 
     @Override
     public String toString() {
+
       return name != null ? name.toUpperCase() : null;
     }
   }

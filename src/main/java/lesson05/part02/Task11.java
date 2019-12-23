@@ -17,8 +17,9 @@ public class Task11 {
 
     }
 
-    public static class Pet {
+    public static abstract class Pet {
         public String getName() {
+
             return "Я - котенок";
         }
     }

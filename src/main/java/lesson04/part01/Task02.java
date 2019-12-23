@@ -2,7 +2,9 @@ package lesson04.part01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 /**
  * 1. Создать массив на 10 строк.
  * 2. Создать массив на 10 чисел.
@@ -23,6 +25,16 @@ import java.io.InputStreamReader;
 public class Task02 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    Scanner in = new Scanner(System.in);
+    String[] stroka = new String[10];
+    int[] dl = new int[10];
+    int i;
+    for (i = 0; i < 10; i++) {
+      stroka[i] = in.nextLine();
+      dl[i] = stroka[i].length();
+    }
+    for (i = 0; i < 10; i++) {
+      System.out.print(dl[i]);
+    } //напишите тут ваш код
   }
 }

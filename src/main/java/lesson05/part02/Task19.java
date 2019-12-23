@@ -22,31 +22,59 @@ public class Task19 {
     }
 
     public interface CanFly {
-        void fly();
+      public void fly();
     }
 
     public interface CanRun {
-        void run();
+        public void run();
     }
 
     public interface CanSwim {
-        void swim();
+        public void swim();
     }
+        public class Human implements CanRun, CanFly {
+            public void run() {
 
+            }
 
-    public class Human {
+            public void fly() {
 
+            }
+
+        }
+
+        public class Duck implements CanFly, CanRun, CanSwim {
+
+            public void run() {
+
+            }
+
+            public void fly() {
+
+            }
+
+            public void swim() {
+
+            }
+
+        }
+
+        public class Penguin implements CanRun,CanSwim {
+
+            public void run() {
+
+            }
+
+            public void swim() {
+
+            }
+
+        }
+
+        public class Airplane implements CanFly {
+
+            public void fly() {
+
+            }
+        }
     }
-
-    public class Duck {
-
-    }
-
-    public class Penguin {
-
-    }
-
-    public class Airplane {
-
-    }
-}

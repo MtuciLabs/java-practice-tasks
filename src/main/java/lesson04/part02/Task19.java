@@ -2,7 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.Set;
 /**
  * Есть коллекция Map<String, Object> (реализация HashMap), туда занесли 10 различных пар объектов.
  * Вывести содержимое коллекции на экран, каждый элемент с новой строки.
@@ -19,7 +19,6 @@ import java.util.Map;
  */
 
 public class Task19 {
-
   public static void main(String[] args) {
     Map<String, Object> map = new HashMap<>();
     map.put("Sim", 5);
@@ -33,7 +32,11 @@ public class Task19 {
     map.put("Hugs", 111111111111L);
     map.put("Comp", (double) 123);
 
-    //напишите тут ваш код
+    Set<Map.Entry<String,Object>> set=map.entrySet();
+    for (Map.Entry<String,Object> m:set){
+      System.out.print(m.getKey() + "-");
+      System.out.println(m.getValue());
+    }
 
   }
 }

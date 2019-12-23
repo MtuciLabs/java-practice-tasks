@@ -24,9 +24,13 @@ public class Task15 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
-
+    try {
     method1();
-
+    } catch (NullPointerException e) {
+      System.out.println(e.toString());
+    } catch (FileNotFoundException e) {
+      System.out.println(e.toString());
+    }
     //напишите тут ваш код
   }
 
