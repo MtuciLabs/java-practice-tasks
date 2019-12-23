@@ -13,7 +13,7 @@ compileTestJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
-<<<<<<< HEAD
+
 }
 
 dependencies {
@@ -25,6 +25,5 @@ test {
     testLogging {
         events "passed", "skipped", "failed"
     }
-=======
->>>>>>> remotes/upstreamм/but1801/Shestakov-Fedor
+
 }
