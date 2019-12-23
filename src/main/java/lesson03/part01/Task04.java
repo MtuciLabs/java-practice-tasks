@@ -18,40 +18,19 @@ import java.io.InputStreamReader;
 public class Task04 {
 
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Джесси", 5,3,2);
-        Cat cat2 = new Cat ("Гуся", 1000, 4,1000);
-        Cat cat3 = new Cat("Альпин", 3, 5,3);
-
-        boolean res12 = cat1.fight(cat2);
-        boolean res13 = cat1.fight(cat3);
-        boolean res23 = cat3.fight(cat2);
-
-        if (){
-            System.out.println(cat1.name);
-        } else{
-            System.out.println(cat2.name);
-        }
-
-        if (){
-            System.out.println(cat1.name);
-        }  else{
-            System.out.println(cat3.name);
-        }
-
-        if (){
-            System.out.println(cat3.name);
-        } else{
-            System.out.println(cat2.name);
-        }
-
-
+        Cat cat1 = new Cat("Bars",9,5,67);
+        Cat cat2 = new Cat("Azazello",13,70,77);
+        Cat cat3 = new Cat("Begemot",13,13,13);
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat2.fight(cat3));
+        System.out.println(cat3.fight(cat1));
     }
 
     public static class Cat {
         protected String name;
         protected int age;
-        int weight;
-        int strength;
+        protected int weight;
+        protected int strength;
 
         public Cat(String name, int age, int weight, int strength) {
             this.name = name;
@@ -60,7 +39,7 @@ public class Task04 {
             this.strength = strength;
         }
 
-        boolean fight(Cat anotherCat) {
+        public boolean fight(Cat anotherCat) {
             int ageAdvantage = this.age > anotherCat.age ? 1 : 0;
             int weightAdvantage = this.weight > anotherCat.weight ? 1 : 0;
             int strengthAdvantage = this.strength > anotherCat.strength ? 1 : 0;
