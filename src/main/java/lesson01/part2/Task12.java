@@ -21,13 +21,18 @@ public class Task12 {
      */
 
     public static int min(int a, int b, int c, int d) {
-        //напишите тут ваш код
-        return 0;
+        int m=Math.min(a,b);
+        int n=Math.min(c,d);
+        int l=Math.min(m,n);
+
+        return l;
+
     }
 
     public static int min(int a, int b) {
-        //напишите тут ваш код
-        return 0;
+        int m=Math.min(a,b);
+        return m;
+
     }
 
     public static void main(String[] args) throws Exception {

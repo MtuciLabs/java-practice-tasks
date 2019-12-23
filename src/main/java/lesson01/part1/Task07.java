@@ -25,9 +25,12 @@ public class Task07 {
         System.out.println(convertCelsiusToFahrenheit(41));
     }
 
-    public static double convertCelsiusToFahrenheit(int celsius) {
-        //напишите тут ваш код
 
-        return 0;
+    public static double convertCelsiusToFahrenheit(double celsius) {
+        double TF;
+        TF=(celsius*9/5)+32;
+
+
+        return TF;
     }
 }

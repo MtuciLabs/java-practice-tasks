@@ -19,7 +19,7 @@ public class Task12 {
         String porridge = "Каша";
         String sausage = "Колбаса";
         String peach = "Персик";
-
+        System.out.println(apple + "\n" + peach);
         //напишите тут ваш код
     }
 }
