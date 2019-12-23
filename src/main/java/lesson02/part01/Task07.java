@@ -15,7 +15,20 @@ package lesson02.part01;
 public class Task07 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        Zerg Danila = new Zerg();
+        Zerg Kulich = new Zerg();
+        Zerg SerGAY = new Zerg();
+        Zerg Sadzoom = new Zerg();
+        Zerg Ondrysha = new Zerg();
 
+        Protoss Chostya = new Protoss();
+        Protoss Chmips = new Protoss();
+        Protoss Marat = new Protoss();
+
+        Terran Dubina = new Terran();
+        Terran Krainov = new Terran();
+        Terran Podpalos = new Terran();
+        Terran Piotr = new Terran();
     }
 
     public static class Zerg {

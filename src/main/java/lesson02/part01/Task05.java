@@ -13,6 +13,7 @@ package lesson02.part01;
 
 public class Task05 {
     public static void main(String[] args) {
+        System.out.println("FEBRUARY 21 2001");
         //напишите тут ваш код
 
     }

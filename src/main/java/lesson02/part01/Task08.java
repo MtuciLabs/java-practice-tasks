@@ -15,6 +15,10 @@ package lesson02.part01;
 public class Task08 {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        int i,fact=1,number=10;
+        for(i=1;i<=number;i++) {
+            fact = fact * i;
+        }
+        System.out.println(fact);
     }
 }

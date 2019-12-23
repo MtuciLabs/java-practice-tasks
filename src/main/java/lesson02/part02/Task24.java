@@ -17,11 +17,36 @@ package lesson02.part02;
  */
 
 import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.*;
 
 public class Task24 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        String number1;
+        String number2;
+        String number3;
+        try (var bufferedReader = new BufferedReader(inputStreamReader)) {
+            number1 = bufferedReader.readLine();
+            number2 = bufferedReader.readLine();
+            number3 = bufferedReader.readLine();
+        }
+        int a = Integer.parseInt(number1);
+        int b = Integer.parseInt(number2);
+        int c = Integer.parseInt(number3);
+        if (a == b) {
+            System.out.println(3);
+        }
+        else if (a == c) {
+            System.out.println(2);
+        }
+        else if (b == c) {
+            System.out.println(1);
+        }
     }
 }
