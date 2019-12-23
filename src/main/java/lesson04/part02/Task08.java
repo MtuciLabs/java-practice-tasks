@@ -20,7 +20,17 @@ import java.util.ArrayList;
 public class Task08 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    int i;
+    ArrayList<String> a=new ArrayList<>();
+    a.add("мама");
+    a.add("мыла");
+    a.add("раму");
+    a.add(1,"именно");
+    a.add(3,"именно");
+    a.add(5,"именно");
+    for (i=0;i<6;i++){
+      System.out.println(a.get(i));
+    }
   }
 }
 

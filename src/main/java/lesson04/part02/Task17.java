@@ -21,8 +21,8 @@ public class Task17 {
 
   public static void main(String[] args) throws Exception {
     String[] cats = new String[]{
-        "васька", "мурка", "дымка", "рыжик", "серый",
-        "снежок", "босс", "борис", "визя", "гарфи"
+        "васька", "муся", "димка", "рыжик", "серый",
+        "снежок", "андрей", "борис", "визя", "саша"
     };
 
     Map<String, Cat> map = addCatsToMap(cats);
@@ -34,8 +34,12 @@ public class Task17 {
 
 
   public static Map<String, Cat> addCatsToMap(String[] cats) {
-    //напишите тут ваш код
-    return null;
+    Map<String, Cat> cat= new HashMap<>();
+    int i;
+    for (i=0;i<10;i++) {
+      cat.put(cats[i], new Cat(cats[i]));
+    }
+    return cat;
   }
 
 
