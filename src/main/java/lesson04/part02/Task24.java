@@ -17,12 +17,27 @@ import java.util.Map;
 public class Task24 {
 
   public static Map<String, Integer> createMap() {
-    //напишите тут ваш код
-    return null;
+    HashMap <String, Integer> map = new HashMap<>(10);
+    map.put("Иван", 1000);
+    map.put("Людмила", 200);
+    map.put("Егор", 3000);
+    map.put("Елизавета", 500);
+    map.put("Федор", 400);
+    map.put("Арсений", 2001);
+    map.put("Александр", 300);
+    map.put("Инесса", 4000);
+    map.put("Анастасия", 2050);
+    map.put("Евгения", 400);
+    return map;
   }
 
   public static void removeItemFromMap(Map<String, Integer> map) {
-    //напишите тут ваш код
+    int i;
+    for (i=0; i<=9; i++){
+      if (map.get(i)>=500){
+        map.remove(i);
+      }
+    }
   }
 
   public static void main(String[] args) {

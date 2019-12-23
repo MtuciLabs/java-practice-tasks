@@ -19,11 +19,15 @@ import java.util.HashMap;
 public class Task14 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    try {
 
-    HashMap<String, String> map = new HashMap<String, String>(null);
-    map.put(null, null);
-    map.remove(null);
+      HashMap<String, String> map = new HashMap<String, String>(null);
+      map.put(null, null);
+      map.remove(null);
+    } catch (NullPointerException exept) {
+      System.out.println(exept.getMessage());
+      System.out.println("Null pointer exeption processed");
+    }
 
     //напишите тут ваш код
   }

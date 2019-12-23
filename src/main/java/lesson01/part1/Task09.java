@@ -3,7 +3,8 @@ package lesson01.part1;
 public class Task09 {
 
     /**
-     * Напиши код метода sumDigitsInNumber(int number). Метод на вход принимает целое трехзначное число. Нужно посчитать сумму цифр этого числа, и вернуть эту сумму.
+     * Напиши код метода sumDigitsInNumber(int number). Метод на вход принимает целое трехзначное число.
+     * Нужно посчитать сумму цифр этого числа, и вернуть эту сумму.
      * <p>
      * Пример:
      * Метод sumDigitsInNumber вызывается с параметром 546.
@@ -26,7 +27,7 @@ public class Task09 {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
-        return 0;
+        int summa=((number/100)+((number/10)%10)+(number%10));
+        return summa;
     }
 }
