@@ -21,36 +21,21 @@ import java.util.List;
 
 public class Task10 {
   public static void main(String[] args) throws Exception {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    ArrayList aList = new ArrayList();
-    ArrayList<String> list = null;
-
+    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList<String> list = new ArrayList<>();
+    for (int i = 0; i < 10; i++) {
+      list.add(r.readLine());
+    }
     ArrayList<String> result = doubleValues(list);
-    int i;
-    for(i=0; i<=0; i++){
-      aList.add(reader.readLine());
-    }
-    ArrayList<String> result = doubleValues(aList);
-
-    for (i=0; i<=result.size()-1;i++){
-      System.out.println(result.get(i));
-    }
-
-    int i;
-    for(i=0; i<=0; i++){
-      aList.add(reader.readLine());
-    }
-
-
-    for (i=0; i<=result.size()-1;i++){
-      System.out.println(result.get(i));
+    for (String s : result) {
+      System.out.println(s);
     }
   }
 
   public static ArrayList<String> doubleValues(ArrayList<String> list) {
-    int i;
-    for (i=1; i<=list.size(); i=i+2){
-      list.add(i, list.get(i-1));
+    for (int i = 0; i < list.size(); i++) {
+      list.add(i + 1, list.get(i));
+      i++;
     }
     return list;
   }
