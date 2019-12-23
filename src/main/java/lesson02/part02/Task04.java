@@ -16,15 +16,21 @@ public class Task04 {
 
     public static void main(String[] args) {
 
+
+
     }
+
+
 
     public static class Cat {
         private static int catsCount = 0;
 
-        public static void addNewCat() {
-            //напишите тут ваш код
 
+        public static void addNewCat() {
+
+            Cat.catsCount = catsCount+1;
         }
+
     }
 
 }

@@ -16,12 +16,16 @@ package lesson02.part01;
  * 5.	Выведенный текст должен полностью соответствовать заданию.
  */
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Task17 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String tempAge = br.readLine();
+        String name = br.readLine();
+        int age = Integer.parseInt(tempAge);
+        System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
 
     }
 }
