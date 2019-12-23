@@ -1,5 +1,6 @@
 package lesson02.part01;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Ввести с клавиатуры имя и вывести надпись:
  * name зарабатывает $5,000. Ха-ха-ха!
@@ -15,7 +16,12 @@ package lesson02.part01;
 
 public class Task19 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введи имя");
+        String name = reader.readLine();
+
+        System.out.println(name + " зарабатывает $5,000. Ха-ха-ха!");
 
     }
 }
