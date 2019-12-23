@@ -1,6 +1,7 @@
 package lesson02.part02;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * Ввести с клавиатуры три числа а, b, c – стороны предполагаемого треугольника.
@@ -20,25 +21,24 @@ import java.util.Scanner;
  */
 
 public class Task15 {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-    public static int main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        Scanner sc1 = new Scanner(System.in);
-        int b = sc1.nextInt();
-        Scanner sc2 = new Scanner(System.in);
-        int c = sc2.nextInt();
-        String num = "не существует";
-        if (a + b > c) {
-            num = "существует";
-        }
-        if (a + c > b) {
-            num = "существует";
-        }
-        if (c + b > a) {
-            num = "существует";
-        }
+        System.out.println("Введите первую сторону треугольника: ");
+        String a = reader.readLine();
+        int A = Integer.parseInt(a);
 
-        System.out.println(num);
+        System.out.println("Введите вторую сторону треугольника: ");
+        String b = reader.readLine();
+        int B = Integer.parseInt(a);
+
+        System.out.println("Введите третью сторону треугольника: ");
+        String c = reader.readLine();
+        int C = Integer.parseInt(a);
+
+        if (((A + B) > C) || ((A + C) > B) || ((C + B) > A)) {
+            System.out.println("Треугольник существует");
+        } else
+            System.out.println("Треугольник не существует");
     }
 }

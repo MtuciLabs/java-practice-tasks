@@ -24,24 +24,33 @@ package lesson02.part02;
  * 6.	Если точка находится в четвёртой координатной четверти, вывести "4".
  */
 
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Task25 {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        if (x> 0 && y>0){
+        BufferedReader reader =  new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введите первое число");
+        String A = reader.readLine();
+        int a = Integer.parseInt(A);
+
+        System.out.println("Введите второе число");
+        String B = reader.readLine();
+        int b = Integer.parseInt(B);
+
+        if ((a>0)&&(b>0)) {
             System.out.println("1");
         }
-        if (x< 0 && y>0){
+        else if ((a<0)&&(b>0)) {
             System.out.println("2");
         }
-        if (x< 0 && y<0){
+        else if ((a<0)&&(b<0)) {
             System.out.println("3");
         }
-        if (x> 0 && y<0){
+        else if ((a>0)&&(b<0)) {
             System.out.println("4");
         }
+
     }
 }

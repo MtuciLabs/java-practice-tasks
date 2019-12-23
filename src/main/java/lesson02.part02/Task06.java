@@ -15,7 +15,7 @@ package lesson02.part02;
 public class Task06 {
 
     public static void main(String[] args) {
-private String fullName = Cat.setName("Кот", "Кот");
+
     }
 
     public static class Cat {
@@ -23,6 +23,8 @@ private String fullName = Cat.setName("Кот", "Кот");
 
         public void setName(String firstName, String lastName) {
             String fullName = firstName + " " + lastName;
+
+            this.fullName = fullName;
         }
     }
 }

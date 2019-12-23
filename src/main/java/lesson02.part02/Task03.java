@@ -19,10 +19,11 @@ public class Task03 {
     }
 
     public static class Cat {
-        private static String name = "безымянный кот";
+
+        private String name = "безымянный кот";
 
         public void setName(String name) {
-            Cat.name = name;
+            this.name = name;
 
         }
     }

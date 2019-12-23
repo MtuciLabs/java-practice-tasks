@@ -1,6 +1,7 @@
 package lesson02.part02;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * Ввести с клавиатуры строку name.
@@ -23,15 +24,17 @@ import java.util.Scanner;
 
 public class Task43 {
     public static void main(String[] args) throws Exception {
-            Scanner in = new Scanner(System.in);
-        String name = in.nextLine();
-        Scanner sc = new Scanner(System.in);
-        int d = sc.nextInt();
-        int m = sc.nextInt();
-        int y = sc.nextInt();
-        System.out.println("Меня зовут"+ name);
-        System.out.print("Я родился"+ d);
-        System.out.print("."+ m);
-        System.out.print("."+ y);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите имя ");
+        String name = reader.readLine();
+        System.out.println("Введите день");
+        int d = Integer.parseInt(reader.readLine());
+        System.out.println("Введите месяц");
+        int m = Integer.parseInt(reader.readLine());
+        System.out.println("Введите год");
+        int y = Integer.parseInt(reader.readLine());
+        System.out.println("Меня зовут "+ name);
+        System.out.println("Я родился " + d + "." + m + "." + y);
+
     }
 }

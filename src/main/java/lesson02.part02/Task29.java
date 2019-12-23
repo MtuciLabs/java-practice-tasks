@@ -36,32 +36,24 @@ import java.util.Scanner;
 
 
 public class Task29 {
-    public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int p = 0;
-        int o = 0;
-if (a>=0){
-    p+=1;
-}
-else{
-    o+=1;
-}
-        if (b>=0){
-            p+=1;
-        }
-        else{
-            o+=1;
-        }
-  if (c>=0){
-            p+=1;
-        }
-        else{
-            o+=1;
-        }
-System.out.println("количество отрицательных чисел: "+o);
-System.out.println("количество положительных чисел: "+p);
+  public static void main(String[] args) throws Exception {
+    int plus = 0;
+    int minus = 0;
+    Scanner input = new Scanner(System.in);
+    System.out.println("Введите три числа");
+    int array[] = new int[3];
+    for (int i = 0; i < 3; i++) {
+      array[i] = input.nextInt();
     }
+    for (int i = 0; i < 3; i++) {
+      if (array[i] > 0) {
+        plus++;
+      } else if (array[i] < 0) {
+        minus++;
+      }
+    }
+    System.out.println("Количество положительных чисел: " + plus);
+    System.out.println("Количество отрицательных чисел: " + minus);
+
+  }
 }

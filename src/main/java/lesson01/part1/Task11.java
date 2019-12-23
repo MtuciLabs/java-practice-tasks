@@ -27,12 +27,10 @@ public class Task11 {
         final private int c = 2;
 
         public long getVolume(int a, int b, int c) {
-            return 0;
+            return a*b*c*1000;
         }
-            return (a*b*c*1000);
-    }
 
-}
+    }
 
     public static void main(String[] args) {
         Pool pool = new Pool();

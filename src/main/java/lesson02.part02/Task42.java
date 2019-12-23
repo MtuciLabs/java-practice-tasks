@@ -1,6 +1,7 @@
 package lesson02.part02;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * Вводить с клавиатуры числа.
@@ -23,17 +24,17 @@ import java.util.Scanner;
  */
 
 public class Task42 {
-    public static void main(String[] args) throws Exception {
-        int sum = 0;
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        while(num != -1){
-   sum = sum + num;
-        }
-        if (num==-1){
-            sum = sum -1;
-        }
 
+  public static void main(String[] args) throws Exception {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int sum = 0;
+    while (true) {
+      int n = Integer.parseInt(reader.readLine());
+      sum += n;
+      if (n == -1) {
+        System.out.println(sum+1);
+        break;
+      }
     }
-
+  }
 }

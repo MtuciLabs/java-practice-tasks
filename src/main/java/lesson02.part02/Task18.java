@@ -1,7 +1,6 @@
 package lesson02.part02;
-
-import java.util.Scanner;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Ввести с клавиатуры два целых числа, и вывести на экран минимальное из них. Если два числа равны между собой, необходимо вывести любое.
  * <p>
@@ -14,20 +13,26 @@ import java.util.Scanner;
  */
 
 public class Task18 {
-    public static int main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c;
-        if (a>b){
-            c=a;
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введите первое число");
+        String a = reader.readLine();
+        int A = Integer.parseInt(a);
+
+        System.out.println("Введите второе число");
+        String b = reader.readLine();
+        int B = Integer.parseInt(b);
+
+        if (A>B) {
+            System.out.println(B);
         }
-        if (a<b){
-            c=b;
+        else if (A<B) {
+            System.out.println(A);
         }
-        if (a==b){
-            c=a;
+        else if (A==B) {
+            System.out.println(A);
         }
-        return c;
+
     }
 }

@@ -1,6 +1,7 @@
 package lesson02.part02;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * Ввести с клавиатуры три числа, вывести на экран среднее из них. Т.е. не самое большое и не самое маленькое.
@@ -16,25 +17,24 @@ import java.util.Scanner;
  */
 
 public class Task41 {
-    public static int main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        int sr;
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        if(Math.max(Math.max(a,b),c) >a && Math.min(Math.min(a,b),c)<a){
-            sr=a;
-        }
-        if(Math.max(Math.max(a,b),c) >b && Math.min(Math.min(a,b),c)<b){
-            sr=b;
-        }
-        if(Math.max(Math.max(a,b),c) >c && Math.min(Math.min(a,b),c)<c){
-            sr=c;
-        }
-        else{
-            sr=a;
-        }
-        return sr;
-    }
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        int c = Integer.parseInt(reader.readLine());
+
+        if (((a<b) && (a>c))||((a>b) && (a<c))) {
+            System.out.println(a);
+        }
+        else if (((b<a) && (b>c))||((b>a) && (b<c))) {
+            System.out.println(b);
+        }
+        else if (((c<a) && (c>b))||((c>a) && (c<b))) {
+            System.out.println(c);
+        }
+        else if ((a==b) || (b==c)) {
+            System.out.println(a);
+        }
+    }
 }
