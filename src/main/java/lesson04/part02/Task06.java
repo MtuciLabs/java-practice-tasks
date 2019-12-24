@@ -16,35 +16,17 @@ import java.util.ArrayList;
  * 5.	Порядок вывода должен быть обратный.
  */
 
-public class Task07 {
+public class Task06 {
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Integer> list = new ArrayList<>();
-        ArrayList<Integer> list2 = new ArrayList<>();
-        ArrayList<Integer> list3 = new ArrayList<>();
-        ArrayList<Integer> list4 = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            list.add(Integer.parseInt(r.readLine()));
-            if (list.get(i) % 3 == 0 && list.get(i) % 2 == 0 && list.get(i) != 0) {
-                list3.add(list.get(i));
-                list2.add(list.get(i));
-            } else if (list.get(i) % 3 == 0 && list.get(i) != 0) {
-                list3.add(list.get(i));
-            } else if (list.get(i) % 2 == 0 && list.get(i) != 0) {
-                list2.add(list.get(i));
-            } else {
-                list4.add(list.get(i));
-            }
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            String s = r.readLine();
+            list.add(s);
         }
-        printList(list3);
-        printList(list2);
-        printList(list4);
-    }
-
-    public static void printList(ArrayList<Integer> list) {
-      for (Integer lists : list) {
-        System.out.println(lists);
-        }
-        System.out.println("");
+      list.remove(2);
+      for(int i = list.size()-1; i >= 0;i--){
+        System.out.println(list.get(i));
+      }
     }
 }
