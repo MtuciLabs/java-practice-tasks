@@ -24,7 +24,7 @@ public class Task13 {
 
     }
 
-    public class Animal extends Fish{
+    public class Animal extends Fish {
 
     }
 
@@ -32,7 +32,7 @@ public class Task13 {
 
     }
 
-    public class Human extends Ape{
+    public class Human extends Ape {
 
     }
 
