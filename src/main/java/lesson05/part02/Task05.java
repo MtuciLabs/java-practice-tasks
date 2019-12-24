@@ -16,7 +16,7 @@ package lesson05.part02;
  * Например "Корова" для объектов типа Cow.
  */
 
-ppublic class Task05 {
+public class Task05 {
     public static void main(String[] args) {
         System.out.println(getObjectType(new Cow()));
         System.out.println(getObjectType(new Dog()));
