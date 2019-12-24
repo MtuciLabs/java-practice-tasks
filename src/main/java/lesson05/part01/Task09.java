@@ -1,5 +1,7 @@
 package lesson05.part01;
 
+import java.awt.desktop.AppReopenedEvent;
+
 /**
  * Как кошка с собакой
  * Скрыть все внутренние переменные класса Cat и Dog.
@@ -25,10 +27,10 @@ public class Task09 {
 }
 
 class Cat {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
-    public Cat(String name, int speed) {
+     Cat(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
@@ -47,10 +49,10 @@ class Cat {
 }
 
 class Dog {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
-    public Dog(String name, int speed) {
+     Dog(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
