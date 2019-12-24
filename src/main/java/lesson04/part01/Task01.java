@@ -1,9 +1,9 @@
 package lesson04.part01;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Scanner;
 /**
  * 1. В методе initializeArray():
  * 1.1. Создайте массив на 20 чисел
