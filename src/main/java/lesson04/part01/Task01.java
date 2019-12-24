@@ -27,27 +27,22 @@ public class Task01 {
   }
 
   public static int[] initializeArray() throws IOException {
-    Scanner scn= new Scanner(System.in);
-    int i ;
+    Scanner scn = new Scanner(System.in);
     int[] arr=new int[20];
-    for(i=0; i<20; i++){
-      int ch=scn.nextInt();
+    for(int i=0;i<20;i++){
       arr[i]=scn.nextInt();
     }
-
-
-
     return arr;
   }
 
   public static int max(int[] array) {
     int max=0;
-    int i;
-    for(i=0; i<20; i++){
+    for(int i=0;i<20;i++){
       if (array[i]>max){
         max=array[i];
       }
     }
+
     return max;
   }
 }

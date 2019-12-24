@@ -17,25 +17,10 @@ package lesson04.part01;
 public class Task12 {
 
   public static void main(String[] args) {
-    try
-    {
-      System.out.println("Запускается");
-      method1();
-      System.out.println("Если нет исключения,покажусь.");
+    try {
+      int a = 42 / 0;
+    } catch (ArithmeticException e) {
+      System.out.println(e.getClass());
     }
-    catch (ArithmeticException ex)
-    {
-      System.out.println("Ага! попалась!");
-    }
-
-    System.out.println("Продолжаем работу. Ну, я жду команд");
-  }
-
-  public static void method1()
-  {
-
-    int a = 42 / 0;
-
-    //напишите тут ваш код
   }
 }
