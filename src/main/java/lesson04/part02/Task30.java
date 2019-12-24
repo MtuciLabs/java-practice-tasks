@@ -19,8 +19,13 @@ public class Task30 {
   public static void main(String[] args) {
     //напишите тут ваш код
 
-    int num = Integer.parseInt("XYZ");
-    System.out.println(num);
+    try {
+      int num = Integer.parseInt("XYZ");
+      System.out.println(num);
+    } catch (NumberFormatException e) {
+      String s = e.getClass().getName();
+      System.out.println(s);
+    }
 
     //напишите тут ваш код
   }

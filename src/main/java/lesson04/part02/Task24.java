@@ -2,7 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.Iterator;
 /**
  * Создать словарь (Map<String, Integer>) и занести в него десять записей по принципу: "фамилия" - "зарплата".
  * Удалить из словаря всех людей, у которых зарплата ниже 500.
@@ -18,11 +18,30 @@ public class Task24 {
 
   public static Map<String, Integer> createMap() {
     //напишите тут ваш код
-    return null;
+    Map<String, Integer> map = new HashMap<>();
+    map.put("Max",500);
+    map.put("Misha",420);
+    map.put("Egor",1000);
+    map.put("Sergey",30);
+    map.put("Marat",10);
+    map.put("Nikita",50);
+    map.put("Kostya",250);
+    map.put("Andrey",1040);
+    map.put("Tom",140);
+    map.put("Hank",680);
+    return map;
   }
 
   public static void removeItemFromMap(Map<String, Integer> map) {
     //напишите тут ваш код
+    Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
+    while (iterator.hasNext()){
+      Map.Entry<String, Integer> pair = iterator.next();
+      String key = pair.getKey();
+      int value = pair.getValue();
+      if (value < 500)
+        iterator.remove();
+    }
   }
 
   public static void main(String[] args) {

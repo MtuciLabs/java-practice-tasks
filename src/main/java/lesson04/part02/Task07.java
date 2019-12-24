@@ -3,7 +3,7 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 /**
  * 1. Введи с клавиатуры 20 чисел, сохрани их в список и рассортируй по трём другим спискам:
  * Число нацело делится на 3 (x%3==0), нацело делится на 2 (x%2==0) и все остальные.
@@ -25,9 +25,33 @@ import java.util.ArrayList;
 public class Task07 {
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
+    ArrayList<Integer> g= new ArrayList<Integer>();
+    ArrayList<Integer> d3= new ArrayList<Integer>();
+    ArrayList<Integer> d2= new ArrayList<Integer>();
+    ArrayList<Integer> o= new ArrayList<Integer>();
+    Scanner in=new Scanner(System.in);
+    int i;
+    for(i=0;i<20;i++){
+      g.add(in.nextInt());
+    }
+    for(i=0;i<20;i++){
+      if (g.get(i)%3==0){
+        d3.add(g.get(i));
+      }
+      if (g.get(i)%2==0){
+        d2.add(g.get(i));
+      }
+      if (g.get(i)%3!=0 && g.get(i)%2!=0){
+        o.add(g.get(i));
+      }
+    }
+    printList(d3);
+    printList(d2);
+    printList(o);
   }
 
   public static void printList(ArrayList<Integer> list) {
     //напишите тут ваш код
+    System.out.println(list);
   }
 }

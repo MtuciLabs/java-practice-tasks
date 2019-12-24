@@ -1,7 +1,7 @@
 package lesson04.part01;
 
 import java.util.Set;
-
+import java.util.HashSet;
 /**
  * 1. Реализовать метод createCats, он должен создавать множество (Set) котов и добавлять в него 3 кота.
  * 2. В методе main удалите одного кота из Set cats.
@@ -26,18 +26,35 @@ public class Task10 {
     Set<Cat> cats = createCats();
 
     //напишите тут ваш код. step 2 - пункт 2
-
+    for (Cat cat : cats) {
+      cats.remove(cat);
+      break;
+    }
     printCats(cats);
   }
 
   public static Set<Cat> createCats() {
     //напишите тут ваш код. step 1 - пункт 1
-    return null;
+    Set<Cat> cats = new HashSet<>();
+    Cat cat1 = new Cat();
+    Cat cat2 = new Cat();
+    Cat cat3 = new Cat();
+    cats.add(cat1);
+    cats.add(cat2);
+    cats.add(cat3);
+    return cats;
   }
 
   public static void printCats(Set<Cat> cats) {
     // step 3 - пункт 3
+    for (Cat x: cats ) {
+      System.out.println(x);
+    }
   }
 
-  public static class Cat {}
+  public static class Cat {
+    public Cat() {
+
+    }
+  }
 }

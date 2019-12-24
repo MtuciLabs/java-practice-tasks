@@ -23,27 +23,10 @@ public class Task04 {
         Cat cat2 = new Cat ("Гуся", 1000, 4,1000);
         Cat cat3 = new Cat("Альпин", 3, 5,3);
 
-        boolean res12 = cat1.fight(cat2);
-        boolean res13 = cat1.fight(cat3);
-        boolean res23 = cat3.fight(cat2);
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat2.fight(cat3));
+        System.out.println(cat3.fight(cat1));
 
-        if (){
-            System.out.println(cat1.name);
-        } else{
-            System.out.println(cat2.name);
-        }
-
-        if (){
-            System.out.println(cat1.name);
-        }  else{
-            System.out.println(cat3.name);
-        }
-
-        if (){
-            System.out.println(cat3.name);
-        } else{
-            System.out.println(cat2.name);
-        }
 
     }
 

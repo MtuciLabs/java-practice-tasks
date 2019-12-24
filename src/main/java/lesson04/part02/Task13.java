@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 /**
  * Создать список строк.
  * Ввести строки с клавиатуры и добавить их в список.
@@ -21,8 +21,19 @@ import java.util.ArrayList;
 
 public class Task13 {
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
 
     //напишите тут ваш код
+    Scanner in = new Scanner(System.in);
+    ArrayList<String> a = new ArrayList<>();
+    String s = null;
+    do {
+      s = in.nextLine();
+      if (s != "end") {
+        a.add(s);
+      }
+    }
+    while (s != "end") ;
+    System.out.print(a);
   }
 }
