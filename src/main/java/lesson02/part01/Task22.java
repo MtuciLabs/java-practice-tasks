@@ -1,9 +1,7 @@
 package lesson02.part01;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
 
 /**
  * Ввести с клавиатуры число n.
@@ -21,15 +19,13 @@ import java.io.Reader;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        InputStream inputStream = System.in;
-        Reader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-        String name = bufferedReader.readLine();
-        String ageS = bufferedReader.readLine();
-        int age = Integer.parseInt(ageS);
-        if (age < 18) {
-            System.out.println("Podrasti eshe");
-        }
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+
+        String number = reader.readLine();
+
+        System.out.println("Я буду зарабатывать $"+number+" в час");
+
 
     }
 }
