@@ -20,6 +20,20 @@ public class Task17 {
 
     }
 
-//add interfaces here - добавь интерфейсы тут
+public interface CanFly {
+        public static void FlyAway(){
+
+        }
+}
+public interface CanRun {
+        public static void RunAway(){
+
+        }
+}
+public interface CanSwim {
+        public static void SwimAway(){
+
+        }
+}
 
 }

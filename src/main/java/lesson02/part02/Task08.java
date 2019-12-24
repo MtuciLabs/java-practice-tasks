@@ -23,7 +23,15 @@ public class Task08 {
     }
 
     public static void compare(int a) {
-        //напишите тут ваш код
+        if (a<5){
+            System.out.println("а меньше 5");
+        }
+        else if (a>5){
+            System.out.println("а больше 5");
+        }
+        else if (a==5){
+            System.out.println("а равно 5");
+        }
 
     }
 }

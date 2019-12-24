@@ -16,19 +16,28 @@ public class Task09 {
      */
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Cat Begemot = new Cat();
+        Dog Fang = new Dog();
+        Fish Nemo = new Fish();
+        Woman Beverly = new Woman();
+        Begemot.Beverly=Beverly;
+        Fang.Beverly=Beverly;
+        Nemo.Beverly=Beverly;
     }
 
     public static class Cat {
         public Woman owner;
+        public Woman Beverly;
     }
 
     public static class Dog {
         public Woman owner;
+        public Woman Beverly;
     }
 
     public static class Fish {
         public Woman owner;
+        public Woman Beverly;
     }
 
     public static class Woman {

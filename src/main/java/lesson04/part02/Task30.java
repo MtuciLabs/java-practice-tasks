@@ -17,11 +17,12 @@ package lesson04.part02;
 public class Task30 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
-    int num = Integer.parseInt("XYZ");
-    System.out.println(num);
-
-    //напишите тут ваш код
+    try{
+      int num = Integer.parseInt("XYZ");
+      System.out.println(num);
+    } catch (NumberFormatException exeption){
+      System.out.println(exeption.getMessage());
+      System.out.println("Exeption processed");
+    }
   }
 }

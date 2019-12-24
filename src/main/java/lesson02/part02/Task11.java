@@ -1,7 +1,8 @@
 package lesson02.part02;
 
 /**
- * Напишите метод checkSeason. По номеру месяца, метод должен определить время года (зима, весна, лето, осень) и вывести на экран.
+ * Напишите метод checkSeason. По номеру месяца, метод должен определить время года (зима, весна, лето, осень)
+ * и вывести на экран.
  * Пример для номера месяца 2:
  * зима
  * Пример для номера месяца 5:
@@ -25,7 +26,18 @@ public class Task11 {
     }
 
     public static void checkSeason(int month) {
-        //напишите тут ваш код
+        if (month>0 && month<=2 && month==12){
+            System.out.println("зима");
+        }
+        else if (month>2 && month<=5){
+            System.out.println("весна");
+        }
+        else if (month>5 && month<=8){
+            System.out.println("лето");
+        }
+        else if (month>8 && month<=11){
+            System.out.println("осень");
+        }
 
     }
 }

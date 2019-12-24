@@ -24,8 +24,10 @@ public class Task12 {
         int weight;
         double size;
 
-        public void initialize(String name) {
+        public void initialize(String name, char sex, int money, int weight, double size)
+        {
             this.name = name;
+            this.sex = sex;
         }
 
         public void initialize(String name, char sex) {

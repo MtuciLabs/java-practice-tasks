@@ -24,8 +24,20 @@ public class Task12 {
     int maximum = 0;
     int minimum = 0;
 
-    //напишите тут ваш код
+    int[] array = new int[20];
+    int i;
+    for (i=0; i<=19; i++){
+      array[i]=Integer.parseInt(reader.readLine());
+    }
 
+    for(i=0; i<=19; i++) {
+      if (array[i]>maximum) {
+        maximum=array[i];
+      }
+      if (array[i]<minimum) {
+        minimum=array[i];
+      }
+    }
     System.out.print(maximum + " " + minimum);
   }
 }

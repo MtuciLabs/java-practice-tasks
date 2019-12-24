@@ -3,7 +3,8 @@ package lesson01.part1;
 public class Task07 {
 
     /**
-     * Метод convertCelsiusToFahrenheit(int celsius) принимает значение в градусах Цельсия. Метод должен переводить температуру и возвращать значение в градусах Фаренгейта.
+     * Метод convertCelsiusToFahrenheit(int celsius) принимает значение в градусах Цельсия.
+     * Метод должен переводить температуру и возвращать значение в градусах Фаренгейта.
      * Температура по Цельсию TC и температура по Фаренгейту TF связаны следующим соотношением:
      * TF = (9 / 5) * TC + 32
      * <p>
@@ -26,8 +27,7 @@ public class Task07 {
     }
 
     public static double convertCelsiusToFahrenheit(int celsius) {
-        //напишите тут ваш код
-
-        return 0;
+        double TF=1.8*celsius+32;
+        return TF;
     }
 }

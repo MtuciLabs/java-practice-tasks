@@ -27,6 +27,17 @@ public class Task35 {
   }
 
   public static void readData() {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList aList = new ArrayList();
+    int i;
+    try{
+      while(1<11){
+        aList.add(Integer.parseInt(reader.readLine()));
+      }
+    } catch (Exception exeption){
+      for(i=0;i<=aList.size();i++){
+        System.out.println(aList.get(i));
+      }
+    }
   }
 }

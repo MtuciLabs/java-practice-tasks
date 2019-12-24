@@ -18,6 +18,12 @@ public class Task16 {
 
     }
 
-    //add an interface here - добавь интерфейс тут
+   public interface CanFly{
+        public static void FlyAway(){
+
+        }
+        public static void FlyOff(){
+        }
+    }
 
 }
