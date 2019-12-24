@@ -16,7 +16,9 @@ package lesson03.part01;
 public class Task03 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Cat cat1 = new Cat("Олег", 12, 122, 32);
+        Cat cat2 = new Cat("Мухомор", 48, 1, 300);
+        Cat cat3 = new Cat("Воплощение зла", 666, 666, 666);
     }
 
     public static class Cat {

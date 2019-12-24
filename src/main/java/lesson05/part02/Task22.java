@@ -41,6 +41,7 @@ public class Task22 {
     }
 
     public static class Cat extends Pet {
+        public void setName(String mane) {this.name = "Я - кот";}
 
     }
 }

@@ -19,6 +19,15 @@ import java.io.InputStreamReader;
 public class Task01 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    String [] array = new String[10];
+    int i;
+    for(i=0; i<=7; i++){
+      array[i] = reader.readLine();
+    }
+    System.out.println(" ");
+    for (i=0; i<=9; i++){
+      System.out.println(array[i]);
+    }
   }
 }
