@@ -21,5 +21,5 @@ public class Task02 {
     }
     // напишите тут ваш ко
         System.out.println(s);
-    
+
 }
