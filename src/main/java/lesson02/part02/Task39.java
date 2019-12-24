@@ -1,5 +1,5 @@
 package lesson02.part02;
-
+import java.io.*;
 /**
  * Ввести с клавиатуры имя и используя цикл for 10 раз вывести: <имя> любит меня.
  * <p>
@@ -26,6 +26,13 @@ package lesson02.part02;
 public class Task39 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String name = bufferedReader.readLine();
+        for (int i=1; i<=10; i++){
+            System.out.println(name + " любит меня.");
+        }
 
     }
 }

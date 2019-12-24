@@ -1,5 +1,5 @@
 package lesson04.part01;
-
+import java.sql.SQLOutput;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -24,5 +24,18 @@ public class Task02 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    String [] aStr = new String[10];
+    int [] aNum = new int[10];
+    int i;
+    for (i=0;i<=9;i++){
+      aStr[i]=reader.readLine();
+    }
+    for(i=0;i<=9;i++){
+      aNum[i] = aStr[i].length();
+    }
+    for(i=0;i<=9;i++){
+      System.out.print(aNum[i]+" ");
+    }
   }
 }

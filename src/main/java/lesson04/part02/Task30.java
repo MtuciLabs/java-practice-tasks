@@ -18,9 +18,16 @@ public class Task30 {
 
   public static void main(String[] args) {
     //напишите тут ваш код
+    try {
 
-    int num = Integer.parseInt("XYZ");
-    System.out.println(num);
+      int num = Integer.parseInt("XYZ");
+      System.out.println(num);
+      int num = Integer.parseInt("XYZ");
+      System.out.println(num);
+    } catch (NumberFormatException exception){
+      System.out.println(exception.getMessage());
+      System.out.println("Exception processed");
+    }
 
     //напишите тут ваш код
   }

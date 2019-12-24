@@ -1,5 +1,5 @@
 package lesson04.part02;
-
+import java.util.Set;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,5 +34,12 @@ public class Task18 {
 
   public static void printKeys(Map<String, String> map) {
     //напишите тут ваш код
+    int i;
+    Set<String> keys = map.keySet();
+    for (String key:keys) {
+      System.out.println(key);
+    }
+  }
+}
   }
 }

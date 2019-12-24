@@ -16,6 +16,7 @@ package lesson02.part02;
  */
 
 public class Task08 {
+
     public static void main(String[] args) {
         compare(3);
         compare(6);
@@ -24,6 +25,12 @@ public class Task08 {
 
     public static void compare(int a) {
         //напишите тут ваш код
-
+        if (a < 5) {
+            System.out.println("Chislo menshe 5");
+        } else if (a > 5) {
+            System.out.println("Chislo bolshe 5");
+        } else {
+            System.out.println("Chislo ravno 5");
+        }
     }
 }

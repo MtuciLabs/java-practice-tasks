@@ -23,6 +23,7 @@ public class Task01 {
     }
 
     public class Pegasus {
+        public class Pegasus extends Horse {
 
     }
 }

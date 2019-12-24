@@ -1,4 +1,5 @@
 package lesson01.part1;
+import java.util.Scanner;
 
 public class Task10 {
 
@@ -16,6 +17,10 @@ public class Task10 {
 
     public static void main(String[] args) {
         int secondsAfter15 = 0;
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        int t = scanner.nextInt();
+        int secondsAfter15 = (t - i)*60;
         System.out.println(secondsAfter15);
     }
 }

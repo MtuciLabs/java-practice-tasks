@@ -24,5 +24,10 @@ public class Task27 {
 
   public static void log(String s) {
     //напишите тут ваш код
+    System.out.println(Thread.currentThread().getStackTrace()[2].getClassName()+": "+Thread.currentThread().getStackTrace()[1].getMethodName()+": "+s);
+
+  }
+}
+
   }
 }

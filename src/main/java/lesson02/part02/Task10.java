@@ -27,6 +27,11 @@ public class Task10 {
 
     public static void checkInterval(int a) {
         //напишите тут ваш код
+        if (a < 50 | a > 100) {
+            System.out.println("Chislo " + a + " ne soderzhitsya v intervale");
 
+        } else {
+            System.out.println("Chislo " + a + " soderzhitsya v intervale");
+        }
     }
 }

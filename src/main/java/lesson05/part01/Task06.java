@@ -21,6 +21,9 @@ public class Task06 {
         public String name;
         public int age;
         public int weight;
+        private String name;
+        private int age;
+        private int weight;
 
         public Cat() {
         }

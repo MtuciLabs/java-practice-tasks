@@ -23,17 +23,15 @@ public class Task03 {
         Pet dog = pet2.getChild();
     }
 
-    public static class Pet {
-        public Pet getChild() {
-            return new Pet();
-        }
-    }
+}
 
-    public static class Cat extends Pet {
+public static class Cat extends Pet {
+    public Pet getChild() {return new Cat();}
 
-    }
+}
 
-    public static class Dog extends Pet {
+public static class Dog extends Pet {
+    public Pet getChild() {return new Dog();}
 
-    }
+}
 }

@@ -1,5 +1,5 @@
 package lesson04.part02;
-
+import java.util.Set;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,6 +34,10 @@ public class Task19 {
     map.put("Comp", (double) 123);
 
     //напишите тут ваш код
+    Set<String> keys = map.keySet();
+    for (String key: keys){
+      System.out.println(key+" - "+map.get(key));
+    }
 
   }
 }

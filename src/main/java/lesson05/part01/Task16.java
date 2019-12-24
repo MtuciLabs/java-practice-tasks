@@ -17,15 +17,13 @@ public class Task16 {
     public static void main(String[] args) {
     }
 
-    public class Pet {
-
-    }
-
     public class Cat {
+        public class Cat extends Pet {
 
-    }
+        }
 
-    public class Dog {
+        public class Dog {
+            public class Dog extends Pet{
 
-    }
-}
+            }
+        }

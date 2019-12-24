@@ -1,4 +1,6 @@
 package lesson02.part01;
+import org.w3c.dom.ls.LSOutput;
+
 
 /**
  * Реализуй метод public static void writeToConsole(String s), который добавляет к началу строки выражение "printing: "
@@ -23,6 +25,9 @@ public class Task10 {
 
     public static void writeToConsole(String s) {
         //напишите тут ваш код
+        s = "Hello world!";
+        String a = "printing: ";
+        System.out.println(a+s);
 
     }
 }

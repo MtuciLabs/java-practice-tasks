@@ -1,5 +1,5 @@
 package lesson02.part01;
-
+import java.io.*;
 /**
  * Ввести с клавиатуры три имени, вывести на экран надпись:
  * name1 + name2 + name3 = Чистая любовь, да-да!
@@ -18,6 +18,13 @@ package lesson02.part01;
 public class Task20 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String name1 = bufferedReader.readLine();
+        String name2 = bufferedReader.readLine();
+        String name3 = bufferedReader.readLine();
+        System.out.println(name1 + " + " + name2 + " + " + name3 + " = Чистая любовь, да-да!");
 
     }
 }

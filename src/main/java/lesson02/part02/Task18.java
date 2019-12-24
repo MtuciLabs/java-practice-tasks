@@ -1,4 +1,5 @@
 package lesson02.part02;
+import java.io.*;
 
 /**
  * Ввести с клавиатуры два целых числа, и вывести на экран минимальное из них. Если два числа равны между собой, необходимо вывести любое.
@@ -14,6 +15,20 @@ package lesson02.part02;
 public class Task18 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        System.out.println("Vvedite 2 tselih chisla");
+        String number1 = bufferedReader.readLine();
+        String number2 = bufferedReader.readLine();
+        int a = Integer.parseInt(number1);
+        int b = Integer.parseInt(number2);
+        int min = b;
+        if (a < min) {
+            System.out.println(a);
+        } else {
+            System.out.println(b);
+        }
 
     }
 }
