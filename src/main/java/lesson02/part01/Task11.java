@@ -16,7 +16,7 @@ package lesson02.part01;
 public class Task11 {
     //напишите тут ваш код
     public static int convertToSecond(int hour){
-        int sec=hour*60;
+        int sec=hour*3600;
         return sec;
     }
 
