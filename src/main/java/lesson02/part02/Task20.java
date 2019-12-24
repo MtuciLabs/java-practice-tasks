@@ -10,6 +10,7 @@ package lesson02.part02;
  * 3.	Программа должна выводить три числа разделенных пробелами.
  * 4.	Программа должна выводить числа в порядке убывания.
 */
+import java.util.Scanner;
 public class Task20 {
 
   public static void main(String[] args) throws Exception {
