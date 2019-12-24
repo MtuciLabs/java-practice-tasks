@@ -14,9 +14,12 @@ package lesson02.part02;
 
 public class Task35 {
     public static void main(String[] args) {
-        //напишите тут ваш код
-        for( int i = 1; i < 101; i++){
-            System.out.println(i);
+        for (int a=1; a<=100; a++) {
+            if (a%2==0) {
+                System.out.println(a);
+            }
+
         }
+
     }
 }

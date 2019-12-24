@@ -1,5 +1,10 @@
 package lesson02.part02;
-import java.util.Scanner;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
 /**
  * Ввести с клавиатуры номер дня недели, в зависимости от номера вывести название
  * «понедельник», «вторник», «среда», «четверг», «пятница», «суббота», «воскресенье»,
@@ -17,40 +22,40 @@ import java.util.Scanner;
  * 4.	Если введено число не входящее в интервал от 1 до 7, то вывести уведомление что такого дня недели не существует.
  */
 
+
 public class Task13 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-        Scanner in = new Scanner(System.in);
-        int day = in.nextInt();
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        System.out.println(" ");
+        String number = bufferedReader.readLine();
+        int a = Integer.parseInt(number);
+        if (a == 1) {
+            System.out.println("Понедельник");
+        }
+        else if (a == 2) {
+            System.out.println("Вторник");
+        }
+        else if (a == 3) {
+            System.out.println("Среда");
+        }
 
-        if(day >= 1 && day < 8) {
-            switch (day) {
-                case 1:
-                    System.out.println("Monday");
-                    break;
-                case 2:
-                    System.out.println("Tuesday");
-                    break;
-                case 3:
-                    System.out.println("Wednesday");
-                    break;
-                case 4:
-                    System.out.println("Thursday");
-                    break;
-                case 5:
-                    System.out.println("Friday");
-                    break;
-                case 6:
-                    System.out.println("Saturday");
-                    break;
-                case 7:
-                    System.out.println("Sunday");
-                    break;
-            }
+        else if (a == 4) {
+            System.out.println("Четверг");
         }
-        else{
-            System.out.println("error");
+        else if (a == 5) {
+            System.out.println("Пятница");
         }
+        else if (a == 6) {
+            System.out.println("Суббота");
+        }
+        else if (a == 7) {
+            System.out.println("Воскресенье");
+        } else {
+            System.out.println("Такого дня недели не существует");
+        }
+
 
     }
 }
