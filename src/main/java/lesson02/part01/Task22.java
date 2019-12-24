@@ -23,7 +23,5 @@ public class Task22 {
         System.out.print("Введите сумму: \n");
         int sum = sc.nextInt();
         System.out.println("Я буду зарабатывать $" + sum + " в час");
-        //напишите тут ваш код
-
     }
 }

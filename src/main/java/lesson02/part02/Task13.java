@@ -22,25 +22,25 @@ public class Task13 {
 
     switch (day) {
       case 1:
-        System.out.println("Monday");
+        System.out.println("Понедельник");
         break;
       case 2:
-        System.out.println("Tuesday");
+        System.out.println("Вторник");
         break;
       case 3:
-        System.out.println("Wednesday");
+        System.out.println("Среда");
         break;
       case 4:
-        System.out.println("Thursday");
+        System.out.println("Четверг");
         break;
       case 5:
-        System.out.println("Friday");
+        System.out.println("Пятница");
         break;
       case 6:
-        System.out.println("Saturday");
+        System.out.println("Суббота");
         break;
       case 7:
-        System.out.println("Sunday");
+        System.out.println("Воскресенье");
         break;
       default:
         System.out.println("Такого дня недели не существует");
