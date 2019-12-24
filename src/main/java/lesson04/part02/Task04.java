@@ -23,7 +23,6 @@ import java.util.List;
 
 public class Task04 {
 
-    private static ArrayList<String> strings;
     private static List<String> strings;
 
     public static void main(String[] args) throws Exception {
@@ -52,3 +51,4 @@ public class Task04 {
         }
 
     }
+}
