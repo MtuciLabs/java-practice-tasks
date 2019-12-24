@@ -22,7 +22,6 @@ public class Task22 {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Введи рандомное число");
         String number = reader.readLine();
 
         System.out.println("Я буду зарабатывать $"+number+" в час");

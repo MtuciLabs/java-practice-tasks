@@ -21,11 +21,9 @@ public class Task21 {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Введите имя");
         String name1 = reader.readLine();
         int length1 = name1.length( );
 
-        System.out.println("Введите имя");
         String name2 = reader.readLine();
         int length2 = name2.length( );
 

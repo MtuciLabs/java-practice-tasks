@@ -22,8 +22,6 @@ public class Task01 {
 
     public static void main(String[] args) throws Exception {
         int[] array = initializeArray();
-    /*String arrayString = Arrays.toString(array);
-    System.out.println(arrayString); */ //если нужно вывести
         int max = max(array);
         System.out.println(max);
     }

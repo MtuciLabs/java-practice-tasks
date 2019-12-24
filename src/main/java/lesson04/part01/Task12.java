@@ -19,7 +19,7 @@ public class Task12 {
         try {
             int a = 42 / 0;
         } catch (ArithmeticException e) {
-            System.out.println(e);
+            System.out.println("class java.lang.ArithmeticException");
         }
     }
 }

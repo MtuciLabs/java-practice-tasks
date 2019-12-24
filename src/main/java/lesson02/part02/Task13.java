@@ -29,28 +29,28 @@ public class Task13 {
         int A = Integer.parseInt(a);
 
         if (A==1) {
-            System.out.println("Понедельник");
+            System.out.println("понедельник");
         }
-        if (A==2) {
-            System.out.println("Вторник");
+        else if (A==2) {
+            System.out.println("вторник");
         }
-        if (A==3) {
-            System.out.println("Среда");
+        else if (A==3) {
+            System.out.println("среда");
         }
-        if (A==4) {
-            System.out.println("Четверг");
+        else if (A==4) {
+            System.out.println("четверг");
         }
-        if (A==5) {
-            System.out.println("Пятница");
+        else if (A==5) {
+            System.out.println("пятница");
         }
-        if (A==6) {
-            System.out.println("Суббота");
+        else if (A==6) {
+            System.out.println("суббота");
         }
-        if (A==7) {
-            System.out.println("Воскресенье");
+        else if (A==7) {
+            System.out.println("воскресенье");
         }
-        if (A>7 & A<1) {
-            System.out.println("Такого дня недели не существует");
+        else {
+            System.out.println("такого дня недели не существует");
         }
 
     }
