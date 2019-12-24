@@ -27,6 +27,6 @@ public class Task06 {
         double Pi;
         Pi = 3.14;
         double L = 2*Pi*radius;
-        System.out.println("result"+L);
+        System.out.println(L);
     }
 }

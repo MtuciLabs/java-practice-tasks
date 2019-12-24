@@ -31,53 +31,55 @@ package lesson03.part01;
  * вес, цвет, адрес и инициализирующий все переменные класса, кроме имени.
  */
 
+
 public class Task14 {
+
 
     public static void main(String[] args) {
         //напишите тут ваш код
+
+//напишите тут ваш код
     }
 
-    public static class Cat {
-        public String name;
-        public int age;
-        public int weight;
-        public String address;
-        public String color;
 
-        public void initialize(String name) {
-            this.name = name;
-            this.weight = weight;
-            this.age = age;
-            this.color = color;
-        }
+        public static class Cat{
+            String name = null;
+            int age = 4;
+            int weight = 5;
+            String color;
+            String address = null;
 
-        public void initialize(String name, int weight, int age) {
-            this.name = name;
-            this.weight = weight;
-            this.age = age;
-            this.color = color;
-        }
+        public Cat(String name) {
+                    this.name = name;
+                    this.weight = weight;
+                    this.color = color;
+                    this.age = age;
+                }
+        public Cat(String name, int age, int weight) {
+                        this.name = name;
+                        this.age = age;
+                        this.weight = weight;
+                        this.color = color;
+                    }
+        public Cat(String name, int age) {
+                            this.name = name;
+                            this.age = age;
+                        }
 
-        public void initialize(String color, int weight) {
-            this.weight = weight;
-            this.age = age;
-            this.color = color;
+        public Cat(int weight, String color) {
+                            this.weight = weight;
+                            this.color = color;
+                        }
 
-        }
 
-        public void initialize(int age, String name) {
-            this.name = name;
-            this.weight = weight;
-            this.age = age;
-            this.color = color;
-        }
 
-        public void initialize(String color, int weight, int age, String address) {
-            this.address = address;
-            this.weight = weight;
-            this.age = age;
-            this.color = color;
-        }
-    }
-    }
+        public Cat(int weight, String color, String address) {
+                                this.color = color;
+                                this.weight = weight;
+                                this.address = address;
+                            }
+                        }
+
+                    }
+
 

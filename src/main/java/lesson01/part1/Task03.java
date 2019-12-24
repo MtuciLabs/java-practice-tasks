@@ -18,6 +18,6 @@ public class Task03 {
         // Напишите здесь ваш код
         int year = 2019;
         int base = year - 98;
-        System.out.println("Year: "+base);
+        System.out.println(base);
     }
 }

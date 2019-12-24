@@ -19,8 +19,10 @@ public class Task12 {
     public static void main(String[] args) {
         try {
             int a = 42 / 0;
-        } catch (ArithmeticException a) {
-            System.out.println("Ошибка! На ноль делить нельзя");
-        }
+           } catch(ArithmeticException e){
+        System.out.println("class java.lang.ArithmeticException");
+
+
+    }
     }
 }
