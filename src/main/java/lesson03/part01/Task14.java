@@ -37,42 +37,45 @@ public class Task14 {
     }
 
     public static class Cat {
-        //напишите тут ваш код
-        String name = null;
-        int age = 4;
-        int weight = 5;
-        String color;
-        String address = null;
+        public String name;
+        public int age;
+        public int weight;
+        public String color;
+        public String address;
 
-        public void initialize(String name) {
+        public Cat(String name) {
             this.name = name;
             this.weight = weight;
             this.color = color;
             this.age = age;
         }
 
-        public void initialize(String name, int age, int weight) {
+        public Cat(String name, int age, int weight) {
             this.name = name;
             this.age = age;
             this.weight = weight;
             this.color = color;
         }
 
-        public void initialize(String name, int age) {
+        public Cat(String name, int age) {
             this.name = name;
+            this.age = age;
+            this.color = color;
+            this.weight = weight;
+        }
+
+        public Cat(int weight, String color) {
+            this.weight = weight;
+            this.color = color;
             this.age = age;
         }
 
-        public void initialize(int weight, String color) {
-            this.weight = weight;
-            this.color = color;
-        }
-
-        public void initialize(int weight, String color, String address) {
+        public Cat(int weight, String color, String address) {
             this.color = color;
             this.weight = weight;
             this.address = address;
+            this.age = age;
         }
-    }
 
+    }
 }
