@@ -16,21 +16,17 @@ import java.io.InputStreamReader;
  */
 
 public class Task02 {
-<<<<<<< HEAD
+
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        String[] arr = new String[10];
-        for (int i = 0; i < 10; i++) {
-            arr[i] = r.readLine();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] array = new int[10];
+        int i;
+        for (i = 0; i <= 9; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
         }
-        for (int i = arr.length - 1; i >= 0; i--) {
-            System.out.println(arr[i]);
+        for (i = 9; i >= 0; i--) {
+            System.out.println(array[i]);
         }
     }
-=======
-
-  public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-  }
->>>>>>> upstream/master
 }
+

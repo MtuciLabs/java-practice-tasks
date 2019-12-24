@@ -3,10 +3,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-<<<<<<< HEAD
 import java.util.Arrays;
-=======
->>>>>>> upstream/master
 
 /**
  * 1. В методе initializeArray():
@@ -23,7 +20,6 @@ import java.util.Arrays;
 
 public class Task01 {
 
-<<<<<<< HEAD
     public static void main(String[] args) throws Exception {
         int[] array = initializeArray();
         int max = max(array);
@@ -31,34 +27,24 @@ public class Task01 {
     }
 
     public static int[] initializeArray() throws IOException {
-        int[] arr = new int[20];
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < 20; i++) {
-            arr[i] = Integer.parseInt(r.readLine());
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int i;
+        int [] array = new int [20];
+        for (i=0; i<=10; i++){
+            array[i] = Integer.parseInt(reader.readLine());
         }
-        System.out.println(Arrays.toString(arr));
-        return arr;
+
+        return array;
     }
 
     public static int max(int[] array) {
-        Arrays.sort(array, 0, 20);
-        return array[19];
+        int i;
+        int maxim = array[0];
+        for (i = 0; i <= 10; i++) {
+            if (array[i]>maxim){
+                maxim = array[i];
+            }
+        }
+        return maxim;
     }
-=======
-  public static void main(String[] args) throws Exception {
-    int[] array = initializeArray();
-    int max = max(array);
-    System.out.println(max);
-  }
-
-  public static int[] initializeArray() throws IOException {
-    // создай и заполни массив
-    return null;
-  }
-
-  public static int max(int[] array) {
-    // найди максимальное значение
-    return 0;
-  }
->>>>>>> upstream/master
 }

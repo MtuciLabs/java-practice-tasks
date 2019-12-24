@@ -15,20 +15,15 @@ package lesson04.part02;
 
 public class Task34 {
 
-  public static void main(String[] args) {
-<<<<<<< HEAD
-    try {
-      divideByZero(4);
-    } catch (ArithmeticException e) {
-      e.printStackTrace();
+    public static void main(String[] args) {
+        try {
+            divideByZero(10);
+
+        } catch (ArithmeticException exception) {
+            exception.printStackTrace();
+        }
     }
-  }
-  public static void divideByZero(int i) {
-    System.out.println(i/0);
-  }
+    public static void divideByZero(int a){
+        System.out.println(a/0);
+    }
 }
-=======
-//    divideByZero();
-  }
-}
->>>>>>> upstream/master

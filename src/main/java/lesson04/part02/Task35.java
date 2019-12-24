@@ -1,10 +1,7 @@
 package lesson04.part02;
 
 import java.io.BufferedReader;
-<<<<<<< HEAD
 import java.io.IOException;
-=======
->>>>>>> upstream/master
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,32 +27,22 @@ import java.util.List;
  */
 
 public class Task35 {
-<<<<<<< HEAD
     public static void main(String[] args) {
         readData();
     }
 
     public static void readData() {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            while (true) {
-                list.add(Integer.parseInt(r.readLine()));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList aList = new ArrayList();
+        int i;
+        try{
+            while(1<11){
+                aList.add(Integer.parseInt(reader.readLine()));
             }
-        } catch (Exception e) {
-            for (int i:list) {
-                System.out.println(i);
+        }catch (Exception exception){
+            for(i=0;i<=aList.size();i++){
+                System.out.println(aList.get(i));
             }
         }
     }
 }
-=======
-  public static void main(String[] args) {
-    readData();
-  }
-
-  public static void readData() {
-    //напишите тут ваш код
-  }
-}
->>>>>>> upstream/master

@@ -22,11 +22,7 @@ public class Task01 {
 
     }
 
-<<<<<<< HEAD
-    public class Pegasus extends Horse{
-=======
-    public class Pegasus {
->>>>>>> upstream/master
+    public class Pegasus extends Horse {
 
     }
 }

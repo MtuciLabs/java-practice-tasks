@@ -28,12 +28,8 @@ public class Task02 {
     }
 
     public static class Whale extends Cow {
-<<<<<<< HEAD
         public String getName() {
             return null;
         }
-=======
->>>>>>> upstream/master
-
     }
 }

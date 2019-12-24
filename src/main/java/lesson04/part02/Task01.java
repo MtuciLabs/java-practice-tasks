@@ -21,24 +21,17 @@ import java.io.InputStreamReader;
  */
 
 public class Task01 {
-<<<<<<< HEAD
+
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        String[] arr = new String[10];
-        for (int i = 0; i < 8; i++) {
-            arr[i] = r.readLine();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String [] array = new String[10];
+        int i;
+        for(i=0; i<=7; i++){
+            array[i] = reader.readLine();
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
-        for (int i = arr.length - 1; i >= 0; i--) {
-            System.out.println(arr[i]);
+        System.out.println(" ");
+        for (i=0; i<=9; i++){
+            System.out.println(array[i]);
         }
     }
-=======
-
-  public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-  }
->>>>>>> upstream/master
 }
