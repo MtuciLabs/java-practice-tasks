@@ -28,6 +28,9 @@ public class Task14 {
         Orange orange = new Orange();
         Yellow yellow = new Yellow();
         Green green = new Green();
+        Blue blue = new Blue();
+        Indigo indigo= new Indigo();
+        Violet violet = new Violet();
 
     }
 
