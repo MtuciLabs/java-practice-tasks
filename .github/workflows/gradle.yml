@@ -1,8 +1,12 @@
 name: Run build
 
 on:
+  push:
+    branches:
+      - master
   pull_request:
-    types: [opened, edited]
+    branches:
+      - master
 
 jobs:
   build:
