@@ -19,5 +19,11 @@ public class Task16 {
     }
 
     //add an interface here - добавь интерфейс тут
+    public interface CanFly {
+
+        public void method1();
+
+        public void method2();
+    }
 
 }
