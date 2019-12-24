@@ -13,7 +13,7 @@ package lesson02.part02;
  * 4.	Если введенное число отрицательное, необходимо увеличить его на единицу и вывести.
  * 5.	Если введенное число равно нулю, необходимо вывести ноль.
  */
-
+import java.util.Scanner;
 public class Task12 {
 
   public static void main(String[] args) throws Exception {
