@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * 1. В методе initializeArray():
@@ -19,7 +20,6 @@ import java.util.Arrays;
  */
 
 public class Task01 {
-
     public static void main(String[] args) throws Exception {
         int[] array = initializeArray();
         int max = max(array);
@@ -27,17 +27,24 @@ public class Task01 {
     }
 
     public static int[] initializeArray() throws IOException {
-        int[] arr = new int[20];
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < 20; i++) {
-            arr[i] = Integer.parseInt(r.readLine());
+        // создай и заполни массив
+        Scanner scn = new Scanner(System.in);
+        int[] arr=new int[20];
+        for(int i=0;i<20;i++){
+            arr[i]=scn.nextInt();
         }
-        System.out.println(Arrays.toString(arr));
         return arr;
     }
 
     public static int max(int[] array) {
-        Arrays.sort(array, 0, 20);
-        return array[19];
+        // найди максимальное значение
+      int max=0;
+        for(int i=0;i<20;i++){
+            if (array[i]>max){
+                max=array[i];
+            }
+        }
+
+        return max;
     }
 }
