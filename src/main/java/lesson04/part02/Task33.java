@@ -14,7 +14,7 @@ package lesson04.part02;
  * 4.	Два класса из четырех должны быть unchecked исключениями.
  *
  */
-
+import java.io.IOException;
 public class Task33 {
 
   public static void main(String[] args) {
