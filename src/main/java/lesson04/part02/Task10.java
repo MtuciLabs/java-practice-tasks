@@ -10,7 +10,7 @@ import java.util.List;
  * 2. Метод doubleValues должен удваивать слова по принципу:
  * "альфа", "бета", "гамма" -> "альфа", "альфа", "бета", "бета", "гамма", "гамма"
  * 3. Выведи результат на экран, каждое значение с новой строки.
- *
+ * <p>
  * Требования:
  * 1.	Проинициализируй переменную типа список строк.
  * 2.	Считай 10 строк с клавиатуры и добавь их в список.
@@ -20,17 +20,23 @@ import java.util.List;
  */
 
 public class Task10 {
-  public static void main(String[] args) throws Exception {
-    // Считать строки с консоли и объявить ArrayList list тут
-    ArrayList<String> list = null;
+    public static void main(String[] args) throws Exception {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            list.add(r.readLine());
+        }
+        ArrayList<String> result = doubleValues(list);
+        for (String s : result) {
+            System.out.println(s);
+        }
+    }
 
-    ArrayList<String> result = doubleValues(list);
-
-    // Вывести на экран result
-  }
-
-  public static ArrayList<String> doubleValues(ArrayList<String> list) {
-    //напишите тут ваш код
-    return null;
-  }
+    public static ArrayList<String> doubleValues(ArrayList<String> list) {
+        for (int i = 0; i < list.size(); i++) {
+            list.add(i + 1, list.get(i));
+            i++;
+        }
+        return list;
+    }
 }
