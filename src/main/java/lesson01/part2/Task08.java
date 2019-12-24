@@ -15,9 +15,6 @@ public class Task08 {
      */
 
     public static void main(String[] args) {
-        //напишите тут ваш код
-        Cat cat;
-        cat = new Cat();
         Cat cat1;
         cat1 = new Cat();
         Cat cat2;
