@@ -19,6 +19,16 @@ import java.util.ArrayList;
 public class Task03 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    ArrayList<String> list = new ArrayList<String>();
+    list.add("1str");
+    list.add("2str");
+    list.add("3str");
+    list.add("4str");
+    list.add("5str");
+    System.out.println(list.size());
+    for(int i = 0; i<list.size();i++){
+      System.out.println(list.get(i));
+    }
+
   }
 }

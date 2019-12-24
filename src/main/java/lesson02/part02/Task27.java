@@ -32,8 +32,45 @@ import java.io.*;
 import java.util.*;
 
 public class Task27 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+    public static void main(String[] args) throws Exception {
+        Scanner scn = new Scanner(System.in);
+        int ch = scn.nextInt();
+        int k = 1;
+        if (ch % 2 == 0 && ch >= 1 && ch <= 999) {
+            for (int i = 1; i <= 3; i++) {
+                if (ch / 10 != 0) {
+                    k = k + 1;
+                    ch = ch / 10;
+                }
+            }
+            if (k == 1) {
+                System.out.println("четное однозначное число");
+            }
+            if (k == 2) {
+                System.out.println("четное двузначное число");
+            }
+            if (k == 3) {
+                System.out.println("четное трехзначное число");
+            }
+        }
+        if (ch % 2 != 0 && ch >= 1 && ch <= 999) {
+            for (int i = 1; i <= 3; i++) {
+                if (ch / 10 != 0) {
+                    k = k + 1;
+                    ch = ch / 10;
+                }
+            }
+            if (k == 1) {
+                System.out.println("нечетное однозначное число");
+            }
+            if (k == 2) {
+                System.out.println("нечетное двузначное число");
+            }
+            if (k == 3) {
+                System.out.println("нечетное трехзначное число");
+            }
+
+        }
     }
 }

@@ -1,6 +1,7 @@
 package lesson04.part01;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -29,7 +30,23 @@ import java.util.Set;
 
 public class Task06 {
   public static void main(String[] args) {
-    //напишите тут ваш код
+    Set<String> set = new HashSet<>();
+    set.add("арбуз");
+    set.add("банан");
+    set.add("вишня");
+    set.add("груша");
+    set.add("дыня");
+    set.add("ежевика");
+    set.add("женьшень");
+    set.add("земляника");
+    set.add("ирис");
+    set.add("картофель");
+    Iterator<String> iterator = set.iterator();
+    while (iterator.hasNext())
+    {
+      String text = iterator.next();
+      System.out.println(text);
+    }
 
   }
 }

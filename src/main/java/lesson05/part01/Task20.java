@@ -16,24 +16,34 @@ package lesson05.part01;
  */
 
 public class Task20 {
+
     public static void main(String[] args) {
     }
 
-    public class King {
-    }
+    public class ChessFigure {
 
-    public class Queen {
-    }
+        public class King extends ChessFigure {
 
-    public class Rook {
-    }
+        }
 
-    public class Knight {
-    }
+        public class Queen extends ChessFigure {
 
-    public class Bishop {
-    }
+        }
 
-    public class Pawn {
+        public class Rook extends ChessFigure {
+
+        }
+
+        public class Knight extends ChessFigure {
+
+        }
+
+        public class Bishop extends ChessFigure {
+
+        }
+
+        public class Pawn extends ChessFigure {
+
+        }
     }
 }

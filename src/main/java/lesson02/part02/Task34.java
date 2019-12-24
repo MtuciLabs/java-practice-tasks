@@ -26,7 +26,12 @@ package lesson02.part02;
 
 public class Task34 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        for(int i = 1; i < 11; i++){
+            for(int k = 1; k < 11; k++){
+                System.out.print(k * i+" " );
+            }
+            System.out.println("");
+        }
 
     }
 }
