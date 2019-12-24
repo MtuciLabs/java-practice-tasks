@@ -3,6 +3,8 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * 1. В методе initializeArray():
@@ -18,20 +20,31 @@ import java.io.InputStreamReader;
  */
 
 public class Task01 {
+    public static void main(String[] args) throws Exception {
+        int[] array = initializeArray();
+        int max = max(array);
+        System.out.println(max);
+    }
 
-  public static void main(String[] args) throws Exception {
-    int[] array = initializeArray();
-    int max = max(array);
-    System.out.println(max);
-  }
+    public static int[] initializeArray() throws IOException {
+        // создай и заполни массив
+        Scanner scn = new Scanner(System.in);
+        int[] arr=new int[20];
+        for(int i=0;i<20;i++){
+            arr[i]=scn.nextInt();
+        }
+        return arr;
+    }
 
-  public static int[] initializeArray() throws IOException {
-    // создай и заполни массив
-    return null;
-  }
+    public static int max(int[] array) {
+        // найди максимальное значение
+      int max=0;
+        for(int i=0;i<20;i++){
+            if (array[i]>max){
+                max=array[i];
+            }
+        }
 
-  public static int max(int[] array) {
-    // найди максимальное значение
-    return 0;
-  }
+        return max;
+    }
 }
