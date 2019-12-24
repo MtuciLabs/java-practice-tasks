@@ -14,14 +14,14 @@ package lesson02.part01;
  */
 
 public class Task11 {
-    public static int convertToSecond(int hour){
-        int sec=hour*360;
+    public static int convertToSeconds(int hour){
+        int sec=hour*3600;
         return sec;
     }
 
     public static void main(String[] args) {
-        System.out.println(convertToSecond(5));
-        System.out.println(convertToSecond(6));
+        System.out.println(convertToSeconds(5));
+        System.out.println(convertToSeconds(6));
 
     }
 }

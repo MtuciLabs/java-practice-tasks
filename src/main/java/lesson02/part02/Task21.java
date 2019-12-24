@@ -26,7 +26,7 @@ public class Task21 {
         if (name1.equals(name2))
             System.out.println("Имена идентичны");
         else if (name1.length()==name2.length())
-            System.out.println("Длины имён равны");
+            System.out.println("Длины имен равны");
 
 
 
