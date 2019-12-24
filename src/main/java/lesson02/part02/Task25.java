@@ -24,8 +24,8 @@ package lesson02.part02;
  * 6.	Если точка находится в четвёртой координатной четверти, вывести "4".
  */
 
-import java.io.Exception;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Task25 {
 
