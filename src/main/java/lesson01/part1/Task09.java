@@ -26,14 +26,15 @@ public class Task09 {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
-        int x = 0;
-        for (int i=1; i<=3; i++){
+        int sum = 0;
+        for (int i=1;i<=3;i++){
             int k=number%10;
-            x  =x+k;
+            sum=sum+k;
             number=number/10;
 
         }
-        return x;
+        //напишите тут ваш код
+
+        return sum;
     }
 }

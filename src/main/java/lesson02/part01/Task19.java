@@ -18,7 +18,6 @@ import java.io.InputStreamReader;
 
 public class Task19 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите имя: \n");
         String name = consoleReader.readLine();

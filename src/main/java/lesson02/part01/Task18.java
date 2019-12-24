@@ -20,7 +20,6 @@ import java.util.*;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите имя: ");
         String name = consoleReader.readLine();

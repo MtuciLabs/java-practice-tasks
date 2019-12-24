@@ -18,8 +18,8 @@ package lesson02.part01;
 public class Task03 {
     public static void main(String[] args) {
         //напишите тут ваш код
-        System.out.println(convertEurToUsd(30,46));
-        System.out.println(convertEurToUsd(40,76));
+        System.out.println(convertEurToUsd(3,4.6));
+        System.out.println(convertEurToUsd(4,7.6));
 
     }
 

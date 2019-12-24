@@ -24,6 +24,7 @@ public class Task13 {
                 System.out.print(k * i + "  ");
             }
             System.out.println("");
+        }
 
     }
 }

@@ -17,13 +17,14 @@ public class Task09 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
-        Woman woman=new Woman();
         Cat cat=new Cat();
-        cat.owner=new Woman();
         Dog dog=new Dog();
-        dog.owner=new Woman();
         Fish fish=new Fish();
+        Woman owner=new Woman();
+        cat.owner=new Woman();
+        dog.owner=new Woman();
         fish.owner=new Woman();
+
     }
 
     public static class Cat {

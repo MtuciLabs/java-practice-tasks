@@ -21,13 +21,11 @@ import java.io.InputStreamReader;
 
 public class Task17 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-        BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите имя: ");
-        String name = consoleReader.readLine();
-        System.out.println("Введите число: ");
-        String age = consoleReader.readLine();
-        System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
-
+      BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+      System.out.println("Введите имя: ");
+      String name = consoleReader.readLine();
+      System.out.println("Введите число: ");
+      String age = consoleReader.readLine();
+      System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");
     }
 }

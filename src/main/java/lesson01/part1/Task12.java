@@ -25,5 +25,6 @@ public class Task12 {
         System.out.println(porridge);
         System.out.println(sausage);
         System.out.println(peach);
+
     }
 }

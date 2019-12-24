@@ -26,9 +26,9 @@ public class Task01 {
 
     public static class Person {
         //напишите тут ваш код
-        String name= "John";
-        int age= 28;
-        int weight=80;
-        int money= 99999999;
+        String name= "Jo";
+        int age= 19;
+        int weight=76;
+        int money= 1;
     }
 }

@@ -16,8 +16,8 @@ public class Task05 {
         int a = 3;
         int b = 9;
 
-        System.out.print("девять");
-        //System.out.print(b);
+        //System.out.print("девять");
+        System.out.print(b);
         System.out.print(" умножить ");
         System.out.print("на ");
         System.out.print(a);
@@ -25,7 +25,7 @@ public class Task05 {
         //System.out.print(" не ");
         //System.out.print("будет ");
         System.out.print(" равно ");
-        //ystem.out.print("пятнадцать");
+        //System.out.print("пятнадцать");
         //System.out.print(21);
         System.out.print((int) Math.pow(3,3));
     }

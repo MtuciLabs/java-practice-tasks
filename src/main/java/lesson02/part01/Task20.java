@@ -20,7 +20,6 @@ import java.io.InputStreamReader;
 
 public class Task20 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите имя1: \n");
         String name1 = consoleReader.readLine();
@@ -29,6 +28,7 @@ public class Task20 {
         System.out.print("Введите имя3: \n");
         String name3 = consoleReader.readLine();
         System.out.println(name1 + " + " + name2 + " + " + name3 + " = Чистая любовь, да-да!");
+
 
     }
 }

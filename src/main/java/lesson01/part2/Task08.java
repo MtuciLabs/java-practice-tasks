@@ -34,7 +34,6 @@ public class Task08 {
         cat7 = new Cat();
         Cat cat8 = new Cat();
         Cat cat9;
-        //напишите тут ваш код
         Cat cat10;
     }
 
