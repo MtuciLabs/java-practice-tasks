@@ -13,6 +13,8 @@ package lesson04.part02;
  * 6.	Программа должна выводить стек-трейс пойманого исключения.
  */
 
+public class Task34 {
+
   public static void main(String[] args) {
     try {
       divideByZero(4);
