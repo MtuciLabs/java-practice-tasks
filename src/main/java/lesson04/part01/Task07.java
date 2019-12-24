@@ -33,6 +33,6 @@ public class Task07 {
   }
 
   public static void printValues(Map<String, String> map) {
-    //напишите тут ваш код
+    System.out.println(map);
   }
 }

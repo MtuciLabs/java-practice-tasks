@@ -1,5 +1,7 @@
 package lesson03.part01;
 
+import jdk.jfr.Description;
+
 /**
  * 1. В классе задачи создать public static класс Idea.
  * 2. В классе Idea создать метод public String getDescription(), который будет возвращать любую строку.
@@ -17,8 +19,16 @@ package lesson03.part01;
 public class Task26 {
 
   public static void main(String[] args) {
-//    printIdea(new Idea());
+//    printIdea(new idea());
   }
 
-  //напишите тут ваш код
+  public static class idea{
+    private String description;
+    public String getDescription(){
+      return description;
+    }
+    public static void printIdea(idea idea){
+      System.out.println(idea.getDescription());
+    }
+  }
 }

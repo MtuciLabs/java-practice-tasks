@@ -31,6 +31,9 @@ public class Task15 {
   }
 
   public static void sort(int[] array) {
-    //напишите тут ваш код
+    int i;
+   for(i=19;i>=0;i--){
+     System.out.println(array[i]);
+   }
   }
 }

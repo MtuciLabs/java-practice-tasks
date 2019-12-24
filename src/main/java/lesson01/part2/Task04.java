@@ -1,5 +1,7 @@
 package lesson01.part2;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Task04 {
 
     /**
@@ -24,6 +26,13 @@ public class Task04 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        int a,b,sum,p;
+        a = 5;
+        b = 7;
+        sum = a + b;
+        p = a * b;
+        System.out.println(sum);
+        System.out.println(p);
     }
 
 }

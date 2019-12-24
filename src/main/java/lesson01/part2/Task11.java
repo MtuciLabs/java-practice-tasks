@@ -19,7 +19,14 @@ public class Task11 {
 
     public static int min(int a, int b, int c) {
         //напишите тут ваш код
-        return 0;
+        int minimum = a;
+        if (b<minimum){
+            minimum = b;
+        }
+        if (c<minimum){
+            minimum = c;
+        }
+        return minimum;
     }
 
     public static void main(String[] args) {
