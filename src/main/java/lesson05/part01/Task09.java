@@ -14,6 +14,16 @@ package lesson05.part01;
  * 5. Методы, с помощью которых классы Cat и Dog взаимодействуют друг с другом, должны быть публичными.
  */
 
+public class Task09 {
+    public static void main(String[] args) {
+        Cat cat = new Cat("Vaska", 5);
+        Dog dog = new Dog("Sharik", 4);
+
+        cat.isDogNear(dog);
+        dog.isCatNear(cat);
+    }
+}
+
 class Cat {
     private String name;
     private int speed;
