@@ -17,7 +17,16 @@ package lesson02.part01;
 
 public class Task12 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+      String a1 = "Мама";
+      String a2 = "Мыла";
+      String a3 = "Раму";
+
+      System.out.println(a1+a2+a3);
+      System.out.println(a1+a3+a2);
+      System.out.println(a2+a1+a3);
+      System.out.println(a2+a1+a1);
+      System.out.println(a3+a1+a2);
+      System.out.println(a3+a2+a1);
 
     }
 }

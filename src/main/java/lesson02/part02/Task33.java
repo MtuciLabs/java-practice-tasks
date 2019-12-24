@@ -25,7 +25,12 @@ package lesson02.part02;
 
 public class Task33 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+      int count=0;
+
+      while (count<10) {
+        count = count + 1;
+        System.out.println("SSSSSSSSSS");
+      }
 
     }
 }
