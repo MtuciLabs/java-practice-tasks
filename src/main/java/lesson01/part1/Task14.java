@@ -16,7 +16,6 @@ public class Task14 {
      * 4. Знаки плюс и минус должны быть расставлены правильно.
      */
 
-
     public static int a = 1;
     public static int b = 3;
     public static int c = 9;

@@ -4,34 +4,54 @@ import java.util.Scanner;
 
 /**
  * Ввести с клавиатуры три числа, и вывести их в порядке убывания. Выведенные числа должны быть разделены пробелом.
- *
- *
- * Требования:
- * 1.	Программа должна считывать числа c клавиатуры.
- * 2.	Программа должна выводить числа на экран.
- * 3.	Программа должна выводить три числа разделенных пробелами.
- * 4.	Программа должна выводить числа в порядке убывания.
-*/
+ * <p>
+ * <p>
+ * Требования: 1.	Программа должна считывать числа c клавиатуры. 2.	Программа должна выводить числа на экран.
+ * 3.	Программа должна выводить три числа разделенных пробелами. 4.	Программа должна выводить числа в порядке убывания.
+ */
 
 public class Task20 {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Введите 1 число ");
         int a = sc.nextInt();
+        System.out.println("Введите 2 число ");
         int b = sc.nextInt();
+        System.out.println("Введите 3 число ");
         int c = sc.nextInt();
-        int f = Math.max(Math.max(a, b), c);
-        int l = (Math.min(Math.min(a, b), c));
-        System.out.print(f);
-        if (f>a && l<a){
-            System.out.print(a);
+
+        int max = 0, mid=0, min=0;
+        if (a > b && a > c) {
+            max=a;
+            if (b > c) {
+                mid=b;
+                min=c;
+            } else {
+                min=b;
+                mid=c;
+            }
         }
-        if (f>b && l<b){
-            System.out.print(b);
+        if (c > a && c > b) {
+            max=c;
+            if (a > b) {
+                mid=a;
+                min=b;
+            } else {
+                mid=b;
+                min=a;
+            }
         }
-        if (f>c && l<c){
-            System.out.print(c);
+        if (b > a && b > c) {
+            max=b;
+            if (a > c) {
+                min=c;
+                mid=a;
+            } else {
+                mid=c;
+                min=a;
+            }
         }
-        System.out.print(l);
+        System.out.println(max + " " + mid + " " + min);
     }
 }

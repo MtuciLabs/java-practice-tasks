@@ -1,53 +1,50 @@
 package lesson02.part02;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 /**
- * Ввести с клавиатуры номер дня недели, в зависимости от номера вывести название
- * «понедельник», «вторник», «среда», «четверг», «пятница», «суббота», «воскресенье»,
- * если введен номер больше 7 или меньше 1 – вывести «такого дня недели не существует».
- * Пример для номера 5:
- * пятница
- * Пример для номера 10:
- * такого дня недели не существует
+ * Ввести с клавиатуры номер дня недели, в зависимости от номера вывести название «понедельник», «вторник», «среда»,
+ * «четверг», «пятница», «суббота», «воскресенье», если введен номер больше 7 или меньше 1 – вывести «такого дня недели
+ * не существует». Пример для номера 5: пятница Пример для номера 10: такого дня недели не существует
  * <p>
  * <p>
- * Требования:
- * 1.	Программа должна считывать число c клавиатуры.
- * 2.	Программа должна выводить текст на экран.
- * 3.	Если введено число от 1 до 7, необходимо вывести день недели.
- * 4.	Если введено число не входящее в интервал от 1 до 7, то вывести уведомление что такого дня недели не существует.
+ * Требования: 1.	Программа должна считывать число c клавиатуры. 2.	Программа должна выводить текст на экран. 3.	Если
+ * введено число от 1 до 7, необходимо вывести день недели. 4.	Если введено число не входящее в интервал от 1 до 7, то
+ * вывести уведомление что такого дня недели не существует.
  */
-import java.util.Scanner;
 
 public class Task13 {
-
-    private static String day2;
-    public static String main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int day = sc.nextInt();
-        if (day == 1) {
-            day2="понедельник";
+    public static void main(String[] args) throws Exception {
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        System.out.println(" ");
+        String number = bufferedReader.readLine();
+        int a = Integer.parseInt(number);
+        if (a == 1) {
+            System.out.println("Понедельник");
         }
-        if (day == 2) {
-            day2="вторник";
+        else if (a == 2) {
+            System.out.println("Вторник");
         }
-        if (day == 3) {
-            day2="среда";
+        else if (a == 3) {
+            System.out.println("Среда");
         }
-        if (day == 4) {
-            day2="четверг";
+        else if (a == 4) {
+            System.out.println("Четверг");
         }
-        if (day == 5) {
-            day2="пятница";
+        else if (a == 5) {
+            System.out.println("Пятница");
         }
-        if (day == 6) {
-            day2="суббота";
+        else if (a == 6) {
+            System.out.println("Суббота");
         }
-        if (day == 7) {
-            day2="воскресенье";
+        else if (a == 7) {
+            System.out.println("Воскресенье");
+        } else {
+            System.out.println("Такого дня недели не существует");
         }
-        if (day > 7 || day < 0) {
-            day2="no";
-        }
-        return day2;
     }
 }

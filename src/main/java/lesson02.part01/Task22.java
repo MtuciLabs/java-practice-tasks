@@ -1,5 +1,7 @@
 package lesson02.part01;
 
+import java.io.*;
+
 /**
  * Ввести с клавиатуры число n.
  * Вывести на экран надпись «Я буду зарабатывать $n в час».
@@ -13,13 +15,15 @@ package lesson02.part01;
  * 3.	Выведенный текст должен содержать введенное число n.
  * 4.	Выведенный тест должен полностью соответствовать заданию.
  */
-import java.util.Scanner;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        Scanner scan = new Scanner(System.in);
-        String n = scan.nextLine();
-        System.out.print("Я буду зарабатывать" + n + "$ доллраов в час.");
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String n = bufferedReader.readLine();
+        int N = Integer.parseInt(n);
+        System.out.println("Я буду зарабатывать $"+ N + " в час");
 
     }
 }

@@ -16,9 +16,10 @@ package lesson03.part01;
 public class Task03 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Cat cat1 = new Cat("Barsik",9,5,67);
+        Cat cat2 = new Cat("Kot",11,7,77);
+        Cat cat3 = new Cat("Pirojok",13,13,13);
     }
-
     public static class Cat {
         private String name;
         private int age;
@@ -31,9 +32,6 @@ public class Task03 {
             this.weight = weight;
             this.strength = strength;
         }
-        Cat n1 = new Cat("Barsik", 2, 5, 17);
-        Cat n2 = new Cat("Kot", 3, 5, 24);
-        Cat n3 = new Cat("Pirojok", 1, 2, 5);
     }
 
 }

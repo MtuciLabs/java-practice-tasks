@@ -29,7 +29,8 @@ public class Task13 {
     }
 
     public static double getWeight(int earthWeight) {
-        double luna = ((earthWeight*17)/100.0);
-        return luna;
+        double m = (earthWeight * 17)/100;
+        //напишите тут ваш код
+        return m;
     }
 }
