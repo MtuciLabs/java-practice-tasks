@@ -1,5 +1,7 @@
 package lesson05.part02;
 
+import lesson05.part02.Task18.CanMove;
+
 /**
  * Создаем человека
  * Есть public интерфейсы CanFly(летать), CanRun(бежать/ездить), CanSwim(плавать).
@@ -22,31 +24,54 @@ public class Task19 {
     }
 
     public interface CanFly {
-        void fly();
+        public void fly();
     }
 
     public interface CanRun {
-        void run();
+        public void run();
     }
 
     public interface CanSwim {
-        void swim();
+        public void swim();
     }
 
 
-    public class Human {
+    public class Human implements CanMove,CanFly {
+      public void move(){
 
+      }
+      public void fly(){
+
+      }
     }
 
-    public class Duck {
+    public class Duck implements CanFly, CanMove, CanSwim{
+      public void move(){
 
+      }
+      public void swim(){
+
+      }
+      public void fly(){
+
+      }
     }
 
-    public class Penguin {
+    public class Penguin implements CanSwim, CanMove {
+      public void move(){
 
+      }
+      public void swim(){
+
+      }
     }
 
-    public class Airplane {
+    public class Airplane implements CanFly,CanMove{
+      public void move(){
 
+      }
+      public void fly(){
+
+      }
     }
 }

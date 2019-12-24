@@ -28,9 +28,20 @@ public class Task24 {
     }
 
     public static String getObjectType(Object o) {
-        //напишите тут ваш код
-
-        return "Животное";
+        String obType = "Животное";
+        if (o instanceof Cat){
+          obType = "Кот";
+        }
+        if (o instanceof Tiger){
+          obType = "Тигр";
+        }
+        if (o instanceof Lion){
+          obType = "Лев";
+        }
+        if (o instanceof Bull){
+          obType = "Бык";
+        }
+        return obType;
     }
 
     public static class Cat {

@@ -17,7 +17,7 @@ package lesson05.part02;
  */
 
 public class Task01 {
-    public static void main(String[] args) {
+      public static void main(String[] args) {
         Cow cow = new Whale();
 
         System.out.println(cow.getName());
@@ -30,6 +30,8 @@ public class Task01 {
     }
 
     public static class Whale extends Cow {
-
+        public String getName() {
+            return "Я не корова, я - кит";
+        }
     }
 }

@@ -17,10 +17,11 @@ package lesson04.part01;
 public class Task12 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    try {
+      int a = 42 / 0;
+    } catch (ArithmeticException exeption) {
+      System.out.println("class java.lang.ArithmeticException");
+    }
 
-    int a = 42 / 0;
-
-    //напишите тут ваш код
   }
 }

@@ -19,6 +19,19 @@ import java.util.ArrayList;
 public class Task03 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    ArrayList aList = new ArrayList();
+    aList.add("Кошка");
+    aList.add("Собака");
+    aList.add("Попугайчик");
+    aList.add("Хомяк");
+    aList.add("Черепашка");
+
+    System.out.println(aList.size());
+
+    int i;
+    for (i=0; i<=aList.size()-1; i++){
+      System.out.println(aList.get(i));
+    }
+
   }
 }

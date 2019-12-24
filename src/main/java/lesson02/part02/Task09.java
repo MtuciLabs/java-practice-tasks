@@ -21,7 +21,15 @@ public class Task09 {
     }
 
     public static void displayClosestToTen(int a, int b) {
-        // напишите тут ваш код
+      if (a>5) {
+        System.out.println("Число больше 5");
+      }
+      else if (a<5) {
+        System.out.println("Число меньше 5");
+      }
+      else
+        System.out.println("Число равно 5");
+
 
     }
 

@@ -16,6 +16,19 @@ public class Task08 {
     public static void main(String[] args) {
 
     }
-
-    //Напишите тут ваши методы
+    public static int Print(int i){
+      return i;
+    }
+    public static Integer Print(Integer I){
+      return I;
+    }
+    public static String Print(String a){
+      return a;
+    }
+    public static Float Print(Float h){
+      return h;
+    }
+    public static Double Print(Double w){
+      return w;
+    }
 }
