@@ -15,9 +15,8 @@ package lesson02.part02;
  * 3.	Программа должна выводить на экран порядковый номер числа, отличного от остальных.
  * 4.	Если все числа разные, ничего не выводить.
  */
-
-import java.io.Exception;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Task24 {
 
