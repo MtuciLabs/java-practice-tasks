@@ -1,6 +1,7 @@
 package lesson04.part01;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,12 +25,11 @@ public class Task09 {
   }
 
   public static long getInsertTimeInMs(List list) {
-    // напишите тут ваш код
-
+    Date beginTime = new Date();
     insert10000(list);
-
-    // напишите тут ваш код
-    return 0;
+    Date finishTime = new Date();
+    long Time = finishTime.getTime()-beginTime.getTime();
+    return Time;
   }
 
   public static void insert10000(List list) {

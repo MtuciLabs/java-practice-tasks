@@ -17,7 +17,7 @@ public class Task19 {
     public static void main(String[] args) {
     }
 
-    public class Pet extends House {
+    public class Pet {
 
     }
 
@@ -25,11 +25,11 @@ public class Task19 {
 
     }
 
-    public class Dog extends Cat {
+    public class Dog extends Pet {
 
     }
 
-    public class House extends Dog {
+    public class House{
 
     }
 

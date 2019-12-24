@@ -15,6 +15,10 @@ package lesson02.part01;
 public class Task08 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        int fk=1;
+        for (int i=1; i<11;i++)
+            fk=fk*i;
+        System.out.print(fk);
 
     }
 }

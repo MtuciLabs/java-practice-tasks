@@ -23,11 +23,14 @@ import java.net.URISyntaxException;
 public class Task15 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-
-    method1();
-
-    //напишите тут ваш код
+    try {
+      method1();}
+    catch (NullPointerException e){
+      System.out.println("перехват NullPointerException");
+    }
+    catch (FileNotFoundException e){
+      System.out.println("перехват FileNotFoundException");
+    }
   }
 
   public static void method1()

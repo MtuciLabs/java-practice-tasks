@@ -1,5 +1,6 @@
 package lesson02.part01;
 
+import org.w3c.dom.ls.LSOutput;
 /**
  * Добавь метод public static void printString(String s), в нем напиши код, который будет выводить переданную строку на экран.
  * <p>
@@ -14,9 +15,12 @@ package lesson02.part01;
  */
 
 public class Task02 {
-    // напишите тут ваш код
+    public static void printString(String s) {
+        System.out.println(s);
+    }
+
 
     public static void main(String[] args) {
-//        printString("Hello, Amigo!");
+        printString("Hello, Amigo!");
     }
 }

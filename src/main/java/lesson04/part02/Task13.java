@@ -23,6 +23,19 @@ public class Task13 {
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-    //напишите тут ваш код
+    ArrayList <String> aList = new ArrayList();
+    String str=" ";
+    int i;
+
+    while (!(str.equals("end"))){
+      str = reader.readLine();
+      aList.add(str);
+    }
+
+    aList.remove("end");
+
+    for (i=0; i<=aList.size()-1; i++){
+      System.out.println(aList.get(i));
+    }
   }
 }

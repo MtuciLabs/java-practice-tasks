@@ -17,6 +17,9 @@ public class Task03 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat cat1 = new Cat("Barsik",9,7,23);
+        Cat cat2 = new Cat("Grandik",10,10,99);
+        Cat cat3 = new Cat("Pushok",8,9,13);
     }
 
     public static class Cat {

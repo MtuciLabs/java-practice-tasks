@@ -40,6 +40,7 @@ public class Task15 {
 
     public Circle(double x, double y) {
       //напишите тут ваш код
+      this(x,y,10);
     }
 
     public Circle() {

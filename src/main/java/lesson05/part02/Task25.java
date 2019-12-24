@@ -33,9 +33,23 @@ public class Task25 {
     }
 
     public static String getObjectType(Object o) {
-        //напишите тут ваш код
-
-        return "Животное";
+        String obType = "Животное";
+        if (o instanceof Cat){
+            obType = "Кот";
+        }
+        if (o instanceof Tiger){
+            obType = "Тигр";
+        }
+        if (o instanceof Lion){
+            obType = "Лев";
+        }
+        if (o instanceof Bull){
+            obType = "Бык";
+        }
+        if (o instanceof Cow){
+            obType = "Корова";
+        }
+        return obType;
     }
 
     public static class Cat extends Animal   //<--Классы наследуются!!

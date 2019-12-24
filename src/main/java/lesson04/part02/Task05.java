@@ -3,6 +3,7 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * 1. Создай список строк в методе main.
@@ -19,6 +20,13 @@ import java.util.ArrayList;
 public class Task05 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    ArrayList<String> arrS=new ArrayList<String>();
+    Scanner scn = new Scanner(System.in);
+    for (int i=0;i<10;i++){
+      arrS.add(0,scn.next());
+    }
+    for (int i=0;i<10;i++){
+      System.out.println(arrS.get(i));
+    }
   }
 }
