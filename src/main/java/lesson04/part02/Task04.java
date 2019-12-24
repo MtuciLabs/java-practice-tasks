@@ -24,26 +24,27 @@ public class Task04 {
   private static ArrayList<String> strings;
 
   public static void main(String[] args) throws Exception {
-    Scanner in=new Scanner(System.in);
-    ArrayList strings=new ArrayList();
-    int i;
-    String s=null;
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    int max=strings.get(0).toString().length();
-    for (i=1;i<5;i++) {
-      if (max < strings.get(i).toString().length()) {
-        max = strings.get(i).toString().length();
+    ArrayList<String> list = new ArrayList<String>();
+    Scanner scn = new Scanner(System.in);
+    for (int i = 0; i < 5; i++) {
+      list.add(scn.next());
+    }
+    int max = 0;
+    String maxs = null;
+    for (int i = 0; i < 5; i++) {
+      String st = list.get(i);
+      if (max < (st.length())) {
+        max = st.length();
+        maxs = st;
       }
     }
-    for (i = 0; i < 5; i++) {
-      if (max == strings.get(i).toString().length()) {
-        System.out.println(strings.get(i));
-      }
+    for(int i=0;i<5;i++){
+      String st=list.get(i);
+      if(max==st.length()){
+        System.out.println(st);
 
+      }
     }
+
   }
 }

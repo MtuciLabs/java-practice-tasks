@@ -18,10 +18,10 @@ public class Task12 {
 
   public static void main(String[] args) {
     try {
-      int a = 42 / 0;
-    }
-    catch(ArithmeticException e){
-      System.out.println(e);
+      int a = 42/0;
+    } catch (ArithmeticException exception) {
+      System.out.println(exception.getMessage());
+      System.out.println("Arithmetic exception processed");
     }
   }
 }
