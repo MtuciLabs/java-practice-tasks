@@ -33,37 +33,46 @@ package lesson03.part01;
 
 public class Task14 {
 
+
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+//напишите тут ваш код
     }
 
-    public static class Cat {
+    public static class Cat{
         String name = null;
-        int age = 3;
-        int weight = 4;
-        String address = null;
+        int age = 4;
+        int weight = 5;
         String color;
-        public void initialize(String name){
+        String address = null;
+
+        public Cat(String name) {
+            this.name = name;
+            this.weight = weight;
+            this.color = color;
+            this.age = age;
+        }
+
+        public Cat(String name, int age, int weight) {
             this.name = name;
             this.age = age;
             this.weight = weight;
             this.color = color;
         }
-        public void initialize(String name, int weight, int age ){
+
+        public Cat(String name, int age) {
             this.name = name;
             this.age = age;
+        }
+
+        public Cat(int weight, String color) {
             this.weight = weight;
             this.color = color;
         }
-        public void initialize(int weight, String color){
-            this.age = age;
-            this.weight = weight;
+
+        public Cat(int weight, String color, String address) {
             this.color = color;
-        }
-        public void initialize( int weight,String color,String address ){
-            this.age = age;
             this.weight = weight;
-            this.color = color;
             this.address = address;
         }
     }

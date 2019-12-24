@@ -27,31 +27,31 @@ public class Task13 {
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-        System.out.println("Vvedite nomer dnya nedeli");
+        System.out.println(" ");
         String number = bufferedReader.readLine();
         int a = Integer.parseInt(number);
         if (a == 1) {
-            System.out.println("Ponedelnik");
+            System.out.println("Понедельник");
         }
         else if (a == 2) {
-            System.out.println("Vtornik");
+            System.out.println("Вторник");
         }
         else if (a == 3) {
-            System.out.println("Sreda");
+            System.out.println("Среда");
         }
         else if (a == 4) {
-            System.out.println("Chetverg");
+            System.out.println("Четверг");
         }
         else if (a == 5) {
-            System.out.println("Pyatnitsa");
+            System.out.println("Пятница");
         }
         else if (a == 6) {
-            System.out.println("Subbota");
+            System.out.println("Суббота");
         }
         else if (a == 7) {
-            System.out.println("Voskresenie");
+            System.out.println("Воскресенье");
         } else {
-            System.out.println("Takogo dnya nedeli ne sushestvuet");
+            System.out.println("Такого дня недели не существует");
         }
 
 

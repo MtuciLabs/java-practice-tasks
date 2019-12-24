@@ -25,10 +25,10 @@ public class Task21 {
         String name1 = bufferedReader.readLine();
         String name2 = bufferedReader.readLine();
         if (name1.equals(name2)) {
-            System.out.println("Imena identichni");
+            System.out.println("Имена идентичны");
         }
         else if (name1.length() == name2.length()) {
-            System.out.println("Dlini imen ravni");
+            System.out.println("Длины имен равны");
         }
 
     }

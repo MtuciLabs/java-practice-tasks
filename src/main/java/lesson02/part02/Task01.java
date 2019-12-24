@@ -20,16 +20,15 @@ public class Task01 {
         Person person = new Person();
         System.out.println("Age is: " + person.age);
         person.adjustAge(person.age);
-        System.out.println("Adjusted age is: " + person.age2);
+        System.out.println("Adjusted age is: " + person.age);
     }
 
     public static class Person {
         public int age = 20;
-        public int age2 = 20;
 
         public void adjustAge(int age) {
-            age2 = age + 20;
-            System.out.println("Age in adjustAge() is: " + age2);
+            this.age = age + 20;
+            System.out.println("Age in adjustAge() is: " + age);
         }
     }
 }

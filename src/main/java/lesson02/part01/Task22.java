@@ -22,7 +22,7 @@ public class Task22 {
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String n = bufferedReader.readLine();
         int N = Integer.parseInt(n);
-        System.out.println("Я буду зарабатывать $"+ N + " в час.");
+        System.out.println("Я буду зарабатывать $"+ N + " в час");
 
     }
 }
