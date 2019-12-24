@@ -3,7 +3,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * 1. В методе initializeArray():
@@ -22,29 +22,28 @@ public class Task01 {
 
   public static void main(String[] args) throws Exception {
     int[] array = initializeArray();
-    /*String arrayString = Arrays.toString(array);
-    System.out.println(arrayString); */ //если нужно вывести
     int max = max(array);
     System.out.println(max);
   }
 
   public static int[] initializeArray() throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    int[] myArray = new int[20];
-    for (int i = 0; i < 20; i++) {
-      myArray[i] = Integer.parseInt(reader.readLine());
+    int[] myarray=new int[20];
+    Scanner in=new Scanner(System.in);
+    for(int i=0;i<20;i++){
+      myarray[i]=in.nextInt();
     }
-    return myArray;
+
+// создай и заполни массив
+    return myarray;
   }
 
   public static int max(int[] array) {
-    int max1 = array[0];
-    for (int i = 0; i < 20; i++) {
-      if (array[i] > max1) {
-        max1 = array[i];
+    int max=-1000;
+    for(int i=0;i<20;i++){
+      if (array[i] > max) {
+        max=array[i];
       }
     }
-
-    return max1;
+    return max;
   }
 }

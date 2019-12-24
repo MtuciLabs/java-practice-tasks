@@ -25,11 +25,13 @@ public class Task01 {
 
     public static class Cow {
         public String getName() {
-            return "Я не корова, Я - кит.";
+            return "Я - корова";
         }
     }
 
     public static class Whale extends Cow {
-
+        public String getName() {
+            return "Я не корова, Я - кит";
+        }
     }
 }
