@@ -19,7 +19,5 @@ public class Task02 {
     public static void printString(String s){
         System.out.println(s);
     }
-    // напишите тут ваш ко
-        System.out.println(s);
 
 }
