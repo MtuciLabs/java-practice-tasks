@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import java.util.Scanner;
+
 public class Task15 {
 
     /**
@@ -16,10 +18,11 @@ public class Task15 {
      * 5. Вы слышали что-нибудь о классе Math?
      */
 
-    public static int number = 25;
 
     public static void main(String[] args) {
-        //Измените код
-        System.out.println(Math.cos(number));
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
+
+        System.out.println(Math.pow(number, 2));
     }
 }

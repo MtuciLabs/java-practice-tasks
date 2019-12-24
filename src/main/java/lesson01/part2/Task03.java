@@ -19,10 +19,14 @@ public class Task03 {
      */
 
     public static void main(String[] args) {
+
         hackSalary(700);
     }
 
     public static void hackSalary(int a) {
-        // напишите тут ваш код
+        int newSlary = a + 100;
+        System.out.print("Tвоя зарплата составляет: ");
+        System.out.print(newSlary);
+        System.out.print("  долларов в месяц.");
     }
 }

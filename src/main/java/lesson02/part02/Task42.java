@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Вводить с клавиатуры числа.
  * Если пользователь ввел -1, вывести на экран сумму всех введенных чисел и завершить программу.
@@ -22,7 +24,28 @@ package lesson02.part02;
 
 public class Task42 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int sum = 0;
+        int num = 0;
 
+        do {
+            num = in.nextInt();
+            sum += num;
+        } while (num != -1);
+        System.out.println(sum);
     }
 }
+/** " other variation of solution "
+ *
+        while(true){
+            int num = in.nextInt();
+            sum += num;
+            if(num == -1){
+                break;
+            }
+
+        }
+        System.out.println(sum -1);
+    }
+}
+**/

@@ -37,11 +37,43 @@ package lesson03.part01;
 public class Task09 {
 
     public static void main(String[] args) {
-
+        Cat cat1 = new Cat();
+        cat1.initialize("Barsic");
     }
 
     public static class Cat {
-        //напишите тут ваш код
+        String name = null;
+        int age = 5;
+        float weight = 5.0f;
+        String color = "some color";
+        String address = null;
+
+        public void initialize(String name){
+            this.name = name;
+        }
+        public void initialize(String name, float weight){
+            this.name = name;
+            this.weight =weight;
+        }
+        public void initialize(String name, float weight, int age){
+            this.name = name;
+            this.weight = weight;
+            this.age = age;
+        }
+        public void initialize(float weight, String color){
+            this.name = "homeless cat";
+            this.weight =weight;
+            this.color = color;
+        }
+        public void initialize( float weight, String color,String address) {
+            this.name = "neighbour cat";
+            this.weight = weight;
+            this.color = color;
+            this.address = address;
+        }
+
+
+
     }
 
 }

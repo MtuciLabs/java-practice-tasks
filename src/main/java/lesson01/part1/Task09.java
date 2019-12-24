@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import java.util.Scanner;
+
 public class Task09 {
 
     /**
@@ -22,11 +24,22 @@ public class Task09 {
      */
 
     public static void main(String[] args) {
-        System.out.println(sumDigitsInNumber(546));
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
+
+        System.out.println(sumDigitsInNumber(number));
     }
 
+
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
-        return 0;
+        int sum = 0;
+
+        for (int i = 0; i < 3; i++) {
+            int num1 = number % 10;
+            number = (number - num1) / 10;
+            sum += num1;
+        }
+        return sum;
+
     }
 }

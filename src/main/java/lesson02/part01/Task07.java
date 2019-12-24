@@ -14,9 +14,42 @@ package lesson02.part01;
 
 public class Task07 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        //StarCraft one love <3
+
+        Zerg zergOne = new Zerg();
+        Zerg zergTwo = new Zerg();
+        Zerg zergThree = new Zerg();
+        Zerg zergFour = new Zerg();
+        Zerg zergFive = new Zerg();
+
+        zergOne.name = "Broodling";
+        zergTwo.name = "Overlord";
+        zergThree.name = "Hydralisk";
+        zergFour.name = "Zergling";
+        zergFive.name = "Queen";
+
+
+        Protoss protoss1 = new Protoss();
+        Protoss protoss2 = new Protoss();
+        Protoss protoss3 = new Protoss();
+
+        protoss1.name = "Raszagal";
+        protoss1.name = "Aldaris";
+        protoss1.name = "Taldarin";
+
+
+        Terran terran_1 = new Terran();
+        Terran terran_2 = new Terran();
+        Terran terran_3 = new Terran();
+        Terran terran_4 = new Terran();
+
+        terran_1.name = "Marine";
+        terran_2.name ="Goliath";
+        terran_3.name = "Valkyrie";
+        terran_4.name = "Firebat";
 
     }
+
 
     public static class Zerg {
         public String name;

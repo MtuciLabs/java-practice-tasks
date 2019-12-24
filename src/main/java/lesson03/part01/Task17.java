@@ -1,5 +1,9 @@
 package lesson03.part01;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Вывести на экран текущую дату в аналогичном виде "21 02 2014".
  * <p>
@@ -13,7 +17,10 @@ package lesson03.part01;
 
 public class Task17 {
 
-  public static void main(String[] args) {
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy MM dd ");
+        Date date = new Date();
+        System.out.println(dateFormat.format(date));
+        //System.out.println(date);
+    }
 }

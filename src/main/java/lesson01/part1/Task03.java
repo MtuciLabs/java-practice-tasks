@@ -15,6 +15,15 @@ public class Task03 {
      */
 
     public static void main(String[] args) {
-        // Напишите здесь ваш код
+        int milenium = 2000;
+        int year_now = 19;
+        int uni_age = 98;
+
+        year_now += milenium;
+        int year_of_foundation = year_now - uni_age;
+
+        System.out.print("МТУСИ был основан в ");
+        System.out.print(year_of_foundation);
+        System.out.print(" году ");
     }
 }

@@ -14,7 +14,14 @@ package lesson02.part01;
 
 public class Task08 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        int num = 1;
+
+        for(int i = 0; i > 10; i++) {
+            int randomNumber = 1 + (int) (Math.random() *10);
+            num *= randomNumber;
+            System.out.println(randomNumber);
+        }
+        //System.out.println(num);
 
     }
 }

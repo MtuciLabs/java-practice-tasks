@@ -2,6 +2,7 @@ package lesson03.part01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * Вводить с клавиатуры числа и вычислить среднее арифметическое.
@@ -49,7 +50,19 @@ import java.io.InputStreamReader;
 public class Task06 {
 
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int sum = 0;
+        int count = 0;
+
+        int num = 0;
+        while (num != -1){
+            num = in.nextInt();
+            sum += num;
+            count++;
+    }
+        System.out.println(sum);
+        float addion = (sum + 1)/(count-1);
+        System.out.println(addion);
     }
 
 }

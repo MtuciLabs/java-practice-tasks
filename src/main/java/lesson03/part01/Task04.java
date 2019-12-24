@@ -16,7 +16,15 @@ package lesson03.part01;
 public class Task04 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Cat barsic = new Cat("Barsic", 10, 7, 120);
+        Cat mursic = new Cat("Mursic", 4, 9, 150);
+        Cat rijic = new Cat("Rijic", 5, 6, 130);
+
+       // boolean fight1 = Cat.fight(barsic mursic);
+        boolean fight2;
+        boolean fight3;
+
+        System.out.println();
     }
 
     public static class Cat {

@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import java.util.Scanner;
+
 public class Task07 {
 
     /**
@@ -22,12 +24,13 @@ public class Task07 {
      */
 
     public static void main(String[] args) {
-        System.out.println(convertCelsiusToFahrenheit(41));
+        Scanner in = new Scanner(System.in);
+        int tempereture = in.nextInt();
+        System.out.println(convertCelsiusToFahrenheit(tempereture));
     }
 
     public static double convertCelsiusToFahrenheit(int celsius) {
-        //напишите тут ваш код
-
-        return 0;
+        double fahrenheit = 1.8 * celsius + 32;
+        return fahrenheit;
     }
 }
