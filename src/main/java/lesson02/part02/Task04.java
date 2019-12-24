@@ -21,8 +21,8 @@ public class Task04 {
     public static class Cat {
         private static int catsCount = 0;
 
-        public static void addNewCat() {
-            //напишите тут ваш код
+        public static void addNewCat(int catsCount) {
+            Cat.catsCount = catsCount + 1;
 
         }
     }

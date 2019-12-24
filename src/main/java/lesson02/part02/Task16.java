@@ -1,5 +1,6 @@
 package lesson02.part02;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Работа светофора для пешеходов запрограммирована следующим образом: в начале каждого часа в течение трех минут горит зелёный сигнал,
  * затем в течение одной минуты — жёлтый, а потом в течение одной минуты — красный, затем опять зелёный горит три минуты и т. д.
@@ -27,7 +28,18 @@ package lesson02.part02;
 
 public class Task16 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+      System.out.println("Введите число t, обозначающее время, прошедшее с начала очередного часа ");
+      String t = reader.readLine();
+      double T = Double.parseDouble(t);
+
+      if (((T % 5) >= 0) && ((T % 5) <= 2)) {
+        System.out.println("Зеленый");
+      } else if ((T % 5) == 3) {
+        System.out.println("Желтый");
+      } else
+        System.out.println("Красный");
 
     }
 }

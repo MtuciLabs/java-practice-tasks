@@ -1,5 +1,6 @@
 package lesson02.part01;
-
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 /**
  * Ввести с клавиатуры число n.
  * Вывести на экран надпись «Я буду зарабатывать $n в час».
@@ -16,7 +17,12 @@ package lesson02.part01;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+      System.out.println("Введи рандомное число");
+      String number = reader.readLine();
+
+      System.out.println("Я буду зарабатывать $"+number+" в час");
 
     }
 }

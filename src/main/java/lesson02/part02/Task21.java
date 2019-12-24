@@ -19,7 +19,22 @@ import java.util.*;
 
 public class Task21 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+      System.out.println("Введите имя");
+      String name1 = reader.readLine();
+      int length1 = name1.length( );
+
+      System.out.println("Введите имя");
+      String name2 = reader.readLine();
+      int length2 = name2.length( );
+
+      if (name1.equals(name2)) {
+        System.out.println("Имена идентичны");
+      }
+      else if (length1==length2) {
+        System.out.println("Длины имен равны");
+      }
 
     }
 }
