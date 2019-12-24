@@ -32,7 +32,7 @@ public class Task21 {
     }
 
     public static void setCatCount(int catCount) {
-      Cat.catCount=catCount;
+      Cat.catCount = catCount;
     }
   }
 }

@@ -2,7 +2,7 @@ package lesson04.part01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  * 1. Создать массив на 10 строк.
@@ -24,15 +24,15 @@ import java.util.Scanner;
 public class Task02 {
 
   public static void main(String[] args) throws Exception {
-    Scanner scan = new Scanner(System.in);
-    String arrS[] = new String[10];
-    int arrI[] = new int[10];
-    for (int i=0;i<10;i++){
-      arrS[i]=scan.next();
-      arrI[i]=arrS[i].length();
+    String [] str = new String[10];
+    int [] num = new int[10];
+    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+    for (int i = 0; i < str.length; i++) {
+      str[i] = r.readLine();
     }
-    for (int i=0;i<10;i++){
-      System.out.println(arrI[i]);
+    for(int i = 0;i < num.length;i++ ){
+      num[i] = str[i].length();
     }
+    System.out.println(Arrays.toString(num));
   }
 }

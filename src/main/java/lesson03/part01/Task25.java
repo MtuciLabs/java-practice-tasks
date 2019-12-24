@@ -13,7 +13,7 @@ package lesson03.part01;
 
 public class Task25 {
 
-  public int step;
+  public static int step;
 
   public static void main(String[] args) {
     method1();

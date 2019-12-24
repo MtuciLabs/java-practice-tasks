@@ -16,12 +16,12 @@ package lesson03.part01;
 public class Task04 {
 
     public static void main(String[] args) {
-        Cat cat1 = new Cat("tom",6,8,10);
-        Cat cat2 = new Cat("bob",8,9,7);
-        Cat cat3 = new Cat("rok",10,14,15);
-        System.out.println(cat1.fight(cat1));
-        System.out.println(cat2.fight(cat2));
-        System.out.println(cat3.fight(cat3));
+        Cat cat1 = new Cat("Bars",9,5,67);
+        Cat cat2 = new Cat("Azazello",13,70,77);
+        Cat cat3 = new Cat("Begemot",13,13,13);
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat2.fight(cat3));
+        System.out.println(cat3.fight(cat1));
     }
 
     public static class Cat {
@@ -41,6 +41,7 @@ public class Task04 {
             int ageAdvantage = this.age > anotherCat.age ? 1 : 0;
             int weightAdvantage = this.weight > anotherCat.weight ? 1 : 0;
             int strengthAdvantage = this.strength > anotherCat.strength ? 1 : 0;
+
             int score = ageAdvantage + weightAdvantage + strengthAdvantage;
             return score > 2; // return score > 2 ? true : false;
         }

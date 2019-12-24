@@ -3,7 +3,6 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * 1. Создай список строк.
@@ -18,16 +17,21 @@ import java.util.Scanner;
  * 4.	Программа должна выводить список на экран, каждое значение с новой строки.
  */
 
-public class  Task04 {
+public class Task04 {
 
-  public static void main(String[] args) throws Exception {
-    ArrayList<String> list = new ArrayList<String>();
-    Scanner scan = new Scanner(System.in);
-    for (int i=0;i<5;i++){
-      list.add(scan.next());}
-    for (int i=0;i<13;i++){
-      list.add(0,list.get(4));
-      list.remove(list.size()-1);}
-    System.out.println(list);
-  }
+    public static void main(String[] args) throws Exception {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            list.add(r.readLine());
+        }
+        for (int i = 0; i < 13; i++) {
+            String s = list.get(list.size() - 1);
+            list.remove(list.size() - 1);
+            list.add(0, s);
+        }
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
 }

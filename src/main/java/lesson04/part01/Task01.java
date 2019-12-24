@@ -3,7 +3,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  * 1. В методе initializeArray():
@@ -20,28 +20,24 @@ import java.util.Scanner;
 
 public class Task01 {
 
-  public static void main(String[] args) throws Exception {
-    int[] array = initializeArray();
-    int max = max(array);
-    System.out.println(max);
-  }
-
-  public static int[] initializeArray() throws IOException {
-    Scanner scan = new Scanner(System.in);
-    int arr[] =new int[20];
-    for (int i=0;i<20;i++){
-      arr[i]=scan.nextInt();
+    public static void main(String[] args) throws Exception {
+        int[] array = initializeArray();
+        int max = max(array);
+        System.out.println(max);
     }
-    return arr;
-  }
 
-  public static int max(int[] array) {
-    int max = 0;
-    for (int i=0;i<20;i++){
-      if (array[i]>max){
-        max=array[i];
-      }
+    public static int[] initializeArray() throws IOException {
+        int[] arr = new int[20];
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        for (int i = 0; i < 20; i++) {
+            arr[i] = Integer.parseInt(r.readLine());
+        }
+        System.out.println(Arrays.toString(arr));
+        return arr;
     }
-    return max;
-  }
+
+    public static int max(int[] array) {
+        Arrays.sort(array, 0, 20);
+        return array[19];
+    }
 }
