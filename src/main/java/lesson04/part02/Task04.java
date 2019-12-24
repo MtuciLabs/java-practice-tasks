@@ -3,7 +3,9 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * 1. Создай список строк.
@@ -21,28 +23,30 @@ import java.util.Scanner;
 
 public class Task04 {
 
-  private static ArrayList<String> strings;
+  private static List<String> strings;
 
   public static void main(String[] args) throws Exception {
-    ArrayList<String> list = new ArrayList<String>();
-    Scanner scn = new Scanner(System.in);
-    for (int i = 0; i < 5; i++) {
-      list.add(scn.next());
-    }
-    int max = 0;
-    String maxs = null;
-    for (int i = 0; i < 5; i++) {
-      String st = list.get(i);
-      if (max < (st.length())) {
-        max = st.length();
-        maxs = st;
-      }
-    }
-    for(int i=0;i<5;i++){
-      String st=list.get(i);
-      if(max==st.length()){
-        System.out.println(st);
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    strings = new ArrayList<String>();
 
+    for (int i = 0; i < 5; i++) {
+      String name = reader.readLine();
+      strings.add(name);
+    }
+
+    Integer[] lenghtOfList = new Integer[5];
+
+    for (int i = 0; i < 5; i++) {
+      int size = strings.get(i).length();
+      lenghtOfList[i] = size;
+    }
+
+    Arrays.sort(lenghtOfList, Collections.reverseOrder());
+    int max = lenghtOfList[0];
+
+    for (int i = 0; i < 5; i++) {
+      if (strings.get(i).length() == max) {
+        System.out.println(strings.get(i));
       }
     }
 
