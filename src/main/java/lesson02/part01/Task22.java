@@ -19,7 +19,6 @@ public class Task22 {
     public static void main(String[] args) throws Exception {
       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-      System.out.println("Введи рандомное число");
       String number = reader.readLine();
 
       System.out.println("Я буду зарабатывать $"+number+" в час");

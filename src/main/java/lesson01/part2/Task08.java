@@ -23,16 +23,9 @@ public class Task08 {
     Cat cat6 = new Cat();
     Cat cat7 = new Cat();
     Cat cat8 = new Cat();
-    Cat cat9 = new Cat();
-    Cat cat10 = new Cat();
     Cat cat11;
     Cat cat12;
-    Cat cat13;
-    Cat cat14;
-    Cat cat15;
-    Cat cat16;
-    Cat cat17;
-    Cat cat18;
+
   }
 
   public static class Cat {

@@ -46,7 +46,7 @@ public class Task13 {
       if (A==7) {
         System.out.println("Воскресенье");
       }
-      if (A>7 & A<1) {
+      if (A>7 || A<1) {
         System.out.println("Такого дня недели не существует");
       }
 

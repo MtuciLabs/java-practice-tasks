@@ -20,8 +20,7 @@ public class Task12 {
     try {
       int a = 42 / 0;
     } catch (ArithmeticException exeption) {
-      System.out.println(exeption.getMessage());
-      System.out.println("Arithmetic exeption processed");
+      System.out.println("class java.lang.ArithmeticException");
     }
 
   }
