@@ -20,7 +20,6 @@ public class Task02 {
         System.out.println(s);
     }
     // напишите тут ваш ко
-    public static void printString(String s){
         System.out.println(s);
-    }
+    
 }
