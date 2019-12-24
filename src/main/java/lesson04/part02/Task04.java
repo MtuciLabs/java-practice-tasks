@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * 1. Создай список строк.
@@ -21,29 +24,32 @@ import java.util.Scanner;
 
 public class Task04 {
 
-  private static ArrayList<String> strings;
+    private static List <String> strings;
 
-  public static void main(String[] args) throws Exception {
-    Scanner in=new Scanner(System.in);
-    ArrayList strings=new ArrayList();
-    int i;
-    String s=null;
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    strings.add(in.nextLine());
-    int max=strings.get(0).toString().length();
-    for (i=1;i<5;i++) {
-      if (max < strings.get(i).toString().length()) {
-        max = strings.get(i).toString().length();
-      }
-    }
-      for (i = 0; i < 5; i++) {
-        if (max == strings.get(i).toString().length()) {
-          System.out.println(strings.get(i));
-      }
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        strings = new ArrayList<String>();
+
+        for (int i = 0; i < 5; i++) {
+            String name = reader.readLine();
+            strings.add(name);
+        }
+
+        Integer[] lenghtOfList = new Integer[5];
+
+        for (int i = 0; i < 5; i++) {
+            int size = strings.get(i).length();
+            lenghtOfList[i] = size;
+        }
+
+        Arrays.sort(lenghtOfList, Collections.reverseOrder());
+        int max = lenghtOfList[0];
+
+        for (int i = 0; i < 5; i++) {
+            if (strings.get(i).length() == max) {
+                System.out.println(strings.get(i));
+            }
+        }
 
     }
-  }
 }

@@ -30,22 +30,22 @@ public class Task13 {
         if ( num == 1){
             System.out.println("Понедельник");
         }
-        if ( num == 2){
+        else if ( num == 2){
             System.out.println("Вторник");
         }
-        if ( num == 3){
+        else if ( num == 3){
             System.out.println("Среда");
         }
-        if ( num == 4){
+        else if ( num == 4){
             System.out.println("Четверг");
         }
-        if ( num == 5){
+        else if ( num == 5){
             System.out.println("Пятница");
         }
-        if ( num == 6){
+        else if ( num == 6){
             System.out.println("Суббота");
         }
-        if ( num == 7){
+        else if ( num == 7){
             System.out.println("Воскресенье");
         }else {
             System.out.println("такого дня недели не существует");

@@ -31,6 +31,7 @@ public class Task13 {
         public void initialize(String  name){
             this.name=name;
         }
+
         public void initialize(String  name, int age){
             this.name=name;
             this.age=age;

@@ -29,7 +29,7 @@ public class Task01 {
         public void adjustAge(int age) {
             this.age = age + 20;
             System.out.println("Age in adjustAge() is: " + age);
-            return;
+
         }
     }
 }

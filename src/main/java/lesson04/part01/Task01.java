@@ -22,8 +22,8 @@ public class Task01 {
 
   public static void main(String[] args) throws Exception {
     int[] array = initializeArray();
-    int maxl = max(array);
-    System.out.println(maxl);
+    int max = max(array);
+    System.out.println(max);
   }
 
   public static int[] initializeArray() throws IOException {
@@ -38,14 +38,13 @@ public class Task01 {
 
   public static int max(int[] array) {
     int i;
-    int maxl=0;
-    int max=array[0];
+    int max=0;
     for(i=0;i<20;i++){
       if (array[i]>max){
         max=array[i];
-        maxl=i;
+
       }
     }
-    return maxl;
+    return max;
   }
 }

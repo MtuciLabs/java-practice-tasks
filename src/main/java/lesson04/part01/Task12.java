@@ -20,7 +20,7 @@ public class Task12 {
         try {
             int a = 42 / 0;
         } catch (ArithmeticException a) {
-            System.out.println("Ошибка! На ноль делить нельзя");
+            System.out.println("class java.lang.ArithmeticException");
         }
     }
 }
