@@ -17,9 +17,9 @@ public class Task21 {
 
   public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Введите имя 1 ");
+
     String a = sc.next();
-    System.out.println("Введите имя 2 ");
+
     String b = sc.next();
       if (a.equals(b)) {
           System.out.println("Имена идентичны");

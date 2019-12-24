@@ -1,9 +1,10 @@
 package lesson04.part01;
 
-import java.io.BufferedReader;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * 1. В методе initializeArray():
@@ -27,17 +28,22 @@ public class Task01 {
     }
 
     public static int[] initializeArray() throws IOException {
-        int[] arr = new int[20];
-        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < 20; i++) {
-            arr[i] = Integer.parseInt(r.readLine());
+        Scanner scn = new Scanner(System.in );
+        int[] arr=new int[20];
+        for(int i=0;i<20;i++){
+            arr[i]=scn.nextInt();
         }
-        System.out.println(Arrays.toString(arr));
         return arr;
     }
 
     public static int max(int[] array) {
-        Arrays.sort(array, 0, 20);
-        return array[19];
+        int max=0;
+        for(int i=0;i<20;i++){
+            if (array[i]>max){
+                max=array[i];
+            }
+        }
+
+        return max;
     }
 }
