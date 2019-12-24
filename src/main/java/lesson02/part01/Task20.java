@@ -14,7 +14,8 @@ package lesson02.part01;
  * 5.	Выведенный текст должен содержать введенное имя name3.
  * 6.	Выведенный тест должен полностью соответствовать заданию.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task20 {
     public static void main(String[] args) throws Exception {
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
