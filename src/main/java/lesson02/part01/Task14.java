@@ -36,6 +36,7 @@ public class Task14 {
 
     public static class Red {
         public Red() {
+
             System.out.println("Red");
         }
     }

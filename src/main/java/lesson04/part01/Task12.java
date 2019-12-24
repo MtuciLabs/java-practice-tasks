@@ -1,6 +1,4 @@
 package lesson04.part01;
-
-
 /**
  * Перехватить исключение, возникающее при выполнении кода:
  * int a = 42 / 0;
@@ -20,8 +18,8 @@ public class Task12 {
         try {
             int a = 42 / 0;
         }
-        catch (ArithmeticException a) {
-            System.out.println(a);
+        catch (ArithmeticException e) {
+            System.out.println(e.getClass());
         }
     }
 }
