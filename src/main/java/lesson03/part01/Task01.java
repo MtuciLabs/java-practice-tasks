@@ -16,7 +16,10 @@ package lesson03.part01;
 public class Task01 {
 
     public static void main(String[] args) {
-
+        String name;
+        int age;
+        int weight;
+        int strength;
     }
 
     public static class Cat{

@@ -29,7 +29,7 @@ public class Task22 {
     static class Cat implements CanMove {
     }
 
-    static class TomCat extends Cat {
+    static class TomCat extends Cat  {
 
     }
 }

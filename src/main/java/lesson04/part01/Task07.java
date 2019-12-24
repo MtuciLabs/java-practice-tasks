@@ -34,5 +34,8 @@ public class Task07 {
 
   public static void printValues(Map<String, String> map) {
     //напишите тут ваш код
+    for (Map.Entry<String, String> e : map.entrySet()) {
+      System.out.println(e.getValue());
+    }
   }
 }

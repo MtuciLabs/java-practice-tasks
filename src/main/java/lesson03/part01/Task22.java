@@ -18,33 +18,29 @@ package lesson03.part01;
  * 4.	Метод readBoolean должен считывать и возвращать логическую переменную(тип boolean).
  */
 
+import java.util.Scanner;
 public class Task22 {
 
   public static void main(String[] args) throws Exception {
-
   }
-
-  public static class ConsoleReader {
-
-    public static String readString() throws Exception {
-      //напишите тут ваш код
-      return null;
-    }
-
-    public static int readInt() throws Exception {
-      //напишите тут ваш код
-      return 0;
-    }
-
-    public static double readDouble() throws Exception {
-      //напишите тут ваш код
-      return 0.0;
-    }
-
-    public static boolean readBoolean() throws Exception {
-      //напишите тут ваш код
-      return false;
-    }
+  public static String readString() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    String stroka = scn.next();
+    return stroka;
   }
-
+  public static int readInt() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    int chislo = scn.nextInt();
+    return chislo;
+  }
+  public static double readDouble() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    double drob = scn.nextDouble();
+    return drob;
+  }
+  public static boolean readBoolean() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    boolean logich = scn.nextBoolean();
+    return logich;
+  }
 }

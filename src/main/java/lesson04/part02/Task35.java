@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.io.IOException;
 /**
  * Написать программу, которая будет вводить числа с клавиатуры.
  * Код по чтению чисел с клавиатуры должен быть в методе readData.
@@ -28,5 +28,17 @@ public class Task35 {
 
   public static void readData() {
     //напишите тут ваш код
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+    try {
+      while (true) {
+        list.add(Integer.parseInt(r.readLine()));
+      }
+    } catch (Exception e) {
+      for (int i:list) {
+        System.out.println(i);
+      }
+    }
+
   }
 }

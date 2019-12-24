@@ -22,12 +22,11 @@ public class Task01 {
         person.adjustAge(person.age);
         System.out.println("Adjusted age is: " + person.age);
     }
-
     public static class Person {
         public int age = 20;
 
         public void adjustAge(int age) {
-            age = age + 20;
+            this.age = age + 20;
             System.out.println("Age in adjustAge() is: " + age);
         }
     }

@@ -25,8 +25,8 @@ public class Task09 {
 }
 
 class Cat {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Cat(String name, int speed) {
         this.name = name;
@@ -47,8 +47,8 @@ class Cat {
 }
 
 class Dog {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Dog(String name, int speed) {
         this.name = name;

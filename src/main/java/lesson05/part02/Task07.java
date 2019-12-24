@@ -16,8 +16,11 @@ package lesson05.part02;
 
 public class Task07 {
     public static void main(String[] args) {
-
+        print(7);
+        Integer z= 13;
+        print(z);
     }
-
+    public static void print(int n){}
+    public static void print(Integer n){}
     //Напишите тут ваши методы
 }

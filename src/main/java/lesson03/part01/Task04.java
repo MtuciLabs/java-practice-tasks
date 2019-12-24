@@ -17,6 +17,12 @@ public class Task04 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat cat1 = new Cat("Bars",9,5,67);
+        Cat cat2 = new Cat("Azazello",13,70,77);
+        Cat cat3 = new Cat("Begemot",13,13,13);
+        System.out.println(cat1.fight(cat2));
+        System.out.println(cat2.fight(cat3));
+        System.out.println(cat3.fight(cat1));
     }
 
     public static class Cat {

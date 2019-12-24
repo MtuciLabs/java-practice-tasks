@@ -3,7 +3,8 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.Arrays;
+import java.util.Scanner;
 /**
  * 1. В методе initializeArray():
  * 1.1. Создайте массив на 20 чисел
@@ -26,12 +27,23 @@ public class Task01 {
   }
 
   public static int[] initializeArray() throws IOException {
-    // создай и заполни массив
-    return null;
-  }
+    int[] myarray=new int[20];
+    Scanner in=new Scanner(System.in);
+    for(int i=0;i<20;i++){
+      myarray[i]=in.nextInt();
+    }
 
+// создай и заполни массив
+    return myarray;
+  }
   public static int max(int[] array) {
-    // найди максимальное значение
-    return 0;
+    int max=-1000;
+    for(int i=0;i<20;i++){
+      if (array[i] > max) {
+        max=array[i];
+      }
+    }
+// найди максимальное значение
+    return max;
   }
 }
