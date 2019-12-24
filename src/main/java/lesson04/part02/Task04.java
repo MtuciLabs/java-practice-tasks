@@ -2,8 +2,7 @@ package lesson04.part02;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * 1. Создай список строк.
@@ -21,26 +20,32 @@ import java.util.Scanner;
 
 public class Task04 {
 
-  private static ArrayList<String> strings;
+  private static List<String> strings;
 
   public static void main(String[] args) throws Exception {
-    Scanner in=new Scanner(System.in);
-    ArrayList <String> strings=new ArrayList<>();
-    for(int i=0;i<5;i++){
-      strings.add(in.next());
-    }
-    int m=-1;
-    for (int i=0;i<5;i++){
-      if(m<strings.get(i).length()){
-      m=strings.get(i).length();
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    strings = new ArrayList<String>();
 
+    for (int i = 0; i < 5; i++) {
+      String name = reader.readLine();
+      strings.add(name);
+    }
+
+    Integer[] lenghtOfList = new Integer[5];
+
+    for (int i = 0; i < 5; i++) {
+      int size = strings.get(i).length();
+      lenghtOfList[i] = size;
+    }
+
+    Arrays.sort(lenghtOfList, Collections.reverseOrder());
+    int max = lenghtOfList[0];
+
+    for (int i = 0; i < 5; i++) {
+      if (strings.get(i).length() == max) {
+        System.out.println(strings.get(i));
       }
     }
-    for(int i=0;i<5;i++){
-      if(m==strings.get(i).length()){
-        System.out.println(strings.get(i).length());
-      }
-    }
-    //напишите тут ваш код
+
   }
 }

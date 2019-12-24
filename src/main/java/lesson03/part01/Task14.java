@@ -38,37 +38,42 @@ public class Task14 {
         //напишите тут ваш код
     }
 
-    public static class Cat {String name = null;
-        int age = 5;
-        float weight = 5.0f;
-        String color = "some color";
+    public  static class Cat{
+        String name = null;
+        int age = 4;
+        int weight = 5;
+        String color;
         String address = null;
 
-        public Cat(String name){
-            this.name = name;
-        }
-        public Cat(String name, float weight){
-            this.name = name;
-            this.weight =weight;
-        }
-        public Cat(String name, float weight, int age){
+        public Cat(String name) {
             this.name = name;
             this.weight = weight;
+            this.color = color;
             this.age = age;
         }
-        public Cat(float weight, String color){
-            this.name = "homeless cat";
-            this.weight =weight;
-            this.color = color;
-        }
-        public Cat( float weight, String color,String address) {
-            this.name = "neighbour cat";
+
+        public Cat(String name, int age, int weight) {
+            this.name = name;
+            this.age = age;
             this.weight = weight;
             this.color = color;
-            this.address = address;
         }
 
-        //напишите тут ваш код
+        public Cat(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        public  Cat(int weight, String color) {
+            this.weight = weight;
+            this.color = color;
+        }
+
+        public Cat(int weight, String color, String address) {
+            this.color = color;
+            this.weight = weight;
+            this.address = address;
+        }
     }
 
 }

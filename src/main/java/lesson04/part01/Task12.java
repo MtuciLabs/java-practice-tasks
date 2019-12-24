@@ -23,7 +23,7 @@ try{
 
 
     } catch(ArithmeticException e){
-      System.out.println("На ноль делить нельзя!!!");
+      System.out.println("class java.lang.ArithmeticException");
 
     }
 

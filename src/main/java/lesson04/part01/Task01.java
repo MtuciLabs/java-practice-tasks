@@ -32,7 +32,7 @@ public class Task01 {
     for(int i=0;i<20;i++){
       myarray[i]=in.nextInt();
     }
-    System.out.println(myarray);
+
     // создай и заполни массив
     return myarray;
   }

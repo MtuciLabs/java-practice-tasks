@@ -34,6 +34,6 @@ public class Task08 {
 
         return metre;
 
-        return 0;
+
     }
 }
