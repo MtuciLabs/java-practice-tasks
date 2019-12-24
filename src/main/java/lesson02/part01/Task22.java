@@ -1,6 +1,10 @@
 package lesson02.part01;
 
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.Scanner;
 
 /**
@@ -19,9 +23,12 @@ import java.util.Scanner;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Введите сумму: \n");
-        int sum = sc.nextInt();
-        System.out.println("Я буду зарабатывать $" + sum + " в час");
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String ns = bufferedReader.readLine();
+        int n = Integer.parseInt(ns);
+        System.out.println("Я буду зарабатывать $"+n+" в час");
+
     }
 }
