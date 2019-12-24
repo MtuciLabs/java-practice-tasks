@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Ввести с клавиатуры два имени, и если имена одинаковые вывести сообщение «Имена идентичны».
  * Если имена разные, но их длины равны – вывести сообщение – «Длины имен равны».
@@ -20,6 +22,17 @@ import java.util.*;
 public class Task21 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите имя 1 ");
+        String a = sc.next();
+        System.out.println("Введите имя 2 ");
+        String b = sc.next();
+        if (a.equals(b)) {
+            System.out.println("Имена идентичны");
+        } else if (a.length() == b.length()) {
+            ;
+        }
+        System.out.print("Длины имен равны");
     }
 }
+
