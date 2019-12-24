@@ -16,7 +16,7 @@ package lesson05.part02;
  * Например "Корова" для объектов типа Cow.
  */
 
-public class Task05 {
+ppublic class Task05 {
     public static void main(String[] args) {
         System.out.println(getObjectType(new Cow()));
         System.out.println(getObjectType(new Dog()));
@@ -25,9 +25,14 @@ public class Task05 {
     }
 
     public static String getObjectType(Object o) {
-        //Напишите тут ваше решение
-
-        return "Неизвестное животное";
+        if (o instanceof Cow)
+            return "Корова";
+        else if (o instanceof Dog)
+            return "Собака";
+        else if (o instanceof Whale)
+            return "Кит";
+        else
+            return "Неизвестное животное";
     }
 
     public static class Cow {
