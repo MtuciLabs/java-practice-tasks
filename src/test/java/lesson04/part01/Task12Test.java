@@ -1,5 +1,4 @@
-package lesson01.part1;
-
+package lesson04.part01;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -11,15 +10,22 @@ import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-public class Task05Test {
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(Task10.class)
+public class Task12Test {
 
   private static final PrintStream originalOut = System.out;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
@@ -35,29 +41,36 @@ public class Task05Test {
   }
 
   @Test
-  public void main_ConsoleOutput() {
+  public void main() throws Exception {
+    // given
+    String expectedType = "class java.lang.ArithmeticException";
+
     // when
-    Task05.main(null);
+    fakeOut.reset();
+    Task12.main(null);
+    String actual = fakeOut.toString().trim();
 
     // then
     assertEquals("Вывод программы не соответствует ожидаемому.",
-        "9 умножить на 3 равно 27", fakeOut.toString());
+        expectedType, actual);
   }
 
   @Test
-  public void main_FileChanges() {
+  public void main_NotChanged() {
     // given
-    String expected = "publicstaticvoidmain(String[]args){inta=3;intb=9;//System.out.print(\"девять\");System.out.print(b);System.out.print(\"умножить\");System.out.print(\"на\");System.out.print(a);//System.out.print(\"три\");//System.out.print(\"не\");//System.out.print(\"будет\");System.out.print(\"равно\");//System.out.print(\"пятнадцать\");//System.out.print(21);System.out.print((int)Math.pow(3,3));}";
-    String taskPath = "./src/main/java/lesson01/part1/Task05.java";
+    String regex = "publicstaticvoidmain\\(String\\[]args\\)\\{.*?try\\{.*?inta=42/0;.*?}catch\\(ArithmeticException.*?\\)\\{.*?System.out.println\\(.*?\\);.*?}.*?}";
+    Pattern pattern = Pattern.compile(regex);
+    String taskPath = "./src/main/java/lesson04/part01/Task12.java";
 
     // when
     try {
       String content = Files.readString(Path.of(taskPath), StandardCharsets.UTF_8);
       String normalizeContent = StringUtils.deleteWhitespace(content);
+      Matcher matcher = pattern.matcher(normalizeContent);
 
       // then
-      assertTrue("Нарушено условие задачи: Нельзя изменять (добавлять, удалять) строки с кодом",
-          normalizeContent.contains(expected));
+      assertTrue("Нарушено условие задачи: В программе должен быть блок try-catch.",
+          matcher.find());
     } catch (IOException e) {
       fail("Ошибка при считывании файла");
     }

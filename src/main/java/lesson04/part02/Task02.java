@@ -16,6 +16,7 @@ import java.io.InputStreamReader;
  */
 
 public class Task02 {
+<<<<<<< HEAD
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         String[] arr = new String[10];
@@ -26,4 +27,10 @@ public class Task02 {
             System.out.println(arr[i]);
         }
     }
+=======
+
+  public static void main(String[] args) throws Exception {
+    //напишите тут ваш код
+  }
+>>>>>>> upstream/master
 }

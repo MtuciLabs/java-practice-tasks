@@ -1,7 +1,10 @@
 package lesson04.part02;
 
 import java.io.BufferedReader;
+<<<<<<< HEAD
 import java.io.IOException;
+=======
+>>>>>>> upstream/master
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +16,11 @@ import java.util.List;
  * Если пользователь ввёл какой-то текст, вместо ввода числа, то метод должен перехватить исключение
  * и вывести на экран все ранее введенные числа в качестве результата.
  * Числа выводить с новой строки сохраняя порядок ввода.
+<<<<<<< HEAD
  * <p>
+=======
+ *
+>>>>>>> upstream/master
  * Требования:
  * 1.	Программа должна считывать данные с клавиатуры.
  * 2.	Метод main не изменять.
@@ -23,6 +30,7 @@ import java.util.List;
  */
 
 public class Task35 {
+<<<<<<< HEAD
     public static void main(String[] args) {
         readData();
     }
@@ -41,3 +49,13 @@ public class Task35 {
         }
     }
 }
+=======
+  public static void main(String[] args) {
+    readData();
+  }
+
+  public static void readData() {
+    //напишите тут ваш код
+  }
+}
+>>>>>>> upstream/master

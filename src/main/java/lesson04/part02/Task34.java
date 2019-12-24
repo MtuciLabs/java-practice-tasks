@@ -16,6 +16,7 @@ package lesson04.part02;
 public class Task34 {
 
   public static void main(String[] args) {
+<<<<<<< HEAD
     try {
       divideByZero(4);
     } catch (ArithmeticException e) {
@@ -26,3 +27,8 @@ public class Task34 {
     System.out.println(i/0);
   }
 }
+=======
+//    divideByZero();
+  }
+}
+>>>>>>> upstream/master

@@ -8,7 +8,11 @@ import java.io.InputStreamReader;
  * 2. Ввести с клавиатуры 8 строк и сохранить их в массив.
  * 3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке.
  * Каждый элемент - с новой строки.
+<<<<<<< HEAD
  * <p>
+=======
+ *
+>>>>>>> upstream/master
  * Требования:
  * 1.	Программа должна создавать массив на 10 строк.
  * 2.	Программа должна считывать 8 строк для массива с клавиатуры.
@@ -17,6 +21,7 @@ import java.io.InputStreamReader;
  */
 
 public class Task01 {
+<<<<<<< HEAD
     public static void main(String[] args) throws Exception {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         String[] arr = new String[10];
@@ -30,4 +35,10 @@ public class Task01 {
             System.out.println(arr[i]);
         }
     }
+=======
+
+  public static void main(String[] args) throws Exception {
+    //напишите тут ваш код
+  }
+>>>>>>> upstream/master
 }
