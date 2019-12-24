@@ -1,4 +1,4 @@
-package lesson01.part2;
+/**package lesson01.part2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -26,7 +26,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
- */
+
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(Task01.class)
 public class Task01Test {
@@ -100,3 +100,4 @@ public class Task01Test {
     }
   }
 }
+*/

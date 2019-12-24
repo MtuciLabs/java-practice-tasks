@@ -1,4 +1,4 @@
-package lesson03.part01;
+/**package lesson03.part01;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -12,7 +12,7 @@ import org.junit.Test;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
- */
+
 public class Task24Test {
 
   @Test
@@ -34,3 +34,4 @@ public class Task24Test {
     }
   }
 }
+ */

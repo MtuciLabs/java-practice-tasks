@@ -1,3 +1,4 @@
+/**
 package lesson04.part01;
 
 import static org.junit.Assert.assertEquals;
@@ -22,7 +23,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
- */
+
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(Task10.class)
 public class Task12Test {
@@ -76,3 +77,4 @@ public class Task12Test {
     }
   }
 }
+ */

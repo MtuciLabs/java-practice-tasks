@@ -20,8 +20,16 @@ import java.io.*;
 import java.util.*;
 
 public class Task17 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        System.out.println("Введи имя");
+        String name = reader.readLine(); //Если ввести имя на русском, то программа выводит "ромбики".
+        //Если на английском - всё нормально. Что-то еще нужно прописать?
+        System.out.println("Введи число");
+        String year = reader.readLine();
+
+        System.out.println(name + " захватит мир через " + year + " лет. Му-ха-ха!");
     }
 }

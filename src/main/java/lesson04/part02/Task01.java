@@ -2,7 +2,7 @@ package lesson04.part02;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+import java.util.Scanner;
 /**
  * 1. Создать массив на 10 строк.
  * 2. Ввести с клавиатуры 8 строк и сохранить их в массив.
@@ -20,5 +20,14 @@ public class Task01 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
+    String[] a=new String[10];
+    int i;
+    Scanner in=new Scanner(System.in);
+    for (i=0;i<10;i++){
+      a[i]=in.nextLine();
+    }
+    for (i=9;i>=0;i--){
+      System.out.println(a[i]);
+    }
   }
 }

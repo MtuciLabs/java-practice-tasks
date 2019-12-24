@@ -24,11 +24,34 @@ package lesson02.part02;
  */
 
 import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.*;
 
 public class Task26 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String number = bufferedReader.readLine();
+        int a = Integer.parseInt(number);
+        if ((a > 0) & (a % 2 == 0)) {
+            System.out.println("Polozhitelnoe chetnoe chislo");
+        }
+        else if ((a > 0) & (a % 2 != 0)) {
+            System.out.println("Polozhitelnoe nechetnoe chislo");
+        }
+        else if ((a < 0) & (a % 2 == 0)) {
+            System.out.println("Otritsatelnoe chetnoe chislo");
 
+        }
+        else if ((a < 0) & (a % 2 != 0)) {
+            System.out.println("Otritsatelnoe nechetnoe chislo");
+        } else {
+            System.out.println("nol");
+        }
     }
 }

@@ -1,7 +1,7 @@
 package lesson04.part02;
 
 import java.util.Set;
-
+import java.util.HashSet;
 /**
  * Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
  * Удалить из множества все числа больше 10.
@@ -18,12 +18,39 @@ public class Task23 {
 
   public static Set<Integer> createSet() {
     // напишите тут ваш код
-    return null;
+    Set<Integer> s=new HashSet<>();
+    s.add(56);
+    s.add(1);
+    s.add(567);
+    s.add(3);
+    s.add(5);
+    s.add(56);
+    s.add(8);
+    s.add(9);
+    s.add(54);
+    s.add(3);
+    s.add(2);
+    s.add(7);
+    s.add(98);
+    s.add(56);
+    s.add(2);
+    s.add(5);
+    s.add(1);
+    s.add(234);
+    s.add(5);
+    s.add(5);
+    return s;
   }
 
   public static Set<Integer> removeAllNumbersGreaterThan10(Set<Integer> set) {
     // напишите тут ваш код
-    return null;
+    for(int i:set){
+      if(i>10){
+        set.remove(i);
+      }
+
+    }
+    return set;
   }
 
   public static void main(String[] args) {
