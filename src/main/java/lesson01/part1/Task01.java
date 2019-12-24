@@ -15,7 +15,6 @@ public class Task01 {
      */
 
     public static void main(String[] args) {
-        System.out.println("Привет мир!");
-        // Напишите здесь ваш код
+        System.out.println("Hello World!");
     }
 }

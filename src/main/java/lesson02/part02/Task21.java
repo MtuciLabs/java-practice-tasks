@@ -14,19 +14,18 @@ import java.io.*;
 import java.util.*;
 
 public class Task21 {
-
   public static void main(String[] args) throws Exception {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Введите имя 1 ");
-    String a = sc.next();
-    System.out.println("Введите имя 2 ");
-    String b = sc.next();
-      if (a.equals(b)) {
-          System.out.println("Имена идентичны");
-      } else if (a.length() == b.length()) {
-        System.out.print("Длины имен равны");
-      }
-
+    InputStream inputStream = System.in;
+    Reader inputStreamReader = new InputStreamReader(inputStream);
+    BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+    String name1 = bufferedReader.readLine();
+    String name2 = bufferedReader.readLine();
+    if (name1.equals(name2)) {
+      System.out.println("Имена идентичны");
+    }
+    else if (name1.length() == name2.length()) {
+      System.out.println("Длины имен равны");
+    }
 
   }
 }

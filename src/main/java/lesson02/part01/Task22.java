@@ -1,7 +1,6 @@
 package lesson02.part01;
 
-
-import java.util.Scanner;
+import java.io.*;
 
 /**
  * Ввести с клавиатуры число n.
@@ -19,11 +18,12 @@ import java.util.Scanner;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Введите сумму: \n");
-        int sum = sc.nextInt();
-        System.out.println("Я буду зарабатывать $" + sum + " в час");
-        //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String n = bufferedReader.readLine();
+        int N = Integer.parseInt(n);
+        System.out.println("Я буду зарабатывать $"+ N + " в час");
 
     }
 }
