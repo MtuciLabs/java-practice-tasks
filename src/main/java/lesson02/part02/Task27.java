@@ -27,9 +27,8 @@ package lesson02.part02;
  * 9.	Если число нечетное и имеет три цифры, вывести "нечетное трехзначное число".
  * 10.	Если введенное число не попадает в диапазон 1 - 999, ничего не выводить на экран
  */
-
-import java.io.Exception;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Task27 {
 
