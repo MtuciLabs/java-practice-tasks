@@ -13,7 +13,7 @@ package lesson02.part01;
 
 public class Task05 {
     public static void main(String[] args) {
-        System.out.println("March 13 2000 );
+        System.out.println("March 13 2000 ");
         //напишите тут ваш код
 
     }
