@@ -3,7 +3,7 @@ name: Run build
 on:
   push:
     branches:
-      - but1801/Lugovenko_D-1
+      - master
   pull_request:
     branches:
       - master
