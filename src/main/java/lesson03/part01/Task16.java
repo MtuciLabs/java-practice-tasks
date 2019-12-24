@@ -25,21 +25,21 @@ public class Task16 {
 
   public static class Circle {
 
-    public Color color;
+    Color color;
 
-    public void Circle() {
+    Circle() {
       color = new Color();
     }
 
-    public class Color {
+    static class Color {
 
       String description;
 
-      public String getDescription() {
+      String getDescription() {
         return description;
       }
 
-      public void setDescription(String description) {
+      void setDescription(String description) {
         this.description = description;
       }
     }

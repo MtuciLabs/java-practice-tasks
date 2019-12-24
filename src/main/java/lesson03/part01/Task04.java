@@ -1,5 +1,7 @@
 package lesson03.part01;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Создать три кота используя класс Cat.
  * Провести три боя попарно между котами.
@@ -17,13 +19,39 @@ public class Task04 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Cat cat1 = new Cat("Джесси", 5,3,2);
+        Cat cat2 = new Cat ("Гуся", 1000, 4,1000);
+        Cat cat3 = new Cat("Альпин", 3, 5,3);
+
+        boolean res12 = cat1.fight(cat2);
+        boolean res13 = cat1.fight(cat3);
+        boolean res23 = cat3.fight(cat2);
+
+        if (){
+            System.out.println(cat1.name);
+        } else{
+            System.out.println(cat2.name);
+        }
+
+        if (){
+            System.out.println(cat1.name);
+        }  else{
+            System.out.println(cat3.name);
+        }
+
+        if (){
+            System.out.println(cat3.name);
+        } else{
+            System.out.println(cat2.name);
+        }
+
     }
 
     public static class Cat {
         protected String name;
         protected int age;
-        protected int weight;
-        protected int strength;
+        int weight;
+        int strength;
 
         public Cat(String name, int age, int weight, int strength) {
             this.name = name;
@@ -32,7 +60,7 @@ public class Task04 {
             this.strength = strength;
         }
 
-        public boolean fight(Cat anotherCat) {
+         boolean fight(Cat anotherCat) {
             int ageAdvantage = this.age > anotherCat.age ? 1 : 0;
             int weightAdvantage = this.weight > anotherCat.weight ? 1 : 0;
             int strengthAdvantage = this.strength > anotherCat.strength ? 1 : 0;

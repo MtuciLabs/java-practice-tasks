@@ -15,6 +15,8 @@ public class Task12 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Person person = new Person();
+        person.initialize();
     }
 
     public static class Person {
@@ -24,20 +26,13 @@ public class Task12 {
         int weight;
         double size;
 
-        public void initialize(String name) {
-            this.name = name;
+        void initialize() {
+            this.money = 100;
+            this.weight = 50;
+            this.size = 24;
         }
 
-        public void initialize(String name, char sex) {
-            this.name = name;
-            this.sex = sex;
-        }
 
-        public void initialize(String name, int money, char sex) {
-            this.name = name;
-            this.money = money;
-            this.sex = sex;
-        }
     }
-
 }
+
