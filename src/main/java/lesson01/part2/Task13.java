@@ -16,6 +16,8 @@ public class Task13 {
      */
 
     public static void print3(String s) {
+        for (int i=0; i<3; i++)
+            System.out.println(s);
         //напишите тут ваш код
 
     }

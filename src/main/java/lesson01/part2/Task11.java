@@ -18,8 +18,9 @@ public class Task11 {
      */
 
     public static int min(int a, int b, int c) {
+        int min= Math.min(Math.min(a,b),c);
         //напишите тут ваш код
-        return 0;
+        return min;
     }
 
     public static void main(String[] args) {
