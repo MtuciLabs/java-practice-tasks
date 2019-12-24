@@ -1,6 +1,7 @@
 package lesson04.part02;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -17,11 +18,30 @@ import java.util.Map;
 public class Task24 {
 
   public static Map<String, Integer> createMap() {
+    Map<String,Integer> map = new HashMap<>();
+    map.put("Masha",200);
+    map.put("Lena", 400);
+    map.put("Liza", 800);
+    map.put("Marina", 40);
+    map.put("Nikita", 470);
+    map.put("Rosa", 700);
+    map.put("Sasha", 500);
+    map.put("Maxim", 1400);
+    map.put("Mitya", 900);
+    map.put("Egor", 3200);
     //напишите тут ваш код
-    return null;
+    return map;
   }
 
   public static void removeItemFromMap(Map<String, Integer> map) {
+    Iterator<Map.Entry<String,Integer>> iterator = map.entrySet().iterator();
+    while (iterator.hasNext()){
+      Map.Entry<String,Integer> pair = iterator.next();
+      String key = pair.getKey();
+      int value = pair.getValue();
+      if (value<500)
+        iterator.remove();
+    }
     //напишите тут ваш код
   }
 

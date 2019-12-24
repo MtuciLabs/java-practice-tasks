@@ -17,10 +17,15 @@ package lesson02.part01;
  */
 
 import java.io.*;
-import java.util.*;
-
+import java.util.Scanner;
 public class Task17 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception{
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите имя:");
+        String name = scanner.nextLine();
+        System.out.println("Введите число:");
+        int year = scanner.nextInt();
+        System.out.println(name + " захватит мир через " + year +" лет. Му-ха-ха!" );
         //напишите тут ваш код
 
     }

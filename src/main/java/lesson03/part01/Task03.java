@@ -16,6 +16,9 @@ package lesson03.part01;
 public class Task03 {
 
     public static void main(String[] args) {
+        Cat cat1 = new Cat("Tom",1,1,1);
+        Cat cat2 = new Cat("Barsik",2,2,2);
+        Cat cat3 = new Cat("Semon",3,3,3);
         //напишите тут ваш код
     }
 
@@ -31,6 +34,7 @@ public class Task03 {
             this.weight = weight;
             this.strength = strength;
         }
+
     }
 
 }

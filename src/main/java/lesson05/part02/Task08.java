@@ -16,6 +16,12 @@ public class Task08 {
     public static void main(String[] args) {
 
     }
+    public static void print(int n){}
+    public static void print(char n){}
+    public static void print(long n){}
+    public static void print(boolean n){}
+    public static void print(String n){}
+
 
     //Напишите тут ваши методы
 }

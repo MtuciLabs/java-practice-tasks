@@ -39,6 +39,9 @@ public class Task15 {
     }
 
     public Circle(double x, double y) {
+      this.x = x;
+      this.y = y;
+      this.radius = 10;
       //напишите тут ваш код
     }
 

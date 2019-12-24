@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры строку и число N больше 0.
  * Вывести на экран строку N раз используя цикл while. Каждое значение с новой строки.
@@ -21,6 +23,16 @@ package lesson02.part02;
 
 public class Task32 {
     public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("text:");
+        String text = scanner.nextLine();
+        System.out.println("N:");
+        int N = scanner.nextInt();
+        int i=1;
+        while (i<=N){
+            System.out.println(text);
+            i++;
+        }
         //напишите тут ваш код
 
     }

@@ -14,6 +14,13 @@ package lesson03.part01;
 
 public class Task20 {
 
+  static class Cat {
+    static int catCount = 0;
+    public Cat(){
+      catCount = catCount+1;
+    }
+  }
+
   //напишите тут ваш код
 
   public static void main(String[] args) {

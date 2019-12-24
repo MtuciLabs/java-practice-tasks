@@ -20,6 +20,8 @@ public class Task06 {
     }
 
     public static void printCircleLength(int radius) {
+        double L=2*3.14*radius;
+        System.out.println("Длина окружности = " + L);
         //напишите тут ваш код
     }
 }

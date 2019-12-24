@@ -16,19 +16,29 @@ public class Task09 {
      */
 
     public static void main(String[] args) {
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        Fish fish = new Fish();
+        Woman woman = new Woman();
+        cat.woman = woman;
+        dog.woman = woman;
+        fish.woman = woman;
         //напишите тут ваш код
     }
 
     public static class Cat {
         public Woman owner;
+        public Woman woman;
     }
 
     public static class Dog {
         public Woman owner;
+        public Woman woman;
     }
 
     public static class Fish {
         public Woman owner;
+        public Woman woman;
     }
 
     public static class Woman {

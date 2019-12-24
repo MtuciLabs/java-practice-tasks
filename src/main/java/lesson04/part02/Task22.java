@@ -22,23 +22,27 @@ import java.util.List;
 public class Task22 {
 
   public static List getListForGet() {
+    ArrayList list = new ArrayList();
     //напишите тут ваш код
-    return null;
+    return list;
   }
 
   public static List getListForSet() {
+    ArrayList list = new ArrayList();
     //напишите тут ваш код
-    return null;
+    return list;
   }
 
   public static List getListForAddOrInsert() {
+    LinkedList list = new LinkedList();
     //напишите тут ваш код
-    return null;
+    return list;
   }
 
   public static List getListForRemove() {
+    LinkedList list = new LinkedList();
     //напишите тут ваш код
-    return null;
+    return list;
   }
 
   public static void main(String[] args) {

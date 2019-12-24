@@ -3,6 +3,8 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Ввести с клавиатуры 2 числа N и M.
@@ -21,7 +23,23 @@ import java.io.InputStreamReader;
 
 public class Task11 {
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("N:");
+    int N=scanner.nextInt();
+    System.out.println("M:");
+    int M=scanner.nextInt();
+    ArrayList<String> list = new ArrayList<String>();
+    System.out.println("Введите массив");
+    for (int i =1; i<N; i++){
+        list.add(scanner.nextLine());
+    }
+    for (int i=0; i<M; i++){
+        list.add(list.get(0));
+        list.remove(0);
+    }
+    for (int i=0;i<list.size(); i++){
+        System.out.println(list.get(i));
+    }
 
     //напишите тут ваш код
   }

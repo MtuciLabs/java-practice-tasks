@@ -33,6 +33,9 @@ public class Task18 {
   }
 
   public static void printKeys(Map<String, String> map) {
+      for (Map.Entry<String, String> pair : map.entrySet()){
+          System.out.println(pair.getKey());
+      }
     //напишите тут ваш код
   }
 }

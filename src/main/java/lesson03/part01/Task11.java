@@ -19,10 +19,18 @@ package lesson03.part01;
 public class Task11 {
 
     public static void main(String[] args) {
+        Person person = new Person();
+        person.initialize("Tom",19);
         //напишите тут ваш код
     }
 
     static class Person {
+        String name;
+        int age;
+        public void initialize(String name, int age){
+             this.name= name;
+             this.age = age;
+        }
         //напишите тут ваш код
     }
 

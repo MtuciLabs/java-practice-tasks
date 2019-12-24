@@ -1,5 +1,6 @@
 package lesson02.part02;
 
+import java.util.Scanner;
 /**
  * Помогите коту обрести имя с помощью метода setName.
  * <p>
@@ -22,6 +23,7 @@ public class Task03 {
         private String name = "безымянный кот";
 
         public void setName(String name) {
+            this.name = name;
             //напишите тут ваш код
 
         }
