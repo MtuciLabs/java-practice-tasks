@@ -29,5 +29,23 @@ public class Task03 {
 
   public static void main(String[] args) throws IOException {
     //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int [] array = new int[15];
+    int i;
+    int sChet = 0;
+    int sNechet = 0;
+    for(i=0;i<=14;i++){
+      if (i % 2 == 0) {
+        sChet = sChet + array[i];
+      } else {
+        sNechet = sNechet + array[i];
+      }
+
+    }
+    if (sChet>sNechet){
+      System.out.println("В домах с чётными номерами проживает больше жителей");
+    } else {
+      System.out.println("В домах с нечётными номерами проживает больше жителей");
+    }
   }
 }

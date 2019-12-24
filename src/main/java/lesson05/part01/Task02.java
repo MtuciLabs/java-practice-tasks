@@ -23,10 +23,13 @@ public class Task02 {
     }
 
     public class Cat {
+        public class Cat extends Pet{
 
     }
 
     public class Dog {
+        public class Dog extends Pet {
+    }
 
     }
 }

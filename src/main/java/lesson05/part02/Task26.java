@@ -24,16 +24,50 @@ public class Task26 {
     public static void main(String[] args) {
 
     }
-
-    public class Cat {
+    public interface CanFly{
+        public void fly();
+    }
+    public interface CanRun{
+        public void run();
+    }
+    public interface CanClimb{
+        public void climb();
     }
 
-    public class Dog {
-    }
+    public class Cat implements CanRun, CanClimb {
+        public void run(){
 
-    public class Tiger extends Cat {
-    }
+        }
+        public void climb(){
 
-    public class Duck {
-    }
-}
+            public class Cat {
+            }
+        }
+
+        public class Dog {
+            public class Dog implements CanRun{
+                public void run(){
+
+                }
+            }
+
+            public class Tiger extends Cat {
+                public class Tiger extends Cat implements CanRun, CanClimb {
+                    public void run(){
+
+                    }
+                    public void climb(){
+
+                    }
+                }
+
+                public class Duck {
+                    public class Duck implements CanRun, CanFly {
+                        public void run(){
+                        }
+                        public void fly(){
+
+                        }
+                    }
+                }
+            }

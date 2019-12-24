@@ -16,8 +16,19 @@ package lesson02.part01;
 public class Task11 {
     //напишите тут ваш код
 
+    public static int convertToSeconds(int hour) {
+        int sec = hour * 60 * 60;
+        return sec;
+
+
+    }
+
     public static void main(String[] args) {
         //напишите тут ваш код
+        int firstTry = convertToSeconds(20);
+        int secondTry = convertToSeconds(600);
+        System.out.println(firstTry);
+        System.out.println(secondTry);
 
     }
 }

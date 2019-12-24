@@ -22,5 +22,11 @@ public class Task12 {
     int a = 42 / 0;
 
     //напишите тут ваш код
+    try {
+      int a = 42/0;
+    } catch (ArithmeticException exception) {
+      System.out.println(exception.getMessage());
+      System.out.println("Arithmetic exception processed");
+    }
   }
 }

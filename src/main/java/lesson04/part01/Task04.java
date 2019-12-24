@@ -1,5 +1,5 @@
 package lesson04.part01;
-
+import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -21,5 +21,19 @@ public class Task04 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList aList = new ArrayList();
+    int i;
+    for(i=0;i<=4;i++){
+      aList.add(reader.readLine());
+    }
+    for(i=0;i<=12;i++){
+      aList.add(0, aList.get(4));
+      aList.remove(4);
+    }
+    System.out.println(" ");
+    for(i=0; i<=4; i++){
+      System.out.println(aList.get(i));
+    }
   }
 }

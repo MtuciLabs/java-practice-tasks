@@ -24,6 +24,10 @@ public class Task14 {
     }
 
     public static class Cow {
+        public static class Cow extends Animal {
+            public String getName(){
+                return "Олег";
+            }
     }
 
 }

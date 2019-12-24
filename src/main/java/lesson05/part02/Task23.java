@@ -26,6 +26,7 @@ public class Task23 {
         protected String name;
 
         public Pet() {
+            public void setName(String name) {this.name = "";}
         }
 
         public final String getName() {

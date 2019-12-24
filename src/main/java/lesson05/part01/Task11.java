@@ -25,6 +25,7 @@ public class Task11 {
 
     //Ева
     public class Eve {
+        public class Eve extends Adam {
 
     }
 }

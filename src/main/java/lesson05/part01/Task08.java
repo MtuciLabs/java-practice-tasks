@@ -16,31 +16,37 @@ public class Task08 {
     public static void main(String[] args) {
     }
 
-    public class Cat {
+    class Cat {
         public String name;
-        public int age;
-        public int weight;
+        public int speed;
+        private String name;
+        private int speed;
 
-        public Cat(String name, int age, int weight) {
+        public Cat(String name, int speed) {
             this.name = name;
-            this.age = age;
-            this.weight = weight;
+            this.speed = speed;
         }
 
         public String getName() {
-            return name;
-        }
+            private String getName() {
+                return name;
+            }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+            @@ -47,15 +47,15 @@ public boolean isDogNear(Dog dog) {
+            }
 
-        public int getAge() {
-            return age;
-        }
+            class Dog {
+                public String name;
+                public int speed;
+                private String name;
+                private int speed;
 
-        public void setAge(int age) {
-            this.age = age;
-        }
-    }
-}
+                public Dog(String name, int speed) {
+                    this.name = name;
+                    this.speed = speed;
+                }
+
+                public String getName() {
+                    private String getName() {
+                        return name;
+                    }

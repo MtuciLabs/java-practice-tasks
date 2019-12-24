@@ -14,6 +14,10 @@ package lesson02.part01;
 public class Task05 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        String month = "October";
+        String day = "12";
+        String year = "2000";
+        System.out.println(month + " " + day + " " + year);
 
     }
 }

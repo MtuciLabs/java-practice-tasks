@@ -24,12 +24,17 @@ public class Task15 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
+    try {
 
-    method1();
+      method1();
+      method1();
 
-    //напишите тут ваш код
+      //напишите тут ваш код
+    } catch (NullPointerException|FileNotFoundException exception){
+      System.out.println(exception.getMessage());
+      System.out.println("Exception processed");
+    }
   }
-
   public static void method1()
       throws NullPointerException, ArithmeticException, FileNotFoundException, URISyntaxException {
     int i = (int) (Math.random() * 4);

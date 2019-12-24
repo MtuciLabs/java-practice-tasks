@@ -1,4 +1,8 @@
 package lesson02.part02;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 /**
  * Ввести с клавиатуры три числа а, b, c – стороны предполагаемого треугольника.
@@ -20,6 +24,21 @@ package lesson02.part02;
 public class Task15 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        System.out.println("Vvedite storoni treugolnika");
+        String sA = bufferedReader.readLine();
+        String sB = bufferedReader.readLine();
+        String sC = bufferedReader.readLine();
+        int a = Integer.parseInt(sA);
+        int b = Integer.parseInt(sB);
+        int c = Integer.parseInt(sC);
+        if (((a + b) > c) & ((a + c) > b) & ((b + c) > a)) {
+            System.out.println("Treugolnik sushestvuet");
+        } else {
+            System.out.println("Treugolnika ne sushestvuet");
+        }
 
     }
 }

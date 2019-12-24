@@ -19,6 +19,16 @@ package lesson02.part01;
 public class Task13 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        int a=1, b=1;
+        while (a<=10){
+            while(b<=10){
+                System.out.print(a*b +" ");
+                b++;
+            }
+            b=1;
+            System.out.println(" ");
+            a++;
+        }
 
     }
 }

@@ -1,5 +1,5 @@
 package lesson04.part02;
-
+import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,5 +24,27 @@ public class Task11 {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     //напишите тут ваш код
+    int n = Integer.parseInt(reader.readLine());
+    int m = Integer.parseInt(reader.readLine());
+
+    ArrayList<String> aList = new ArrayList();
+
+    int i;
+    for (i=0; i<=n-1; i++){
+      aList.add(reader.readLine());
+    }
+    for (i=0; i<=n-1; i++){
+      aList.add(aList.get(0));
+      aList.remove(0);
+    }
+
+    for (i=0; i<=m-1; i++){
+      aList.add(aList.get(0));
+      aList.remove(0);
+    }
+
+    for (i=0; i<=n-1; i++){
+      System.out.println(aList.get(i));
+    }
   }
 }

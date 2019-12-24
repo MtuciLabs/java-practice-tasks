@@ -1,7 +1,9 @@
 package lesson03.part01;
 
 import java.io.BufferedReader;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 
 /**
  * Вводить с клавиатуры числа и вычислить среднее арифметическое.
@@ -50,6 +52,26 @@ public class Task06 {
 
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        double sum = 0;
+        int k = 0;
+
+        while(true) {
+            String number = bufferedReader.readLine();
+            int num = Integer.parseInt(number);
+            if (num==-1) {
+                break;
+            }
+            else {
+                sum = sum + num;
+                k++;
+            }
+
+        }
+        System.out.println(sum/k);
+
     }
 
 }

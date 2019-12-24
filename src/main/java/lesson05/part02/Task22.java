@@ -28,6 +28,8 @@ public class Task22 {
         protected String name;
 
         public Pet() {
+            public void setName(String mane) {this.name = "Я - кот";}
+
         }
 
         public String getName() {

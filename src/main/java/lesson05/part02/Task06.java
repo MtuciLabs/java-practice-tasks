@@ -19,4 +19,10 @@ public class Task06 {
     }
 
     //Напишите тут ваши методы
+    public static int Print(int i){
+        return i;
+    }
+    public static String Print(String a){
+        return a;
+    }
 }

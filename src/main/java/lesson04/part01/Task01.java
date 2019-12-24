@@ -28,10 +28,26 @@ public class Task01 {
   public static int[] initializeArray() throws IOException {
     // создай и заполни массив
     return null;
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int i;
+    int [] array = new int [20];
+    for (i=0; i<=10; i++){
+      array[i] = Integer.parseInt(reader.readLine());
+    }
+
+    return array;
   }
 
   public static int max(int[] array) {
     // найди максимальное значение
     return 0;
+    int i;
+    int maxim = array[0];
+    for (i = 0; i <= 10; i++) {
+      if (array[i]>maxim){
+        maxim = array[i];
+      }
+    }
+    return maxim;
   }
 }
