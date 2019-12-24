@@ -20,8 +20,17 @@ import java.io.*;
 import java.util.*;
 
 public class Task17 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введи имя");
+        String name = reader.readLine();
+
+        System.out.println("Введи рандомное число");
+        String year = reader.readLine();
+
+        System.out.println(name + " захватит мир через " + year + " лет. Му-ха-ха!");
+
 
     }
 }

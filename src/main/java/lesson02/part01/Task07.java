@@ -14,7 +14,22 @@ package lesson02.part01;
 
 public class Task07 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Zerg Castello = new Zerg();
+        Zerg Rassel = new Zerg();
+        Zerg Gordon = new Zerg();
+        Zerg Derek = new Zerg();
+        Zerg Gorok = new Zerg();
+
+
+        Protoss Mazda = new Protoss();
+        Protoss Masdam = new Protoss();
+        Protoss Cardan = new Protoss();
+
+
+        Terran Fuck = new Terran();
+        Terran Damn = new Terran();
+        Terran Bitch = new Terran();
+        Terran Shit = new Terran();
 
     }
 
