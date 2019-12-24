@@ -16,25 +16,24 @@ public class Task08 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
-        Cat cat;
-        cat = new Cat();
-        Cat cat1;
-        cat1 = new Cat();
-        Cat cat2;
-        cat2 = new Cat();
-        Cat cat3;
-        cat3 = new Cat();
-        Cat cat4;
-        cat4 = new Cat();
-        Cat cat5;
-        cat5 = new Cat();
-        Cat cat6;
-        cat6 = new Cat();
-        Cat cat7;
-        cat7 = new Cat();
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        Cat cat3 = new Cat();
+        Cat cat4 = new Cat();
+        Cat cat5 = new Cat();
+        Cat cat6 = new Cat();
+        Cat cat7 = new Cat();
         Cat cat8 = new Cat();
         Cat cat9;
-        Cat cat10;
+        Cat cat11;
+        Cat cat22;
+        Cat cat33;
+        Cat cat44;
+        Cat cat55;
+        Cat cat66;
+        Cat cat77;
+        Cat cat88;
+        Cat cat99;
     }
 
     public static class Cat {
