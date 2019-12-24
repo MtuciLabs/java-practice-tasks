@@ -20,4 +20,8 @@ public class Task02 {
         System.out.println(s);
     }
 
+
+    public static void main(String[] args) {
+        printString("Hello, Amigo!");
+    }
 }
