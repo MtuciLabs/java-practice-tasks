@@ -31,6 +31,15 @@ public class Task15 {
   }
 
   public static void sort(int[] array) {
-    //напишите тут ваш код
+    for (int i = 0; i < 20; i++) {
+      for (int j = i+1; j < 20; j++) {
+        if (array[j] > array[i]) {
+          int t = array[j];
+          array[j] = array[i];
+          array[i] = t;
+        }
+      }
+      //напишите тут ваш код
+    }
   }
 }

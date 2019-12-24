@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Написать программу, которая будет вводить числа с клавиатуры.
@@ -23,10 +24,23 @@ import java.util.List;
 
 public class Task35 {
   public static void main(String[] args) {
+
     readData();
   }
 
   public static void readData() {
+    BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
+    ArrayList list = new ArrayList();
+    int i;
+    try{
+      while (1<11){
+        list.add(Integer.parseInt(reader.readLine()));
+      }
+    }catch (Exception e){
+      for (i=0; i<=list.size(); i++){
+        System.out.println(list.get(i));
+      }
+    }
     //напишите тут ваш код
   }
 }

@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Создать список строк.
@@ -21,8 +22,18 @@ import java.util.ArrayList;
 
 public class Task13 {
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    Scanner scanner = new Scanner(System.in);
 
+    ArrayList<String> list = new ArrayList<>();
+    String str="";
+    while (!(str.equals("end"))){
+      str=scanner.nextLine();
+      list.add(str);
+    }
+    list.remove("end");
+    for (int i=0; i<list.size(); i++){
+      System.out.println(list.get(i));
+    }
     //напишите тут ваш код
   }
 }

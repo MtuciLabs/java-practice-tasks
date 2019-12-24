@@ -1,6 +1,7 @@
 package lesson04.part02;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 1. Создай список строк.
@@ -19,6 +20,16 @@ import java.util.ArrayList;
 public class Task03 {
 
   public static void main(String[] args) {
+    ArrayList<String> list = new ArrayList<String>(5);
+    list.add("Яблоко");
+    list.add("Груша");
+    list.add("Персик");
+    list.add("Слива");
+    list.add("Банан");
+    System.out.println(list.size());
+    for (int i=0; i<list.size(); i++){
+      System.out.println(list.get(i));
+    }
     //напишите тут ваш код
   }
 }
