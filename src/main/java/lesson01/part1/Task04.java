@@ -15,7 +15,6 @@ public class Task04 {
 
     int x = 27;
     int y = 15;
-
     // y = y - x;
     // y = y + x;
     // y = y + x;
