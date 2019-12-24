@@ -16,11 +16,11 @@ package lesson02.part01;
 public class Task04 {
     public static double addTenPercent(int i) {
         //напишите тут ваш код
-        double nw = i * 0.1 + i;
-        return nw;
+        double s=i*1.1;
+        return s;
     }
 
     public static void main(String[] args) {
-
+        System.out.println(addTenPercent(9));
     }
 }

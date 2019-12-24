@@ -17,10 +17,9 @@ import java.util.Scanner;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        System.out.println("Я буду зарабатывать $"+n+" в час");
+        Scanner sc = new Scanner(System.in);
+        int sum = sc.nextInt();
+        System.out.println("Я буду зарабатывать $" + sum + " в час");
 
     }
 }
