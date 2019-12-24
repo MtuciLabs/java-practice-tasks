@@ -19,8 +19,35 @@ package lesson05.part02;
 
 public class Task09 {
     public static void main(String[] args) {
+        int a = 0;
+        int b = 999;
+
+        long c = 0;
+        long d = 999;
+
+        double e = 0;
+        double f = 999;
+
+        min(a, b);
+        min(c, d);
+        min(e, f);
+    }
+
+    public static int min(int a, int b) {
+        int min = Math.min(a, b);
+        return min;
 
     }
 
     //Напишите тут ваши методы
+    public static long min(long a, long b) {
+        long min = Math.min(a, b);
+        return min;
+    }
+
+    public static double min(double a, double b) {
+        double min = Math.min(a, b);
+        return min;
+    }
+
 }

@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры целое число в диапазоне 1 - 999. Вывести его строку-описание следующего вида:
  * «четное однозначное число» - если число четное и имеет одну цифру,
@@ -34,6 +37,23 @@ import java.util.*;
 public class Task27 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer num = Integer.parseInt(reader.readLine());
+        if (num >= 1 && num <= 999)
+            if (num % 2 != 0) {
+                if (num <= 9) {
+                    System.out.println("нечетное однозначное число");
+                } else if (num <= 99) {
+                    System.out.println("нечетное двузначное число");
+                } else {
+                    System.out.println("нечетное трехзначное число");
+                }
+            } else if (num <= 9) {
+                System.out.println("четное однозначное число");
+            } else if (num <= 99) {
+                System.out.println("четное двузначное число");
+            } else {
+                System.out.println("четное трехзначное число");
+            }
     }
 }

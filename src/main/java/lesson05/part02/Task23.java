@@ -28,7 +28,7 @@ public class Task23 {
         public Pet() {
         }
 
-        public final String getName() {
+        public String getName()  {
             return name;
         }
 

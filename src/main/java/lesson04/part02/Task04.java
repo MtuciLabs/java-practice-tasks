@@ -24,5 +24,17 @@ public class Task04 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList<String> aList = new ArrayList();
+    int i;
+    for (i = 0; i <= 4; i++) {
+      aList.add(reader.readLine());
+    }
+    int max = -1;
+    for (i = 0; i <= 4; i++) {
+      if (aList.get(i).length() == max) {
+        System.out.println(aList.get(i));
+      }
+    }
   }
 }

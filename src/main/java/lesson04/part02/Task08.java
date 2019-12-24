@@ -21,6 +21,17 @@ public class Task08 {
 
   public static void main(String[] args) {
     //напишите тут ваш код
+    ArrayList <String> aList = new ArrayList();
+    aList.add("мама");
+    aList.add("мыла");
+    aList.add("раму");
+    int i;
+    for (i=0; i<=5; i=i+2){
+      aList.add(i+1,"именно");
+    }
+    for (i=0; i<=5; i++){
+      System.out.println(aList.get(i));
+    }
   }
 }
 

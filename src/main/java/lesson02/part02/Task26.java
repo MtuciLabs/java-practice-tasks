@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры целое число. Вывести на экран его строку-описание следующего вида:
  * «отрицательное четное число» - если число отрицательное и четное,
@@ -29,6 +32,15 @@ import java.util.*;
 public class Task26 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer num = Integer.parseInt(reader.readLine());
+        if (num<0 && num%2 == 0)
+            System.out.println("отрицательное четное число");
+        if (num>0 && num%2 == 0)
+            System.out.println("положительное четное число");
+        if (num<0 && num%2 != 0)
+            System.out.println("отрицательное нечетное число");
+        if (num>0 && num%2 != 0)
+            System.out.println("положительное нечетное число");
     }
 }

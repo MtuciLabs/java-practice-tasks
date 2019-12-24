@@ -17,5 +17,14 @@ public class Task34 {
 
   public static void main(String[] args) {
 //    divideByZero();
+    try {
+      divideByZero(10);
+
+    } catch (ArithmeticException exception) {
+      exception.printStackTrace();
+    }
+  }
+  public static void divideByZero(int a){
+    System.out.println(a/0);
   }
 }

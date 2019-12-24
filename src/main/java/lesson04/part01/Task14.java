@@ -1,6 +1,7 @@
 package lesson04.part01;
 
 import java.util.HashMap;
+import java.sql.SQLOutput;
 
 /**
  * Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:
@@ -19,12 +20,12 @@ import java.util.HashMap;
 public class Task14 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
-
-    HashMap<String, String> map = new HashMap<String, String>(null);
-    map.put(null, null);
-    map.remove(null);
-
-    //напишите тут ваш код
+    try {
+      HashMap<String, String> map = new HashMap<String, String>(null);
+      map.put(null, null);
+      map.remove(null);
+    } catch (NullPointerException map) {
+      System.out.println("NullPointerException");
+    }
   }
 }

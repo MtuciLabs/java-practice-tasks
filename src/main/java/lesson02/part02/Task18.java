@@ -1,5 +1,10 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
 /**
  * Ввести с клавиатуры два целых числа, и вывести на экран минимальное из них. Если два числа равны между собой, необходимо вывести любое.
  * <p>
@@ -14,6 +19,17 @@ package lesson02.part02;
 public class Task18 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
+        String number1 = bufferedReader.readLine();
+        String number2 = bufferedReader.readLine();
+
+        int a = Integer.parseInt(number1);
+        int b = Integer.parseInt(number2);
+
+        if (a>b) System.out.println(b);
+        else System.out.println(a);
     }
 }

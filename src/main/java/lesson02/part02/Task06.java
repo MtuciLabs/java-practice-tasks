@@ -19,12 +19,13 @@ public class Task06 {
     }
 
     public static class Cat {
-        private String fullName;
+        private static String fullName;
 
         public void setName(String firstName, String lastName) {
             String fullName = firstName + " " + lastName;
 
             //напишите тут ваш код
+            Cat.fullName=fullName;
         }
     }
 }

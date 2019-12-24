@@ -2,6 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Есть коллекция Map<String, Object> (реализация HashMap), туда занесли 10 различных пар объектов.
@@ -34,6 +35,9 @@ public class Task19 {
     map.put("Comp", (double) 123);
 
     //напишите тут ваш код
-
+    Set<String> keys = map.keySet();
+    for (String key: keys){
+      System.out.println(key+" - "+map.get(key));
+    }
   }
 }
