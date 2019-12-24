@@ -33,7 +33,28 @@ import java.util.*;
 
 public class Task27 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Введите число");
+        String A = reader.readLine();
+        int a = Integer.parseInt(A);
+
+        if (a / 10 == 0) {
+            if (a % 2 == 0) {
+                System.out.println("Четное однозначное число");
+            } else
+                System.out.println("Нечетное однозначное число");
+        } else if (a / 100 == 0) {
+            if (a % 2 == 0) {
+                System.out.println("Четное двузначное число");
+            } else
+                System.out.println("Нечетное двузначное число");
+        } else if (a / 1000 == 0) {
+            if (a % 2 == 0) {
+                System.out.println("Четное трехзначное число");
+            } else
+                System.out.println("Нечетное трехзначное число");
+        }
 
     }
 }

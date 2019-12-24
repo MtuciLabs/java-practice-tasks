@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 /**
  * Нужно создать два списка - LinkedList и ArrayList.
- *
+ * <p>
  * Требования:
  * 1.	Программа не должна выводить текст на экран.
  * 2.	Программа не должна считывать значения с клавиатуры.
@@ -16,17 +16,17 @@ import java.util.LinkedList;
 
 public class Task08 {
 
-  public static Object createArrayList() {
-    //напишите тут ваш код
-    return null;
-  }
+    public static Object createArrayList() {
+        ArrayList array_list = new ArrayList();
+        return array_list;
+    }
 
-  public static Object createLinkedList() {
-    //напишите тут ваш код
-    return null;
-  }
+    public static Object createLinkedList() {
+        LinkedList linked_list = new LinkedList();
+        return null;
+    }
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-  }
+    }
 }

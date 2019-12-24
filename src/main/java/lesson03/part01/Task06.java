@@ -31,8 +31,8 @@ import java.io.InputStreamReader;
  * Подсказка: один из вариантов решения этой задачи, использовать конструкцию:
  *
  * while (true) {
- *     int number = считываем число;
- *     if (проверяем, что number -1)
+ *     int  (проверяемnumber = считываем число;
+ *  *     if, что number -1)
  *         break;
  * }
  *
@@ -49,7 +49,21 @@ import java.io.InputStreamReader;
 public class Task06 {
 
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        float summa = 0; float delitel = 0;
+
+        while (true) {
+            System.out.println("Введите число: ");
+            int number = Integer.parseInt(reader.readLine());
+            summa = summa + number;
+            delitel = delitel + 1;
+
+            if (number==-1) {
+                System.out.println("Среднее арифметическое = "+ (summa/delitel));
+                break;
+            }
+        }
+
     }
 
 }

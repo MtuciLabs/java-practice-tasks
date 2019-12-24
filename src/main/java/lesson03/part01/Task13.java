@@ -21,11 +21,27 @@ package lesson03.part01;
 public class Task13 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Friend friend = new Friend();
+        friend.initialize("Barsuk", 100, 'ж');
     }
 
     public static class Friend {
-        //напишите тут ваш код
+        String name;
+        int age;
+        char sex;
+
+        public void initialize(String name) {
+            this.name = name;
+        }
+        public void initialize(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+        public void initialize(String name, int age, char sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
     }
 
 }
