@@ -1,9 +1,10 @@
-package lesson01.part1;
-
+package lesson02.part01;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.io.PrintStream;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -12,9 +13,10 @@ import org.junit.Test;
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-public class Task06Test {
+public class Task22Test {
 
   private static final PrintStream originalOut = System.out;
+  private static final InputStream originalIn = System.in;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
 
   @BeforeClass
@@ -25,38 +27,23 @@ public class Task06Test {
   @AfterClass
   public static void restore() {
     System.setOut(originalOut);
+    System.setIn(originalIn);
   }
 
   @Test
-  public void main_SpecialCase() {
+  public void main_SpecialCase() throws Exception {
     // given
-    String expected = String.valueOf(2 * 3.14 * 5);
+    String expectedIn = "50";
+    String expectedOut = "Я буду зарабатывать $" + expectedIn + " в час";
 
     // when
+    System.setIn(new ByteArrayInputStream(expectedIn.getBytes()));
     fakeOut.reset();
-    Task06.printCircleLength(5);
+    Task22.main(null);
     String actual = fakeOut.toString().trim();
 
     // then
     assertEquals("Вывод программы не соответствует ожидаемому.",
-        expected, actual);
-  }
-
-  @Test
-  public void main_ArbitraryCases() {
-    for (int parameter = 0; parameter < 100; parameter++) {
-      // given
-      double pi = 3.14;
-      String expected = String.valueOf(2 * pi * parameter);
-
-      // when
-      fakeOut.reset();
-      Task06.printCircleLength(parameter);
-      String actual = fakeOut.toString().trim();
-
-      // then
-      assertEquals("Вывод программы не соответствует ожидаемому.",
-          expected, actual);
-    }
+        expectedOut, actual);
   }
 }

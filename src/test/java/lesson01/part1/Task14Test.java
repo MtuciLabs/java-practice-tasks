@@ -19,7 +19,7 @@ import org.junit.Test;
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-public class Task04Test {
+public class Task14Test {
 
   private static final PrintStream originalOut = System.out;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
@@ -35,23 +35,23 @@ public class Task04Test {
   }
 
   @Test
-  public void main_ConsoleOutput() {
+  public void main_SpecialCase() {
     // given
-    String expectedOutput = String.join(System.lineSeparator(), "26", "25");
+    String expected = "20";
 
     // when
-    Task04.main(null);
+    Task14.main(null);
 
     // then
     assertEquals("Вывод программы не соответствует ожидаемому.",
-        expectedOutput, fakeOut.toString().trim());
+        expected, fakeOut.toString().trim());
   }
 
   @Test
-  public void main_FileChanges() {
+  public void main_VarChanges() {
     // given
-    String expected = "publicstaticvoidmain(String[]args){intx=27;inty=15;//y=x-y;//y=y-x;//y=y+x;//y=y+x;y=x/y;//y=y/x;//y=y*x;x=x-y;y=y-x;System.out.println(Math.abs(x));System.out.println(Math.abs(y));}";
-    String taskPath = "./src/main/java/lesson01/part1/Task04.java";
+    String expected = "publicstaticinta=1;publicstaticintb=3;publicstaticintc=9;publicstaticintd=27;";
+    String taskPath = "./src/main/java/lesson01/part1/Task14.java";
 
     // when
     try {
@@ -59,7 +59,26 @@ public class Task04Test {
       String normalizeContent = StringUtils.deleteWhitespace(content);
 
       // then
-      assertTrue("Нарушено условие задачи: Нельзя изменять (добавлять, удалять) строки с кодом",
+      assertTrue("Нарушено условие задачи: Значения переменных: a, b, c, d не изменяй",
+          normalizeContent.contains(expected));
+    } catch (IOException e) {
+      fail("Ошибка при считывании файла");
+    }
+  }
+
+  @Test
+  public void main_Changes() {
+    // given
+    String expected = "publicstaticvoidmain(String[]args){intresult=-a+b-c+d;System.out.println(result);}";
+    String taskPath = "./src/main/java/lesson01/part1/Task14.java";
+
+    // when
+    try {
+      String content = Files.readString(Path.of(taskPath), StandardCharsets.UTF_8);
+      String normalizeContent = StringUtils.deleteWhitespace(content);
+
+      // then
+      assertTrue("Нарушено условие задачи: Порядок следования переменных в этой строке изменять нельзя.",
           normalizeContent.contains(expected));
     } catch (IOException e) {
       fail("Ошибка при считывании файла");

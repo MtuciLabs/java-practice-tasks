@@ -1,5 +1,4 @@
-package lesson01.part1;
-
+package lesson02.part02;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +11,7 @@ import org.junit.Test;
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-public class Task06Test {
+public class Task35Test {
 
   private static final PrintStream originalOut = System.out;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
@@ -28,35 +27,20 @@ public class Task06Test {
   }
 
   @Test
-  public void main_SpecialCase() {
+  public void main_SpecialCase() throws Exception {
     // given
-    String expected = String.valueOf(2 * 3.14 * 5);
+    String[] evenNumbers = {"2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "22", "24", "26", "28", "30", "32",
+        "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "62", "64", "66", "68",
+        "70", "72", "74", "76", "78", "80", "82", "84", "86", "88", "90", "92", "94", "96", "98", "100"};
+    String expectedOut = String.join(System.lineSeparator(), evenNumbers);
 
     // when
     fakeOut.reset();
-    Task06.printCircleLength(5);
+    Task35.main(null);
     String actual = fakeOut.toString().trim();
 
     // then
     assertEquals("Вывод программы не соответствует ожидаемому.",
-        expected, actual);
-  }
-
-  @Test
-  public void main_ArbitraryCases() {
-    for (int parameter = 0; parameter < 100; parameter++) {
-      // given
-      double pi = 3.14;
-      String expected = String.valueOf(2 * pi * parameter);
-
-      // when
-      fakeOut.reset();
-      Task06.printCircleLength(parameter);
-      String actual = fakeOut.toString().trim();
-
-      // then
-      assertEquals("Вывод программы не соответствует ожидаемому.",
-          expected, actual);
-    }
+        expectedOut, actual);
   }
 }

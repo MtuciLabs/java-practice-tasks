@@ -1,12 +1,11 @@
-package lesson01.part1;
+package lesson02.part02;
 
-
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -19,9 +18,10 @@ import org.junit.Test;
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-public class Task04Test {
+public class Task01Test {
 
   private static final PrintStream originalOut = System.out;
+  private static final InputStream originalIn = System.in;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
 
   @BeforeClass
@@ -32,26 +32,14 @@ public class Task04Test {
   @AfterClass
   public static void restore() {
     System.setOut(originalOut);
+    System.setIn(originalIn);
   }
 
   @Test
-  public void main_ConsoleOutput() {
+  public void main_SpecialCase() throws Exception {
     // given
-    String expectedOutput = String.join(System.lineSeparator(), "26", "25");
-
-    // when
-    Task04.main(null);
-
-    // then
-    assertEquals("Вывод программы не соответствует ожидаемому.",
-        expectedOutput, fakeOut.toString().trim());
-  }
-
-  @Test
-  public void main_FileChanges() {
-    // given
-    String expected = "publicstaticvoidmain(String[]args){intx=27;inty=15;//y=x-y;//y=y-x;//y=y+x;//y=y+x;y=x/y;//y=y/x;//y=y*x;x=x-y;y=y-x;System.out.println(Math.abs(x));System.out.println(Math.abs(y));}";
-    String taskPath = "./src/main/java/lesson01/part1/Task04.java";
+    String expected = "publicvoidadjustAge(intage){this.age=age+20;System.out.println(\"AgeinadjustAge()is:\"+age);}";
+    String taskPath = "./src/main/java/lesson02/part02/Task01.java";
 
     // when
     try {
@@ -59,7 +47,7 @@ public class Task04Test {
       String normalizeContent = StringUtils.deleteWhitespace(content);
 
       // then
-      assertTrue("Нарушено условие задачи: Нельзя изменять (добавлять, удалять) строки с кодом",
+      assertTrue("Нарушено условие задачи: Метод adjustAge класса Person должен увеличивать возраст человека (Person) на 20.",
           normalizeContent.contains(expected));
     } catch (IOException e) {
       fail("Ошибка при считывании файла");

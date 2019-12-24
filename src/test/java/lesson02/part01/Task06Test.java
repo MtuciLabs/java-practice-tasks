@@ -1,5 +1,4 @@
-package lesson01.part1;
-
+package lesson02.part01;
 
 import static org.junit.Assert.assertEquals;
 
@@ -30,33 +29,15 @@ public class Task06Test {
   @Test
   public void main_SpecialCase() {
     // given
-    String expected = String.valueOf(2 * 3.14 * 5);
+    String expected = "382";
 
     // when
     fakeOut.reset();
-    Task06.printCircleLength(5);
+    Task06.main(null);
     String actual = fakeOut.toString().trim();
 
     // then
     assertEquals("Вывод программы не соответствует ожидаемому.",
         expected, actual);
-  }
-
-  @Test
-  public void main_ArbitraryCases() {
-    for (int parameter = 0; parameter < 100; parameter++) {
-      // given
-      double pi = 3.14;
-      String expected = String.valueOf(2 * pi * parameter);
-
-      // when
-      fakeOut.reset();
-      Task06.printCircleLength(parameter);
-      String actual = fakeOut.toString().trim();
-
-      // then
-      assertEquals("Вывод программы не соответствует ожидаемому.",
-          expected, actual);
-    }
   }
 }

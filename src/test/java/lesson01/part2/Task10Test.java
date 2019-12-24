@@ -1,5 +1,4 @@
-package lesson01.part1;
-
+package lesson01.part2;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +11,7 @@ import org.junit.Test;
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
  */
-public class Task06Test {
+public class Task10Test {
 
   private static final PrintStream originalOut = System.out;
   private static final ByteArrayOutputStream fakeOut = new ByteArrayOutputStream();
@@ -30,33 +29,15 @@ public class Task06Test {
   @Test
   public void main_SpecialCase() {
     // given
-    String expected = String.valueOf(2 * 3.14 * 5);
+    String expected = String.join(System.lineSeparator(), "12", "-20", "-20");
 
     // when
     fakeOut.reset();
-    Task06.printCircleLength(5);
+    Task10.main(null);
     String actual = fakeOut.toString().trim();
 
     // then
     assertEquals("Вывод программы не соответствует ожидаемому.",
         expected, actual);
-  }
-
-  @Test
-  public void main_ArbitraryCases() {
-    for (int parameter = 0; parameter < 100; parameter++) {
-      // given
-      double pi = 3.14;
-      String expected = String.valueOf(2 * pi * parameter);
-
-      // when
-      fakeOut.reset();
-      Task06.printCircleLength(parameter);
-      String actual = fakeOut.toString().trim();
-
-      // then
-      assertEquals("Вывод программы не соответствует ожидаемому.",
-          expected, actual);
-    }
   }
 }
