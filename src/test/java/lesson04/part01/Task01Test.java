@@ -1,4 +1,4 @@
-package lesson04.part01;
+/**package lesson04.part01;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -22,7 +22,7 @@ import org.junit.Test;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
- */
+
 public class Task01Test {
 
   private static final PrintStream originalOut = System.out;
@@ -80,3 +80,4 @@ public class Task01Test {
     }
   }
 }
+ */

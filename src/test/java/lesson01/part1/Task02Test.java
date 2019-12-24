@@ -1,4 +1,4 @@
-package lesson01.part1;
+/**package lesson01.part1;
 
 
 import static org.junit.Assert.assertEquals;
@@ -12,7 +12,7 @@ import org.junit.Test;
 
 /**
  * @author Azamat_Abidokov Date: 07-Oct-19
- */
+
 public class Task02Test {
 
   private static final PrintStream originalOut = System.out;
@@ -42,3 +42,4 @@ public class Task02Test {
         output.repeat(count), fakeOut.toString());
   }
 }
+ */

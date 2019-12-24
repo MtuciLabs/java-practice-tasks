@@ -36,51 +36,42 @@ public class Task14 {
     public static void main(String[] args) {
         //напишите тут ваш код
     }
-
     public static class Cat {
-        //напишите тут ваш код
-        private String name;
-        private int age;
-        private int weight;
-        private String address;
-        private String color;
+        public String name;
+        public int age;
+        public int weight;
+        public String color;
+        public String address;
 
-        int defaultAge = 4;
-        int defaultWeight = 6;
-        String defaultColor = "red";
-
-        public void initialize1(String name){
-            this.name = name;
-            this.age = defaultAge;
-            this.weight = defaultWeight;
-            this.color = defaultColor;
-        }
-
-        public void initialize2(String name, int age, int weight){
-            this.name = name;
-            this.age = age;
+        public Cat(String name) {
+            this.name  = name;
             this.weight = weight;
-            this.color = defaultColor;
-        }
-
-        public void initialize3(String name,int age){
-            this.name = name;
+            this.color = color;
             this.age = age;
-            this.weight = defaultWeight;
-            this.color = defaultColor;
         }
 
-        public void initialize4(String color,int weight){
-            this.age = defaultAge;
+        public Cat(String name, int age, int weight) {
+            this.name  = name;
+            this.age = age;
             this.weight = weight;
             this.color = color;
         }
 
-        public void initialize5(int weight, String color,String address){
-            this.age = defaultAge;
+        public Cat(String name, int age) {
+            this.name  = name;
+            this.age = age;
+        }
+
+        public Cat(int weight, String color) {
             this.weight = weight;
             this.color = color;
+        }
+
+        public Cat(int weight, String color, String address) {
+            this.color = color;
+            this.weight = weight;
             this.address = address;
+
         }
     }
 

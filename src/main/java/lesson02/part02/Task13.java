@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.Scanner;
 /**
  * Ввести с клавиатуры номер дня недели, в зависимости от номера вывести название
  * «понедельник», «вторник», «среда», «четверг», «пятница», «суббота», «воскресенье»,
@@ -24,35 +25,31 @@ import java.io.Reader;
 public class Task13 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        InputStream inputStream = System.in;
-        Reader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-        System.out.println("Vvedite nomer dnya nedeli");
-        String number = bufferedReader.readLine();
-        int a = Integer.parseInt(number);
-        if (a == 1) {
-            System.out.println("Ponedelnik");
+        Scanner scn = new Scanner(System.in);
+        int day = scn.nextInt();
+        if(day==1){
+            System.out.println("Понедельник");
         }
-        else if (a == 2) {
-            System.out.println("Vtornik");
+        if(day==2){
+            System.out.println("Вторник");
         }
-        else if (a == 3) {
-            System.out.println("Sreda");
+        if(day==3){
+            System.out.println("Среда");
         }
-        else if (a == 4) {
-            System.out.println("Chetverg");
+        if(day==4){
+            System.out.println("Четверг");
         }
-        else if (a == 5) {
-            System.out.println("Pyatnitsa");
+        if(day==5){
+            System.out.println("Пятница");
         }
-        else if (a == 6) {
-            System.out.println("Subbota");
+        if(day==6){
+            System.out.println("Суббота");
         }
-        else if (a == 7) {
-            System.out.println("Voskresenie");
-        } else {
-            System.out.println("Takogo dnya nedeli ne sushestvuet");
+        if(day==7){
+            System.out.println("Воскресенье");
         }
-
+        if (day>7 || day<1){
+            System.out.println("такого дня недели не существует");
+        }
     }
 }
