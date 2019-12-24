@@ -42,4 +42,4 @@ public class Task18 {
     System.out.println("Even: " + even + " Odd: " + odd);
   }
   }
-}
+

@@ -35,31 +35,28 @@ public class Task32 {
 
   public static void main(String[] args) {
     try {
-    handleExceptions();
-    }catch (Exception e){
-      BEAN.log(e);
+      handleExceptions();
+    }catch (Exception exception){
+      BEAN.log(exception);
     }
   }
-
-  public static void handleExceptions() {
-    // Раскомментируй
+  public static void handleExceptions() throws FileSystemException {
     try {
-   BEAN.methodThrowExceptions();
-    } catch (FileSystemException e){
-      BEAN.log(e);
-      throw e;
-    } catch (CharConversionException e){
-      BEAN.log(e);
-    } catch (IOException e){
-      BEAN.log(e);
+      BEAN.methodThrowExceptions();
+    } catch (FileSystemException exception){
+      BEAN.log(exception);
+      throw exception;
+    } catch (CharConversionException exception){
+      BEAN.log(exception);
+    } catch (IOException exception){
+      BEAN.log(exception);
     }
-  }
 
+  }
   public static class StatelessBean {
     public void log(Exception exception) {
       System.out.println(exception.getMessage() + ", " + exception.getClass().getSimpleName());
     }
-
     public void methodThrowExceptions() throws CharConversionException, FileSystemException, IOException {
       int i = (int) (Math.random() * 3);
       if (i == 0) {

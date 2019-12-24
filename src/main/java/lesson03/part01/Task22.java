@@ -17,47 +17,30 @@ package lesson03.part01;
  * 3.	Метод readDouble должен считывать и возвращать дробное число(тип double).
  * 4.	Метод readBoolean должен считывать и возвращать логическую переменную(тип boolean).
  */
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
+import java.util.Scanner;
 public class Task22 {
 
   public static void main(String[] args) throws Exception {
-
   }
-
-  public static class ConsoleReader {
-
-    public static String readString() throws Exception {
-      //напишите тут ваш код
-      return null;
-      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-      String a = reader.readLine();
-      return a;
-    }
-
-    public static int readInt() throws Exception {
-      //напишите тут ваш код
-      return 0;
-      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-      int b =Integer.parseInt(reader.readLine());
-      return b;
-    }
-
-    public static double readDouble() throws Exception {
-      //напишите тут ваш код
-      return 0.0;
-      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-      double c = Double.parseDouble(reader.readLine());
-      return c;
-    }
-
-    public static boolean readBoolean() throws Exception {
-      //напишите тут ваш код
-      return false;
-      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-      boolean d =  Boolean.parseBoolean(reader.readLine());
-      return d;
-    }
+  public static String readString() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    String stroka = scn.next();
+    return stroka;
   }
-
+  public static int readInt() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    int chislo = scn.nextInt();
+    return chislo;
+  }
+  public static double readDouble() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    double drob = scn.nextDouble();
+    return drob;
+  }
+  public static boolean readBoolean() throws Exception {
+    Scanner scn = new Scanner(System.in);
+    boolean logich = scn.nextBoolean();
+    return logich;
+  }
 }

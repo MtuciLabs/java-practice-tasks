@@ -40,9 +40,9 @@ public class Task24 {
       if (value < 500)
         iterator.remove();
     }
-
+  }
     public static void main (String[]args){
 
     }
-  }
+
 }

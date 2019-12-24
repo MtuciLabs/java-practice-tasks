@@ -17,12 +17,14 @@ public class Task34 {
 
   public static void main(String[] args) {
     try {
-   divideByZero();
+      divideByZero(10);
     } catch (ArithmeticException e) {
       e.printStackTrace();
     }
   }
-  public static void divideByZero(int i) {
-    System.out.println(i/0);
+
+  private static void divideByZero(int i) {
+    System.out.println(i / 0);
   }
-}
+  }
+

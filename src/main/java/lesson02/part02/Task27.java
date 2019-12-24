@@ -32,8 +32,7 @@ import java.io.*;
 import java.util.*;
 
 public class Task27 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
         public static void main(String[] args) throws Exception {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Введите число ");
@@ -55,4 +54,4 @@ public class Task27 {
             }
         }
     }
-}
+

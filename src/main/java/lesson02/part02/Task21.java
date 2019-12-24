@@ -18,8 +18,7 @@ import java.io.*;
 import java.util.*;
 
 public class Task21 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
         public static void main(String[] args) throws Exception {
             Scanner sc = new Scanner(System.in);
             System.out.println("Введите имя 1 ");
@@ -35,4 +34,4 @@ public class Task21 {
 
         }
     }
-}
+

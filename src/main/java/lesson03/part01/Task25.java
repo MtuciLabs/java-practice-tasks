@@ -21,6 +21,8 @@ public class Task25 {
 
 
   public static void method1() {
+
+  }
     public static void method2() {
     new Task25().method3();
   }
@@ -29,7 +31,7 @@ public class Task25 {
     method4();
   }
 
-  public void method4() {
+  public static void method4() {
     step++;
     for (StackTraceElement element : Thread.currentThread().getStackTrace())
       System.out.println(element);

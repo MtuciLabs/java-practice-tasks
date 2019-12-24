@@ -34,7 +34,7 @@ public class Task01 {
     System.out.println(Arrays.toString(arr));
     return arr;
   }
-  }
+
 
   public static int max(int[] array) {
     Arrays.sort(array, 0, 20);

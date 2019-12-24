@@ -17,27 +17,19 @@ public class Task30 {
     public static void main(String[] args) {
         Man man = new Man();
         Woman woman = new Woman();
-
         printName(man);
+        //  printName(woman);
         printName(woman);
     }
-
-    public static void printName(Man man) {
-        if (h.getClass()== Man.class)
-            System.out.println("x");
-        if (h instanceof Woman)
-            System.out.println("y");
+    public static void printName(Human human) {
 
     }
-
     public static class Human {
 
     }
-
     public static class Man extends Human{
 
     }
-
     public static class Woman extends Human{
 
     }

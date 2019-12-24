@@ -48,8 +48,7 @@ import java.io.InputStreamReader;
 
 public class Task06 {
 
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
         public static void main(String[] args) throws Exception {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             float sum = 0;
@@ -67,4 +66,4 @@ public class Task06 {
         }
     }
 
-}
+

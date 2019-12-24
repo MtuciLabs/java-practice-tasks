@@ -17,8 +17,7 @@ package lesson02.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class Task36 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
         public static void main(String[] args) throws Exception {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Введите число 1 ");
@@ -33,4 +32,4 @@ public class Task36 {
             }
         }
     }
-}
+

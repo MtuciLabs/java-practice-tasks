@@ -41,6 +41,7 @@ public class Task19 {
   }
 
   public static class Body {
+
     public static void calculateMassIndex(double weight, double height) {
       // напишите тут ваш код
       double s = weight / (height * height);
@@ -50,8 +51,11 @@ public class Task19 {
         System.out.println("Нормальный: между 18.5 и 25");
       } else if (s >= 25 & s < 30) {
         System.out.println("Избыточный вес: между 25 и 30");
-      } else if (s>=30){
+      } else if (s >= 30) {
         System.out.println("Ожирение: 30 или больше");
+      }
+
+
     }
   }
 }

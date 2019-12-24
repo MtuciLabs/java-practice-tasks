@@ -15,8 +15,7 @@ package lesson02.part02;
  */
 
 public class Task38 {
-    public static void main(String[] args) {
-        //напишите тут ваш код
+
         public static void main(String[] args) {
             for (int a = 1; a < 11; a++) {
                 System.out.print(8);
@@ -27,4 +26,4 @@ public class Task38 {
             }
         }
     }
-}
+

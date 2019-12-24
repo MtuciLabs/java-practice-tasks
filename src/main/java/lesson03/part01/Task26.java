@@ -20,7 +20,7 @@ public class Task26 {
   printIdea(new Idea());
   }
 
-}
+
 public static class Idea {
   public String getDescription() {
     return "Idea";
@@ -31,4 +31,4 @@ public static class Idea {
   //напишите тут ваш код
 }
 }
-}
+

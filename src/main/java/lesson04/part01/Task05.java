@@ -26,7 +26,7 @@ public class Task05 {
     //напишите тут ваш код
     ArrayList<Integer> list = new ArrayList<>();
     for (int i = 0; i < 10; i++) {
-      list.add(Integer.parseInt(r.readLine()));
+      list.add(Integer.parseInt(reader.readLine()));
     }
     for (int i = list.size() - 1; i >= 0; i--) {
       System.out.println(list.get(i));

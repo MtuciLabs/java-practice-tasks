@@ -18,8 +18,7 @@ package lesson02.part02;
  */
 import java.util.Scanner;
 public class Task15 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
         public static void main(String[] args) throws Exception {
             Scanner sc = new Scanner(System.in);
             System.out.println("Введите сторону а ");
@@ -36,4 +35,3 @@ public class Task15 {
 
         }
     }
-}
