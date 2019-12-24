@@ -16,7 +16,6 @@ package lesson02.part02;
  */
 
 public class Task01 {
-
   public static void main(String[] args) {
     Person person = new Person();
     System.out.println("Age is: " + person.age);
@@ -25,12 +24,11 @@ public class Task01 {
   }
 
   public static class Person {
-
     public int age = 20;
 
     public void adjustAge(int age) {
-      this.age = age + 20;
-      System.out.println("Age in adjustAge is: " + age);
+      this.age= age + 20;
+      System.out.println("Age in adjustAge() is: " + age);
     }
   }
 }
