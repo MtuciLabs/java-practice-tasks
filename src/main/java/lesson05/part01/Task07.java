@@ -18,8 +18,8 @@ public class Task07 {
     }
 
     public class Cat {
-        public String name;
-        public int age;
+        private  String name;
+        private int age;
         public int weight;
 
         public Cat(String name, int age, int weight) {
@@ -29,6 +29,7 @@ public class Task07 {
         }
 
         public String getName() {
+
             return name;
         }
 

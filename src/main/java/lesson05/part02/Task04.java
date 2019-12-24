@@ -1,5 +1,7 @@
 package lesson05.part02;
 
+import java.util.Objects;
+
 /**
  * То ли птица, то ли лампа
  * Написать метод, который определяет, объект какого класса ему передали,
@@ -26,6 +28,16 @@ public class Task04 {
     }
 
     public static void printObjectType(Object o) {
+        if(o instanceof Cat){
+            System.out.println("Кошка");
+        } else if(o instanceof Bird ){
+            System.out.println("Птица");
+        } else if(o instanceof Lamp) {
+            System.out.println("Лампа");
+        } else if(o instanceof Dog){
+            System.out.println("Собака");
+        }
+
         //Напишите тут ваше решение
     }
 

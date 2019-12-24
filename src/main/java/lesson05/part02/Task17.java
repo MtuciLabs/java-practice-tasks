@@ -19,7 +19,24 @@ public class Task17 {
     public static void main(String[] args) {
 
     }
+public interface CanFly{
+        public static void inu(){
 
+        }
+
+}
+    public interface CanRun{
+        public static void inv(){
+
+        }
+
+    }
+    public interface CanSwim{
+        public static void inm(){
+
+        }
+
+    }
 //add interfaces here - добавь интерфейсы тут
 
 }

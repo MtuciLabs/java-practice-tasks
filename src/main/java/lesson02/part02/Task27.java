@@ -34,6 +34,35 @@ import java.util.*;
 public class Task27 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        int num = in.nextInt();
+        int i = 0;
 
+
+        if (num % 2 == 0) {
+            System.out.print("четное ");
+        }
+        else if(num % 2 != 0) {
+            System.out.print("нечетное ");
+        }
+
+
+        while (num >= 1) {
+            i += 1;
+            num /= 10;
+        }
+
+
+        switch (i) {
+            case 1:
+                System.out.print("однозначное число");
+                break;
+            case 2:
+                System.out.print("двузначное число");
+                break;
+            case 3:
+                System.out.print("трехзначное число");
+                break;
+        }
     }
 }

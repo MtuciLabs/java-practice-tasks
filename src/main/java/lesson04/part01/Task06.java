@@ -29,6 +29,19 @@ import java.util.Set;
 
 public class Task06 {
   public static void main(String[] args) {
+    HashSet<String> hashset=new HashSet<>(10);
+    hashset.add("арбуз");
+    hashset.add("банан");
+    hashset.add("вишня");
+    hashset.add("груша");
+    hashset.add("дыня");
+    hashset.add("ежевика");
+    hashset.add("женьшень");
+    hashset.add("земляника");
+    hashset.add("ирис");
+    hashset.add("картофель");
+    System.out.println(hashset);
+
     //напишите тут ваш код
 
   }

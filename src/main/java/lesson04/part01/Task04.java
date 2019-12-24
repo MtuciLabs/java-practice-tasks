@@ -1,8 +1,8 @@
 package lesson04.part01;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * 1. Создай список строк.
@@ -20,6 +20,19 @@ import java.util.ArrayList;
 public class Task04 {
 
   public static void main(String[] args) throws Exception {
+    Scanner in=new Scanner(System.in);
+
+    ArrayList a1=new ArrayList();
+    for(int i=0;i<5;i++){
+      a1.add(i,in.next());
+    }
+    for(int i=0;i<13;i++){
+      a1.add(0,a1.get(4));
+      a1.remove(4);
+    }
+    for(int i=0;i<5;i++){
+      System.out.println(a1.get(i));
+    }
     //напишите тут ваш код
   }
 }
