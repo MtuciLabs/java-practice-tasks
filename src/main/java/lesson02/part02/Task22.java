@@ -10,7 +10,7 @@ package lesson02.part02;
  * 3.	Если возраст меньше 18 вывести только сообщение "Подрасти еще".
  * 4.	Если возраст больше либо равно 18 ничего не выводить.
  */
-
+import java.util.Scanner;
 public class Task22 {
 
   public static void main(String[] args) throws Exception {
