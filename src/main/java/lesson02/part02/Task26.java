@@ -23,8 +23,8 @@ package lesson02.part02;
  * 7.	Если число положительное и нечетное, вывести "положительное нечетное число".
  */
 
-import java.io.Exception;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Task26 {
 
