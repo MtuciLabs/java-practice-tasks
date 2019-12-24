@@ -16,8 +16,16 @@ package lesson05.part02;
 
 public class Task07 {
     public static void main(String[] args) {
+        print(1);
+        print(1);
 
     }
 
     //Напишите тут ваши методы
+    public static int print(int w){
+        return w;
+    }
+    public static Integer print(Integer w){
+        return w;
+    }
 }
