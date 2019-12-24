@@ -28,5 +28,6 @@ public class Task09 {
             System.out.println(s);
         //напишите тут ваш код
 
+        }
     }
 }
