@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import java.util.Scanner;
+
 public class Task10 {
 
     /**
@@ -15,7 +17,12 @@ public class Task10 {
      */
 
     public static void main(String[] args) {
-        int secondsAfter15 = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Сколько сейчас времени?");
+        int t1 = sc.nextInt();
+        System.out.println("От скольких надо посчитать?");
+        int t2 = sc.nextInt();
+        int secondsAfter15 = (t1-t2)*60;
         System.out.println(secondsAfter15);
     }
 }

@@ -28,7 +28,8 @@ public class Task11 {
 
         public long getVolume(int a, int b, int c) {
             //напишите тут ваш код
-            return 0;
+            long V = a*b*c*1000; // 1000 литров в 1кубометре воды
+            return V;
         }
 
     }

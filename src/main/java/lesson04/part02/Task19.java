@@ -2,6 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Есть коллекция Map<String, Object> (реализация HashMap), туда занесли 10 различных пар объектов.
@@ -22,18 +23,22 @@ public class Task19 {
 
   public static void main(String[] args) {
     Map<String, Object> map = new HashMap<>();
-    map.put("Sim", 5);
-    map.put("Tom", 5.5);
-    map.put("Arbus", false);
+    map.put("Som", 5);
+    map.put("Tim", 5.5);
+    map.put("Ara", false);
     map.put("Baby", null);
     map.put("Cat", "Cat");
     map.put("Eat", Long.valueOf(56));
     map.put("Food", Character.valueOf('3'));
-    map.put("Gevey", '6');
-    map.put("Hugs", 111111111111L);
-    map.put("Comp", (double) 123);
+    map.put("Gery", '6');
+    map.put("Hugo", 111111111111L);
+    map.put("Com", (double) 123);
 
-    //напишите тут ваш код
+    Set<Map.Entry<String,Object>> set=map.entrySet();
+    for (Map.Entry<String,Object> m:set){
+      System.out.print(m.getKey() + "-");
+      System.out.println(m.getValue());
+    }
 
   }
 }

@@ -3,6 +3,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * 1. В методе initializeArray():
@@ -26,12 +27,24 @@ public class Task01 {
   }
 
   public static int[] initializeArray() throws IOException {
-    // создай и заполни массив
-    return null;
+    int i;
+    int[] a= new int[20];
+    Scanner in=new Scanner(System.in);
+    for(i=0;i<20;i++){
+      a[i]=in.nextInt();
+    }
+    return a;
   }
 
   public static int max(int[] array) {
-    // найди максимальное значение
-    return 0;
+    int i;
+    int max=0;
+    for(i=0;i<20;i++){
+      if (array[i]>max){
+        max=array[i];
+
+      }
+    }
+    return max;
   }
 }

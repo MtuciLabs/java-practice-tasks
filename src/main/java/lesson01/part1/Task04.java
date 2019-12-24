@@ -17,10 +17,10 @@ public class Task04 {
         int y = 15;
 
         // y = x - y;
-        // y = y - x;
+        //y = y - x;
         // y = y + x;
         // y = y + x;
-        // y = x / y;
+         y = x / y;
         // y = y / x;
         // y = y * x;
 

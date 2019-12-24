@@ -18,7 +18,8 @@ public class Task10 {
      */
 
     public static int min(int a, int b) {
-        return 0;
+        int p = Math.min(a, b);
+        return p;
         //напишите тут ваш код
     }
 

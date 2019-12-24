@@ -2,6 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Есть коллекция Map<String, String> (реализация HashMap), туда занесли 10 различных строк.
@@ -18,21 +19,24 @@ public class Task18 {
 
   public static void main(String[] args) {
     Map<String, String> map = new HashMap<>();
-    map.put("Sim", "Sim");
-    map.put("Tom", "Tom");
-    map.put("Arbus", "Arbus");
+    map.put("Som", "Som");
+    map.put("Tim", "Tim");
+    map.put("Ara", "Ara");
     map.put("Baby", "Baby");
     map.put("Cat", "Cat");
     map.put("Dog", "Dog");
     map.put("Eat", "Eat");
     map.put("Food", "Food");
-    map.put("Gevey", "Gevey");
-    map.put("Hugs", "Hugs");
+    map.put("Gery", "Gery");
+    map.put("Hugo", "Hugo");
 
     printKeys(map);
   }
 
   public static void printKeys(Map<String, String> map) {
-    //напишите тут ваш код
+    Set<Map.Entry<String,String>> set=map.entrySet();
+    for (Map.Entry<String,String> m: set){
+      System.out.println(m.getKey());
+    }
   }
 }

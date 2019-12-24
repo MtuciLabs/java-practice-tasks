@@ -24,17 +24,23 @@ public class Task15 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Man men = new Man();
+        Woman women = new Woman();
+        men.Kate =  women;
+        women.Lexa = men;
+
+
     }
 
     public static class Man {
         public int age;
         public int height;
-        public Woman wife;
+        public Woman Kate;
     }
 
     public static class Woman {
         public int age;
         public int height;
-        public Man husband;
+        public Man Lexa;
     }
 }

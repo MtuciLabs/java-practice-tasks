@@ -18,21 +18,21 @@ public class Task07 {
 
   public static void main(String[] args) {
     Map<String, String> map = new HashMap<>();
-    map.put("Sim", "Sim");
+    map.put("Pit", "Pit");
     map.put("Tom", "Tom");
-    map.put("Arbus", "Arbus");
+    map.put("Ash", "Ash");
     map.put("Baby", "Baby");
     map.put("Cat", "Cat");
     map.put("Dog", "Dog");
     map.put("Eat", "Eat");
     map.put("Food", "Food");
-    map.put("Gevey", "Gevey");
-    map.put("Hugs", "Hugs");
+    map.put("Gev", "Gev");
+    map.put("Mik", "Mik");
 
     printValues(map);
   }
 
   public static void printValues(Map<String, String> map) {
-    //напишите тут ваш код
+    System.out.println(map);
   }
 }

@@ -23,6 +23,14 @@ package lesson02.part01;
 public class Task09 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        int sum = 0;
+        int x;
+        for(x = 1; x <=5; x++){
+            System.out.println(sum+x);
+            sum++;
+
+
+        }
 
     }
 }

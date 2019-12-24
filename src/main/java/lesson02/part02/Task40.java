@@ -16,6 +16,9 @@ package lesson02.part02;
 public class Task40 {
     public static void main(String[] args) {
         //напишите тут ваш код
+        for (int x = 0; x < 100; x++){
+            System.out.println("Я никогда не буду работать за копейки. Амиго");
+        }
 
     }
 }

@@ -18,10 +18,16 @@ public class Task09 {
     public static void main(String[] args) {
         displayClosestToTen(8, 11);
         displayClosestToTen(7, 14);
+
     }
 
     public static void displayClosestToTen(int a, int b) {
         // напишите тут ваш код
+        if (abs(a-10)>abs(b-10)){
+            System.out.println(b+" Ближе к 10");
+        } else {
+            System.out.println(a+" Ближе к 10");
+        }
 
     }
 

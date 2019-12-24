@@ -19,12 +19,12 @@ public class Task11 {
     }
 
     //Адам
-    public class Adam {
+    public class Adam  {
 
     }
 
     //Ева
-    public class Eve {
+    public class Eve extends Adam {
 
     }
 }

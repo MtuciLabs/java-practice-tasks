@@ -30,6 +30,17 @@ import java.util.*;
 public class Task25 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Integer num1 = Integer.parseInt(reader.readLine());
+        Integer num2 = Integer.parseInt(reader.readLine());
+        if (num1>0 && num2>0)
+            System.out.println("1");
+        if (num1<0 && num2<0)
+            System.out.println("3");
+        if (num1>0 && num2<0)
+            System.out.println("4");
+        if (num1<0 && num2>0)
+            System.out.println("2");
 
     }
 }
