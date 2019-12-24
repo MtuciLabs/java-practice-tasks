@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import java.util.Scanner;
+
 public class Task10 {
 
     /**
@@ -15,7 +17,13 @@ public class Task10 {
      */
 
     public static void main(String[] args) {
+        int i;
         int secondsAfter15 = 0;
+        int minutes = 30;
+        for (i=0; i<minutes; i++){
+            secondsAfter15 = secondsAfter15+60;
+        }
+
         System.out.println(secondsAfter15);
     }
 }

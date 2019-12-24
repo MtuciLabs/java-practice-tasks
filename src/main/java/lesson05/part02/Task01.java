@@ -25,7 +25,7 @@ public class Task01 {
 
     public static class Cow {
         public String getName() {
-            return "Я - корова";
+            return "Я не корова, Я - кит.";
         }
     }
 
