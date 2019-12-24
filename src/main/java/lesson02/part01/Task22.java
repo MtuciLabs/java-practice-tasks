@@ -21,9 +21,15 @@ import java.io.Reader;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        String n=reader.readLine();
-        System.out.println("Я буду зарабатывать " + n + " в час");
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String name = bufferedReader.readLine();
+        String ageS = bufferedReader.readLine();
+        int age = Integer.parseInt(ageS);
+        if (age < 18) {
+            System.out.println("Podrasti eshe");
+        }
 
     }
 }
