@@ -32,12 +32,12 @@ package lesson03.part01;
  */
 
 public class Task14 {
-
     public static void main(String[] args) {
         //напишите тут ваш код
     }
 
     public static class Cat {
+        //напишите тут ваш код
         String name = null;
         int age = 4;
         int weight = 5;
