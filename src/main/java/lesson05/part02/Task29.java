@@ -22,8 +22,8 @@ public class Task29 {
         void fly();
     }
 
-    public static class Horse {
-        public void run() {
+    public static class Horse implements CanFly {
+        public void fly() {
 
         }
     }

@@ -25,11 +25,11 @@ public class Task19 {
 
     }
 
-    public class Dog extends Cat {
+    public class Dog extends Pet {
 
     }
 
-    public class House extends Dog {
+    public class House extends Airplane {
 
     }
 

@@ -14,7 +14,7 @@ public class Task03 {
 
     public static void main(String[] args) {
         Cat cat = new Cat();
-        cat.setName("Жужик");
+        cat.setName("Кузя");
         System.out.println(cat.name);
     }
 
@@ -22,7 +22,7 @@ public class Task03 {
         private String name = "безымянный кот";
 
         public void setName(String name) {
-            //напишите тут ваш код
+            this.name = name;
 
         }
     }

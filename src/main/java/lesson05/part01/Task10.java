@@ -19,7 +19,10 @@ public class Task10 {
     }
 
     public class Cat {
-
+        private String name;
+        private  int age;
+        private int speed;
+        private int weight;
         public Cat(String name, int age, int weight) {
 
         }

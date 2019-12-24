@@ -15,5 +15,6 @@ public class Task17 {
 
   public static void main(String[] args) {
     //напишите тут ваш код
+    System.out.println("09 11 2019");
   }
 }

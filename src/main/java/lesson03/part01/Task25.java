@@ -13,25 +13,25 @@ package lesson03.part01;
 
 public class Task25 {
 
-  public int step;
+  private static int step;
 
   public static void main(String[] args) {
-//    method1();
+    method1();
   }
 
-  public void method1() {
+  private static void method1() {
     method2();
   }
 
-  public void method2() {
+  private static void method2() {
     new Task25().method3();
   }
 
-  public void method3() {
+  private void method3() {
     method4();
   }
 
-  public void method4() {
+  private void method4() {
     step++;
     for (StackTraceElement element : Thread.currentThread().getStackTrace())
       System.out.println(element);

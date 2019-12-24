@@ -3,7 +3,8 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.ArrayList;
+import java.util.Scanner;
 /**
  * Создать массив на 20 чисел.
  * Заполнить его числами с клавиатуры.
@@ -19,12 +20,25 @@ import java.io.InputStreamReader;
 
 public class Task12 {
   public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    Scanner in=new Scanner(System.in);
+    ArrayList<Integer> a=new ArrayList<>();
 
     int maximum = 0;
     int minimum = 0;
-
-    //напишите тут ваш код
+    int i;
+    for(i=0;i<20;i++) {
+      a.add(in.nextInt());
+    }
+    maximum=a.get(0);
+    minimum=a.get(0);
+    for (i=1;i<20;i++) {
+      if (a.get(i)>maximum){
+        maximum=a.get(i);
+      }
+      if (a.get(i)<minimum){
+        minimum=a.get(i);
+      }
+    }
 
     System.out.print(maximum + " " + minimum);
   }

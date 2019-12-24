@@ -1,6 +1,8 @@
 package lesson03.part01;
 
 import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * Ввести с клавиатуры число. Определить, сколько в введенном числе четных цифр, а сколько нечетных.
@@ -27,5 +29,27 @@ public class Task18 {
 
   public static void main(String[] args) throws IOException {
     //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+    System.out.println("Введите число");
+    String numSt = reader.readLine();
+    int num =  Integer.parseInt(numSt);
+
+    int dig;
+    int kolch = 0;
+    int kolnch = 0;
+
+    while (num!=0){
+      dig = num%10;
+      if (dig%2==0){
+        kolch = kolch+1;
+      }
+      if (dig%2!=0){
+        kolnch = kolnch+1;
+      }
+      num=num/10;
+    }
+
+    System.out.println("Even: "+kolch+" Odd: "+kolnch);
   }
 }

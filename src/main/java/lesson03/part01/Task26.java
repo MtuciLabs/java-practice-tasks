@@ -18,7 +18,19 @@ public class Task26 {
 
   public static void main(String[] args) {
 //    printIdea(new Idea());
+    printIdea(new Idea());
+  }
+
+  public static class Idea{
+    String description;
+
+    public String getDescription(){
+      return description;
+    }
   }
 
   //напишите тут ваш код
+  private static void printIdea(Idea idea){
+    System.out.println(idea.description);
+  }
 }

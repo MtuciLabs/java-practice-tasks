@@ -2,7 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.Set;
 /**
  * Есть коллекция Map<String, String> (реализация HashMap), туда занесли 10 различных строк.
  * Вывести на экран список ключей, каждый элемент с новой строки.
@@ -33,6 +33,9 @@ public class Task18 {
   }
 
   public static void printKeys(Map<String, String> map) {
-    //напишите тут ваш код
+    Set<Map.Entry<String,String>> set=map.entrySet();
+    for (Map.Entry<String,String> m: set){
+      System.out.println(m.getKey());
+    }
   }
 }

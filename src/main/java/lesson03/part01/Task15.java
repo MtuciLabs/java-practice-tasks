@@ -28,21 +28,23 @@ public class Task15 {
 
   static class Circle {
 
-    public double x;
-    public double y;
-    public double radius;
+    double x;
+    double y;
+    double radius;
 
-    public Circle(double x, double y, double radius) {
+    Circle(double x, double y, double radius) {
       this.x = x;
       this.y = y;
       this.radius = radius;
     }
 
-    public Circle(double x, double y) {
+    Circle(double x, double y) {
       //напишите тут ваш код
+      this(x,y,10);
+
     }
 
-    public Circle() {
+    Circle() {
       this(5, 5, 1);
     }
   }

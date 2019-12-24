@@ -1,7 +1,6 @@
 package lesson04.part01;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * 1. Создать массив на 10 строк.
@@ -23,6 +22,17 @@ import java.io.InputStreamReader;
 public class Task02 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    String[] array1 = new String[10];
+    int[] array2 = new int[10];
+    Scanner scanner = new Scanner(System.in);
+    for (int i=0; i<array1.length; i++){
+      array1[i]=scanner.nextLine();
+    }
+    for (int i=0; i<array2.length; i++){
+      array2[i]=array1[i].length();
+    }
+    for (int i=0; i<array2.length; i++){
+      System.out.print(array2[i]);
+    }
   }
 }
