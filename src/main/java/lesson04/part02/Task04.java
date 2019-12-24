@@ -3,6 +3,9 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * 1. Создай список строк.
@@ -20,25 +23,32 @@ import java.util.ArrayList;
 
 public class Task04 {
 
-  private static ArrayList<String> strings;
+  private static List<String> strings;
 
   public static void main(String[] args) throws Exception {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    ArrayList <String> aList = new ArrayList();
-    int i;
-    for (i=0; i<=4; i++){
-      aList.add(reader.readLine());
+    strings = new ArrayList<String>();
+
+    for (int i = 0; i < 5; i++) {
+      String name = reader.readLine();
+      strings.add(name);
     }
-    int max = -1;
-    for (i=0; i<=4; i++){
-      if (aList.get(i).length()>max){
-        max=aList.get(i).length();
+
+    Integer[] lenghtOfList = new Integer[5];
+
+    for (int i = 0; i < 5; i++) {
+      int size = strings.get(i).length();
+      lenghtOfList[i] = size;
+    }
+
+    Arrays.sort(lenghtOfList, Collections.reverseOrder());
+    int max = lenghtOfList[0];
+
+    for (int i = 0; i < 5; i++) {
+      if (strings.get(i).length() == max) {
+        System.out.println(strings.get(i));
       }
     }
-    for (i=0; i<=4; i++){
-      if (aList.get(i).length()==max){
-        System.out.println(aList.get(i));
-      }
-    }
+
   }
 }

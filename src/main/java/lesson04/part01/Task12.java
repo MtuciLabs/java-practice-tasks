@@ -19,9 +19,8 @@ public class Task12 {
   public static void main(String[] args) {
     try {
       int a=42/0;
-    } catch (ArithmeticException exeption) {
-      System.out.println(exeption.getMessage());
-      System.out.println("Arithmetic exeption processed");
+    } catch (ArithmeticException e) {
+      System.out.println("class java.lang.ArithmeticException");
     }
   }
 }
