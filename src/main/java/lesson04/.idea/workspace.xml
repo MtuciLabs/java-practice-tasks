@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e63413e-b4eb-44e1-bd1d-da0459e7baa0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/part02/Task01.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task02.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task03.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task04.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task05.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task06.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task07.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task08.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task09.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part02/Task10.java" beforeDir="false" afterPath="$PROJECT_DIR$/part02/Task10.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1VIPbmDqNWNM5pT1feVp2GWIzRv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e63413e-b4eb-44e1-bd1d-da0459e7baa0" name="Default Changelist" comment="" />
+      <created>1576937710988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576937710988</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
