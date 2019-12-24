@@ -1,6 +1,7 @@
 package lesson03.part01;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Ввести с клавиатуры число. Определить, сколько в введенном числе четных цифр, а сколько нечетных.
@@ -26,6 +27,19 @@ public class Task18 {
   public static int odd;
 
   public static void main(String[] args) throws IOException {
-    //напишите тут ваш код
+    Scanner scn= new Scanner(System.in);
+    even=0; odd=0;
+    int ch=scn.nextInt();
+    while (ch!=0){
+      int ost=ch%10;
+      if (ost%2==0) {
+        even = even + 1;
+      }else{
+        odd=odd+1;
+      }
+      ch=ch/10;
+    }
+    System.out.println(even);
+    System.out.println(odd);
   }
 }

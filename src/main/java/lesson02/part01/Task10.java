@@ -22,7 +22,8 @@ public class Task10 {
     }
 
     public static void writeToConsole(String s) {
+        String s2="printing:"+s;
         //напишите тут ваш код
-
+        System.out.println(s2);
     }
 }

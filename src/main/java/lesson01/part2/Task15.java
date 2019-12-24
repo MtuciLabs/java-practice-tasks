@@ -23,7 +23,8 @@ public class Task15 {
      */
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Man man=new Man();
+        Woman woman=new Woman();
     }
 
     public static class Man {
@@ -36,5 +37,6 @@ public class Task15 {
         public int age;
         public int height;
         public Man husband;
+
     }
 }

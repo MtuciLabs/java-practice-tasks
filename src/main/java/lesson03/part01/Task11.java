@@ -19,11 +19,6 @@ package lesson03.part01;
 public class Task11 {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
-    }
-
-    static class Person {
-        //напишите тут ваш код
-    }
+           }
 
 }

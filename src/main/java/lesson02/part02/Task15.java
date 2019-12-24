@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * Ввести с клавиатуры три числа а, b, c – стороны предполагаемого треугольника.
  * Определить возможность существования треугольника по сторонам. Результат вывести на экран в следующем виде:
@@ -19,7 +22,20 @@ package lesson02.part02;
 
 public class Task15 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число a");
+        System.out.println("Введите число b");
+        System.out.println("Введите число c");
+        String as = reader.readLine();
+        String bs = reader.readLine();
+        String cs = reader.readLine();
+        int a = Integer.parseInt(as);
+        int b = Integer.parseInt(bs);
+        int c = Integer.parseInt(cs);
+        if (((a+b)>c)&&((a+c)>b)&&((b+c)>a)) {
+            System.out.println("Треугольник существует.");
+        }else{
+            System.out.println("Треугольник не существует.");
+        }
     }
 }

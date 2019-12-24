@@ -39,7 +39,10 @@ public class Task15 {
     }
 
     public Circle(double x, double y) {
-      //напишите тут ваш код
+      this.x = x;
+      this.y = y;
+      radius = 10;
+      Circle circle = new Circle(5, 5,10);
     }
 
     public Circle() {

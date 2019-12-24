@@ -42,7 +42,16 @@ public class Task19 {
 
   public static class Body {
     public static void calculateMassIndex(double weight, double height) {
-      // напишите тут ваш код
+      double ind= weight/(height*height);
+      if (ind<18.5){
+        System.out.println("недовес");
+      }if ((ind<25)&&(ind>18.5)){
+        System.out.println("Нормальный");
+      }if ((ind>25)&&(ind<30)){
+        System.out.println("Избыточный вес");
+      }if (ind>30){
+        System.out.println("Ожирение");
+      }
     }
   }
 }
