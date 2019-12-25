@@ -29,8 +29,8 @@ public class Task21 {
         int min = inputArray[1];
         if (inputArray == null || inputArray.length == 0) {
             return new Pair<Integer, Integer>(null, null);
-        }else {
-            for (i=0; i<inputArray.length; i++) {
+        } else {
+            for (i = 0; i < inputArray.length; i++) {
                 if (inputArray[i] > max) {
                     max = inputArray[i];
                 }
@@ -41,6 +41,7 @@ public class Task21 {
             return new Pair<Integer, Integer>(min, max);
 
         }
+    }
 
     public static class Pair<X, Y> {
         public X x;

@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  * 1. В методе initializeArray():
@@ -18,33 +19,27 @@ import java.util.Scanner;
  */
 
 public class Task01 {
-
   public static void main(String[] args) throws Exception {
     int[] array = initializeArray();
     int max = max(array);
     System.out.println(max);
   }
-
   public static int[] initializeArray() throws IOException {
-    int i;
-    int[] a= new int[20];
+    int[] myarray=new int[20];
     Scanner in=new Scanner(System.in);
-    for(i=0;i<20;i++){
-      a[i]=in.nextInt();
+    for(int i=0;i<20;i++){
+      myarray[i]=in.nextInt();
     }
-    return a;
+    return myarray;
   }
-
   public static int max(int[] array) {
-    int i;
-    int maxl=0;
-    int max=array[0];
-    for(i=0;i<20;i++){
-      if (array[i]>max){
+    int max=-1000;
+    for(int i=0;i<20;i++){
+      if (array[i] > max) {
         max=array[i];
-        maxl=i;
       }
     }
-    return maxl;
+    return max;
+
   }
 }

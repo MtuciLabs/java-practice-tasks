@@ -2,8 +2,7 @@ package lesson04.part01;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.Vector;
+
 
 /**
  * 1. Создай список строк.
@@ -21,18 +20,18 @@ import java.util.Vector;
 public class Task04 {
 
   public static void main(String[] args) throws Exception {
-    Scanner in=new Scanner(System.in);
-    ArrayList<String> mas= new ArrayList<String>();
-    int i;
-    for(i=0;i<5;i++) {
-      String q = in.nextLine();
-      mas.add(q);
+    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList<String> list = new ArrayList<>();
+    for (int i = 0; i < 5; i++) {
+      list.add(r.readLine());
     }
-    for(i=0;i<13;i++) {
-      mas.add(0,mas.remove(mas.size()-1));
+    for (int i = 0; i < 13; i++) {
+      String s = list.get(list.size() - 1);
+      list.remove(list.size() - 1);
+      list.add(0, s);
     }
-    for (String string : mas){
-      System.out.println(string);
-    } //напишите тут ваш код
+    for (String s : list) {
+      System.out.println(s);
+    }
   }
 }

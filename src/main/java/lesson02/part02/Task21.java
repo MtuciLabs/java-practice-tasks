@@ -21,15 +21,12 @@ import java.util.Scanner;
 
 public class Task21 {
     public static void main(String[] args) throws Exception {
-        Scanner in = new Scanner(System.in);
-        String name1 = in.next();
-        String name2 = in.next();
-
-        if(name1.equals(name2)){
-            System.out.println("names r da same");
-        }
-        else if(name1.length() == name2.length()){
-            System.out.println("names have da same length ");
-        }
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String name1 = reader.readLine();
+        String name2 = reader.readLine();
+        if (name1.equals(name2))
+            System.out.println("Имена идентичны");
+        else if (name1.length()==name2.length())
+            System.out.println("Длины имен равны");
     }
 }

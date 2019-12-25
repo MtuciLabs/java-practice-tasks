@@ -15,6 +15,9 @@ public class Task03 {
      */
 
     public static void main(String[] args) {
+        int year = 2019;
+        int base = year - 98;
+        System.out.println(base);
         // Напишите здесь ваш код
     }
 }
