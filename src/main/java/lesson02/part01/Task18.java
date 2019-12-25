@@ -20,7 +20,10 @@ import java.util.*;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String name = bufferedReader.readLine();
+        String money = bufferedReader.readLine();
+        String age = bufferedReader.readLine();
+        System.out.println(name + " получает " + money +  " через " + age +  " лет.");
     }
 }

@@ -1,4 +1,5 @@
 package lesson03.part01;
+import jdk.jfr.Description;
 
 /**
  * 1. В классе задачи создать public static класс Idea.
@@ -20,5 +21,17 @@ public class Task26 {
 //    printIdea(new Idea());
   }
 
-  //напишите тут ваш код
+  public static class idea {
+
+    private String description;
+
+    public String getDescription() {
+      return description;
+    }
+
+    public static void printIdea(idea idea) {
+      System.out.println(idea.getDescription());
+      //напишите тут ваш код
+    }
+  }
 }

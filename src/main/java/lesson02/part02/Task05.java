@@ -21,8 +21,11 @@ public class Task05 {
         private static int catsCount = 0;
 
         public static void setCatsCount(int catsCount) {
-            //напишите тут ваш код
+            Cat.catsCount = catsCount;
 
+        }
+        public static void main(String[] args) {
+            setCatsCount(4);
         }
     }
 }

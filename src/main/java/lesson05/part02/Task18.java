@@ -17,31 +17,69 @@ package lesson05.part02;
  */
 
 public class Task18 {
+
     public static void main(String[] args) {
 
     }
 
     public interface CanFly {
-        void fly();
+
+        public void fly();
     }
 
     public interface CanMove {
-        void move();
+
+        public void move();
     }
 
     public interface CanEat {
-        void eat();
+
+        public void eat();
     }
 
-    public class Dog {
-    }
+    public class Dog implements CanMove, CanEat {
 
-    public class Duck {
-    }
+        public void move() {
 
-    public class Car {
-    }
+        }
 
-    public class Airplane {
+        public void eat() {
+
+        }
+
+        public class Duck implements CanEat, CanMove, CanFly {
+
+            public void move() {
+
+            }
+
+            public void eat() {
+
+            }
+
+            public void fly() {
+
+            }
+        }
+
+        public class Car implements CanMove {
+
+            public void move() {
+
+            }
+
+        }
+
+        public class Airplane implements CanFly, CanMove {
+
+            public void fly() {
+
+            }
+
+            public void move() {
+
+            }
+        }
     }
 }
+

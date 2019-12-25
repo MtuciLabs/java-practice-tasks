@@ -3,6 +3,8 @@ package lesson04.part02;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
+
 
 /**
  * Введи с клавиатуры 5 слов в список строк. Удали 3 - ий элемент списка,
@@ -18,6 +20,16 @@ import java.util.ArrayList;
 
 public class Task06 {
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    ArrayList<String> a=new ArrayList<String>();
+    Scanner in= new Scanner(System.in);
+    int i;
+    for(i=0;i<5;i++){
+      a.add(in.nextLine());
+    }
+    a.remove(3);
+    for(i=3;i>=0;i--){
+      System.out.println(a.get(i));
+    }
+//напишите тут ваш код
   }
 }

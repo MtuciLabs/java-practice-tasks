@@ -2,7 +2,9 @@ package lesson03.part01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 /**
  * Вводить с клавиатуры числа и вычислить среднее арифметическое.
  * Если пользователь ввел -1, вывести на экран среднее арифметическое всех чисел и завершить программу.
@@ -49,7 +51,25 @@ import java.io.InputStreamReader;
 public class Task06 {
 
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner in = new Scanner(System.in);
+        double sr=0;
+        int k = 0;
+        double sum = 0;
+        double a;
+        do {
+            a = in.nextInt();
+            if (a != -1) {
+                k++;
+                sum = sum + a;
+                sr = sum / k;
+
+
+            }
+        } while (a != -1) ;
+        System.out.println(sum);
+        System.out.println(k);
+        System.out.println(sr);
+    }
     }
 
-}
+

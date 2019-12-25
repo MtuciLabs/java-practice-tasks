@@ -26,7 +26,17 @@ public class Task04 {
     }
 
     public static void printObjectType(Object o) {
-        //Напишите тут ваше решение
+        String obType = "";
+        if (o instanceof Cat){
+            obType = "Кошка";
+        }
+        if (o instanceof Bird){
+            obType = "Птица";
+        }
+        if (o instanceof Lamp){
+            obType = "Лампа";
+        }
+        System.out.println(obType); //Напишите тут ваше решение
     }
 
     public static class Cat {

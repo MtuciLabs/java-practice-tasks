@@ -22,7 +22,28 @@ package lesson02.part01;
 
 public class Task09 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        int sum=0;
+        for (int i=1,j=0,l=-1,m=-2, n=-3;i<=5;i++,j++,l++,m++,n++){
+            sum+=i;
+            switch (i){
+                case 1:
+                    System.out.println(sum);
+                    break;
+                case 2:
+                    System.out.println(j + "+" + i + "=" + sum);
+                    break;
+                case 3:
+                    System.out.println(l + "+"  + j + "+" + i + "=" + sum);
+                    break;
+                case 4:
+                    System.out.println(m + "+" + l + "+"  + j + "+" + i + "=" + sum);
+                    break;
+                case 5:
+                    System.out.println(n + "+"  + m + "+" + l + "+"  + j + "+" + i + "=" + sum);
+                    break;
+            }
+
+        }
 
     }
 }

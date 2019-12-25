@@ -19,6 +19,21 @@ public class Task17 {
     public static void main(String[] args) {
 
     }
+    public interface CanFly{
+        public static void FlyStraiht(){
+
+        }
+    }
+    public interface CanRun{
+        public static void RunStraight(){
+
+        }
+    }
+    public interface CanSwim{
+        public static void SwimStraight(){
+
+        }
+    }
 
 //add interfaces here - добавь интерфейсы тут
 

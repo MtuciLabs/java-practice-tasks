@@ -26,8 +26,19 @@ public class Task05 {
 
     public static String getObjectType(Object o) {
         //Напишите тут ваше решение
+        String obType = "Неизвестное животное";
+        if (o instanceof Cow){
+            obType = "Корова";
+        }
+        if (o instanceof Dog){
+            obType = "Собака";
+        }
+        if (o instanceof Whale){
+            obType = "Кит";
+        }
 
-        return "Неизвестное животное";
+        return obType;
+
     }
 
     public static class Cow {

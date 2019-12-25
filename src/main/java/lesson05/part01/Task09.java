@@ -25,45 +25,51 @@ public class Task09 {
 }
 
 class Cat {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Cat(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
+
         return name;
     }
 
     public int getSpeed() {
+
         return speed;
     }
 
     public boolean isDogNear(Dog dog) {
+
         return this.speed > dog.getSpeed();
     }
 }
 
 class Dog {
-    public String name;
-    public int speed;
+    private String name;
+    private int speed;
 
     public Dog(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
+    private String getName() {
+
         return name;
     }
 
-    public int getSpeed() {
+    public int getSpeed()
+    {
         return speed;
     }
 
     public boolean isCatNear(Cat cat) {
+
         return this.speed > cat.getSpeed();
     }
 }

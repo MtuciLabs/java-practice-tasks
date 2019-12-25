@@ -42,7 +42,10 @@ public class Task11 {
   }
 
   public static StackTraceElement[] method5() {
-    //напишите тут ваш код
+    StackTraceElement[] stack = Thread.currentThread().getStackTrace();
+    for (StackTraceElement element : stack) {
+      System.out.println(element.getMethodName());
+    }
     return null;
   }
 }

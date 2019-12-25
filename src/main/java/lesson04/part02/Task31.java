@@ -21,8 +21,11 @@ public class Task31 {
 
   public static void main(String[] args) throws Exception {
     //напишите тут ваш код
-
+    try {
     method1();
+    }catch(Exception e) {
+      System.out.println(e);
+    }
 
     //напишите тут ваш код
 

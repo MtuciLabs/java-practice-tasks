@@ -17,7 +17,14 @@ public class Task11 {
     //напишите тут ваш код
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        System.out.println(convertToSeconds(5));
+        System.out.println(convertToSeconds(1));
+
+    }
+    public static int convertToSeconds(int hour){
+        int sec;
+        sec=hour*60*60;
+        return sec;
 
     }
 }

@@ -2,6 +2,7 @@ package lesson04.part02;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Создать коллекцию Map<String, String> (реализация HashMap), занести туда 10 пар строк:
@@ -30,6 +31,23 @@ import java.util.Map;
 public class Task16 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    Map<String, String> a= new HashMap<String, String>();
+    a.put("арбуз", "ягода");
+    a.put("банан", "трава");
+    a.put("вишня", "ягода");
+    a.put("груша", "фрукт");
+    a.put("дыня", "овощ");
+    a.put("ежевика", "куст");
+    a.put("жень-шень", "корень");
+    a.put("земляника", "ягода");
+    a.put("ирис", "цветок");
+    a.put("картофель", "клубень");
+    Set<Map.Entry<String, String>> set=a.entrySet();
+    for (Map.Entry<String,String> me: set){
+      System.out.print(me.getKey() + "-");
+      System.out.println(me.getValue());
+
+    }
+//напишите тут ваш код
   }
 }

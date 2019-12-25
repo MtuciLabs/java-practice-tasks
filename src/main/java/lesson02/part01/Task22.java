@@ -1,4 +1,8 @@
 package lesson02.part01;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.InputStream;
+import java.io.Reader;
 
 /**
  * Ввести с клавиатуры число n.
@@ -16,7 +20,13 @@ package lesson02.part01;
 
 public class Task22 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String number = bufferedReader.readLine();
+        int n = Integer.parseInt(number);
+        System.out.println("Я буду зарабатывать $"+n+" в час");
 
     }
 }
+
