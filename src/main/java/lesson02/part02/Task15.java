@@ -16,10 +16,26 @@ package lesson02.part02;
  * 3.	Если треугольник с такими сторонами может существовать, необходимо вывести текст: "Треугольник существует."
  * 4.	Если треугольник с такими сторонами не может существовать, необходимо вывести текст: "Треугольник не существует."
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task15 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число a");
+        System.out.println("Введите число b");
+        System.out.println("Введите число c");
+        String as = reader.readLine();
+        String bs = reader.readLine();
+        String cs = reader.readLine();
+        int a = Integer.parseInt(as);
+        int b = Integer.parseInt(bs);
+        int c = Integer.parseInt(cs);
+        if (((a+b)>c)&&((a+c)>b)&&((b+c)>a)) {
+            System.out.println("Треугольник существует.");
+        }else{
+            System.out.println("Треугольник не существует.");
+        }   //напишите тут ваш код
 
     }
 }
+

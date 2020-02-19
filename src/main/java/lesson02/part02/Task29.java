@@ -32,10 +32,25 @@ package lesson02.part02;
  * 7.	Учесть, что число "0" не относится ни к положительным, ни к отрицательным числам.
  */
 
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task29 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] numbers = new int[3];
+        int p = 0;
+        int n = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Введите число " + (i + 1));
+            numbers[i] = Integer.parseInt(reader.readLine());
+            if (numbers[i] > 0) {
+                p++;
+            } else {
+                n++;
+            }
+        }
+        System.out.println("количество отрицательных чисел: " + n + "; количество положительных чисел: " + p);  //напишите тут ваш код
 
     }
 }

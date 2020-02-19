@@ -15,13 +15,17 @@ package lesson02.part01;
  * 4.	Выведенный текст должен содержать введенное число.
  * 5.	Выведенный текст должен полностью соответствовать заданию.
  */
-
 import java.io.*;
 import java.util.*;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task17 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите имя: ");
+        String name = consoleReader.readLine();
+        System.out.println("Введите число: ");
+        String age = consoleReader.readLine();
+       System.out.println(name + " захватит мир через " + age + " лет. Му-ха-ха!");  //напишите тут ваш код
     }
 }

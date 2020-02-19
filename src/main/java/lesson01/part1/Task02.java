@@ -1,6 +1,6 @@
 package lesson01.part1;
 
-public class Task02 {
+public class  Task02 {
 
     /**
      * Написать программу, выводящую на экран надпись "Hello World!" 3 раза. Каждый раз - с новой строки.
@@ -18,8 +18,10 @@ public class Task02 {
      * 4. Текст должен состоять из 3 строк.
      * 5. Попробуй удалить метод main, в пустом месте написать psvm и нажать tab.
      */
-
     public static void main(String[] args) {
-        // Напишите здесь ваш код
+        System.out.println("Hello World!");
+        System.out.println("Hello World!");
+        System.out.println("Hello World!");//Ваш код
     }
+
 }

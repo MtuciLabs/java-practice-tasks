@@ -12,7 +12,6 @@ package lesson02.part02;
  * 4.	Метод main должен вызывать метод addPrice только два раза.
  * 5.	Метод addPrice класса Apple должен увеличивать стоимость яблок на переданное значение.
  */
-
 public class Task02 {
     public static void main(String[] args) {
         Apple apple = new Apple();
@@ -21,13 +20,10 @@ public class Task02 {
         apple2.addPrice(100);
         System.out.println("Стоимость яблок " + Apple.applesPrice);
     }
-
     public static class Apple {
         public static int applesPrice = 0;
-
         public static void addPrice(int applesPrice) {
-            //напишите тут ваш код
-
+                Apple.applesPrice = Apple.applesPrice + applesPrice;  //напишите тут ваш код
         }
     }
 }

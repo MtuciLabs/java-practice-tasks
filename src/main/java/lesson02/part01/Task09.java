@@ -19,10 +19,12 @@ package lesson02.part01;
  * 3.	Число в каждой новой строке должно быть больше предыдущего.
  * 4.	Выводимый текст должен соответствовать заданию.
  */
-
 public class Task09 {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        int s=0;
+        for (int i=1; i<6;i++){
+            s=s+i;
+            System.out.println(s); //напишите тут ваш код
+        }
     }
 }

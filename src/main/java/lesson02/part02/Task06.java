@@ -11,20 +11,14 @@ package lesson02.part02;
  * 4.	Метод setName должен иметь локальную переменную fullName.
  * 5.	Метод setName класса Cat должен устанавливать значение глобальной переменной private String fullName равным локальной переменной fullName.
  */
-
 public class Task06 {
-
     public static void main(String[] args) {
-
     }
-
     public static class Cat {
         private String fullName;
-
         public void setName(String firstName, String lastName) {
             String fullName = firstName + " " + lastName;
-
-            //напишите тут ваш код
+            this.fullName = fullName; //напишите тут ваш код
         }
     }
 }

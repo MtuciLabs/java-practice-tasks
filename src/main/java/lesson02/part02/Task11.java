@@ -15,7 +15,6 @@ package lesson02.part02;
  * 4.	Метод checkSeason должен быть static void, и иметь только один параметр int.
  * 5.	Метод checkSeason должен выводить текст на экран согласно заданию.
  */
-
 public class Task11 {
     public static void main(String[] args) {
         checkSeason(12);
@@ -23,9 +22,31 @@ public class Task11 {
         checkSeason(7);
         checkSeason(10);
     }
-
     public static void checkSeason(int month) {
-        //напишите тут ваш код
-
+        {
+            if (month>11)
+                if (month<=12)
+                    System.out.println("зима");
+        }
+        {
+            if (month>2)
+                if (month<=5)
+                    System.out.println("весна");
+        }
+        {
+            if (month>5)
+                if (month<=8)
+                    System.out.println("лето");
+        }
+        {
+            if (month>8)
+                if (month<=11)
+                    System.out.println("осень");
+        }
+        if (month>12)
+            if (month<12)
+                System.out.println("ошибка");
+            else
+                System.out.println("зима");  //напишите тут ваш код
     }
 }

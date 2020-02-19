@@ -11,9 +11,8 @@ package lesson02.part01;
  * 4.	Количество круглых скобок должно остаться прежним (2 открывающие и 2 закрывающие).
  * 5.	Метод main должен выводить на экран число 382.
  */
-
 public class Task06 {
     public static void main(String[] args) {
-        System.out.println((2 * 3) + 4 * 5 + (6 * 7));
+        System.out.println(2 * (3 + 4 * (5 + 6 * 7)));
     }
 }

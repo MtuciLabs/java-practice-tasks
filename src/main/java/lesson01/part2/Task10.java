@@ -18,7 +18,12 @@ public class Task10 {
      */
 
     public static int min(int a, int b) {
-        return 0;
+        int min;
+        if (a>b)
+            min = b;
+        else
+            min = a;
+        return min;
         //напишите тут ваш код
     }
 

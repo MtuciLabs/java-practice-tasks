@@ -19,11 +19,21 @@ package lesson02.part02;
  * 3.	Если введенный год является високосным, необходимо вывести текст: "количество дней в году: 366".
  * 4.	Если введенный год не является високосным, необходимо вывести текст: "количество дней в году: 365".
  */
-
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task14 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите число");
+        String as = reader.readLine();
+        int a = Integer.parseInt(as);
+        if (a %100==0 && a %400 ==0 )
+            System.out.println("количество дней в году: 366");
+        else if (a % 4 == 0 && a % 100 > 0)
+            System.out.println("количество дней в году: 366");
+        else if (a % 100 == 0)
+            System.out.println("количество дней в году: 365");
+        else
+            System.out.println("количество дней в году: 365");   //напишите тут ваш код
     }
 }

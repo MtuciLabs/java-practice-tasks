@@ -10,19 +10,14 @@ package lesson02.part02;
  * 3.	Класс Cat должен содержать два метода setCatsCount и main.
  * 4.	Метод setCatsCount класса Cat должен устанавливать значение переменной catsCount равным переданному параметру.
  */
-
 public class Task05 {
-
     public static void main(String[] args) {
-
     }
-
     public static class Cat {
         private static int catsCount = 0;
 
         public static void setCatsCount(int catsCount) {
-            //напишите тут ваш код
-
+            Cat.catsCount=Cat.catsCount+catsCount; //напишите тут ваш код
         }
     }
 }

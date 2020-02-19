@@ -11,10 +11,11 @@ package lesson02.part01;
  * 3.	Выведенное число должно быть больше трех миллионов.
  * 4.	Выведенное число должно соответствовать заданию.
  */
-
 public class Task08 {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        int s=1;
+        for (int i=1; i<11; i++)
+            s=s*i;
+        System.out.println(s); //напишите тут ваш код
     }
 }

@@ -11,19 +11,14 @@ package lesson02.part02;
  * 3.	Класс Cat должен содержать два метода addNewCat и main.
  * 4.	Метод addNewCat класса Cat должен увеличивать количество котов на 1.
  */
-
 public class Task04 {
-
     public static void main(String[] args) {
-
     }
-
     public static class Cat {
         private static int catsCount = 0;
 
         public static void addNewCat() {
-            //напишите тут ваш код
-
+            catsCount = catsCount + 1;         //напишите тут ваш код
         }
     }
 

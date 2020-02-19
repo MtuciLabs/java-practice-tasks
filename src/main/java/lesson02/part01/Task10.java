@@ -15,14 +15,11 @@ package lesson02.part01;
  * 5.	Метод writeToConsole должен добавлять к началу строки "printing: " и выводить полученный результат на экран.
  * 6.	Программа должна вывести "printing: Hello world!".
  */
-
 public class Task10 {
     public static void main(String[] args) {
         writeToConsole("Hello world!");
     }
-
     public static void writeToConsole(String s) {
-        //напишите тут ваш код
-
+        System.out.println("printing: " + s);  //напишите тут ваш код
     }
 }

@@ -12,12 +12,13 @@ package lesson02.part01;
  * 4.	Метод main должен выводить результаты вызова на экран, каждый раз с новой строки.
  * 5.	Метод convertToSeconds не должен ничего выводить на экран.
  */
-
 public class Task11 {
-    //напишите тут ваш код
-
+    public static int convertToSeconds(int hour){
+        int sec= hour *60*60;
+        return sec;
+    } //напишите тут ваш код
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        System.out.println(convertToSeconds(1));
+        System.out.println(convertToSeconds(2)); //напишите тут ваш код
     }
 }
