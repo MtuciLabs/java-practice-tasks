@@ -19,7 +19,6 @@ package lesson02.part01;
  * 3.	Число в каждой новой строке должно быть больше предыдущего.
  * 4.	Выводимый текст должен соответствовать заданию.
  */
-
 public class Task09 {
     public static void main(String[] args) {
         int s=0;

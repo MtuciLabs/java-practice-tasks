@@ -17,7 +17,6 @@ package lesson02.part01;
 
 import java.io.*;
 import java.util.*;
-
 public class Task18 {
     public static void main(String[] args) throws Exception {
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
@@ -28,6 +27,5 @@ public class Task18 {
         System.out.println("Введите число2: ");
         String num2 = consoleReader.readLine();
         System.out.println(name + " получает " + num1 + " через " + num2 + " лет.");  //напишите тут ваш код
-
     }
 }

@@ -43,8 +43,7 @@ public class Task13 {
                     break;
                 case 7:
                     System.out.println("Воскресенье");
-                    break;
-            }
+                    break; }
         } else {
             System.out.println("такого дня недели не существует");  //напишите тут ваш код
         }

@@ -11,7 +11,6 @@ package lesson02.part01;
  * 3.	Нужно создать 3 объекта типа Protoss и каждому из них дать свое имя.
  * 4.	Нужно создать 4 объекта типа Terran и каждому из них дать свое имя.
  */
-
 public class Task07 {
     public static void main(String[] args) {
         Zerg zerg0 = new Zerg();
@@ -38,17 +37,13 @@ public class Task07 {
         terran1.name="T1";
         terran2.name="T2";
         terran3.name="T3";  //напишите тут ваш код
-
     }
-
     public static class Zerg {
         public String name;
     }
-
     public static class Protoss {
         public String name;
     }
-
     public static class Terran {
         public String name;
     }

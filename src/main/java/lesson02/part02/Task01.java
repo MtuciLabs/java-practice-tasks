@@ -14,7 +14,6 @@ package lesson02.part02;
  * 5.	Метод main должен вызывать метод adjustAge только один раз.
  * 6.	Метод adjustAge класса Person должен увеличивать возраст человека (Person) на 20.
  */
-
 public class Task01 {
     public static void main(String[] args) {
         Person person = new Person();
@@ -22,7 +21,6 @@ public class Task01 {
         person.adjustAge(person.age);
         // System.out.println("Adjusted age is: " + person.age);
     }
-
     public static class Person {
         public int age = 20;
 

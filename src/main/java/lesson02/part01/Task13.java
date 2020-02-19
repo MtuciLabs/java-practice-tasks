@@ -15,7 +15,6 @@ package lesson02.part01;
  * 3.	Каждая выведенная строка должна содержать 10 чисел, разделенных пробелом.
  * 4.	Выведенные числа должны быть таблицей умножения.
  */
-
 public class Task13 {
     public static void main(String[] args) {
         for(int i = 1; i < 11; i++){
@@ -24,6 +23,5 @@ public class Task13 {
             }
             System.out.println("");
         } //напишите тут ваш код
-
     }
 }

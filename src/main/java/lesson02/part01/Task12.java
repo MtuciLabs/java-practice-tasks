@@ -14,7 +14,6 @@ package lesson02.part01;
  * 3.	Текст в каждой строке должен быть уникален.
  * 4.	Должны быть выведены все возможные комбинации.
  */
-
 public class Task12 {
     public static void main(String[] args) {
         String a="Мама";
@@ -26,6 +25,5 @@ public class Task12 {
         System.out.println(b+c);
         System.out.println(c+a);
         System.out.println(c+b); //напишите тут ваш код
-
     }
 }

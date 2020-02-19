@@ -26,6 +26,5 @@ public class Task20 {
         System.out.print("Введите имя3: \n");
         String name3 = consoleReader.readLine();
         System.out.println(name1 + " + " + name2 + " + " + name3 + " = Чистая любовь, да-да!"); //напишите тут ваш код
-
     }
 }

@@ -21,6 +21,5 @@ public class Task22 {
         System.out.print("Введите число: \n");
         String num = consoleReader.readLine();
         System.out.println("Я буду зарабатывать $"+ num + " в час");   //напишите тут ваш код
-
     }
 }
