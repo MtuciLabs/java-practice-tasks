@@ -41,7 +41,49 @@ public class Task09 {
     }
 
     public static class Cat {
-        //напишите тут ваш код
+        String name;
+        int age;
+        int weight;
+        String address;
+        String color;
+
+        public Cat(String name)
+        {
+            this.name = name;
+
+
+
+
+        }
+        public Cat(String name, int age, int weight)
+        {
+            this.name = name;
+            this.weight = weight;
+            this.age = age;
+        }
+        public Cat(String name, int age)
+        {
+            this.name = name;
+            this.age = age;
+            weight = 4;
+
+        }
+        public Cat(int weight, String color)
+        {
+            age = 5;
+            this.color = color;
+            this.weight = weight;
+
+
+        }
+        public Cat(int weight, String color, String address)
+        {
+            this.address = address;
+            age = 7;
+            this.color = color;
+            this.weight = weight;
+
+        } //напишите тут ваш код
     }
 
 }

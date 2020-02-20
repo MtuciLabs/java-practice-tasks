@@ -18,13 +18,18 @@ public class Task23 {
 
   public static void main(String[] args) {
     // Создай 10 котов
+    for (int i = 0; i < 10; i++) {
+      Cat cat = new Cat();
+    }
+      System.out.println(Cat.catCount); // Выведи значение переменной catCount
+    }
 
-    // Выведи значение переменной catCount
+    public static class Cat {
+      public static int catCount;// Создай статическую переменную catCount
+
+      // Создай конструктор
+      public Cat() {
+        catCount++;
+      }
+    }
   }
-
-  public static class Cat {
-    // Создай статическую переменную catCount
-
-    // Создай конструктор
-  }
-}
