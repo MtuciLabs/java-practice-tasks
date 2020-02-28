@@ -16,11 +16,13 @@ package lesson04.part01;
 public class Task13 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    try { //напишите тут ваш код
 
     int[] m = new int[2];
     m[8] = 5;
 
-    //напишите тут ваш код
+    } catch (ArrayIndexOutOfBoundsException e) {
+      System.out.println("ArrayIndexOutOfBoundsException");
+    }   //напишите тут ваш код
   }
 }

@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
  * 3.	Метод max должен возвращать максимальный элемент из переданного массива.
  * 4.	Метод main изменять нельзя.
  */
-
+import java.util.Scanner;
 public class Task01 {
 
   public static void main(String[] args) throws Exception {
@@ -27,11 +27,23 @@ public class Task01 {
 
   public static int[] initializeArray() throws IOException {
     // создай и заполни массив
-    return null;
+    Scanner scn = new Scanner(System.in);
+    int[] arr=new int[20];
+    for(int i=0;i<20;i++){
+      arr[i]=scn.nextInt();
+    }
+    return arr;
   }
 
   public static int max(int[] array) {
     // найди максимальное значение
-    return 0;
+    int max=0;
+    for(int i=0;i<20;i++){
+      if (array[i]>max){
+        max=array[i];
+      }
+    }
+
+    return max;
   }
 }

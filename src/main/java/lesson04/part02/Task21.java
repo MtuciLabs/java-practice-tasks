@@ -18,7 +18,7 @@ import java.util.List;
  * 7.	Метод getGetTimeInMs должен вернуть время в миллисекундах, которое занимает 10 тысяч вызовов get для списка.
  *
  */
-
+import java.util.Date;
 public class Task21 {
 
   public static void main(String[] args) {
@@ -34,12 +34,14 @@ public class Task21 {
   }
 
   public static long getGetTimeInMs(List list) {
-    // напишите тут ваш код
+    Date beginTime = new Date();// напишите тут ваш код
 
     get10000(list);
 
-    // напишите тут ваш код
-    return 0;
+    Date finishTime = new Date();
+    long msDelay = finishTime.getTime() - beginTime.getTime();
+    return msDelay;// напишите тут ваш код
+
   }
 
   public static void get10000(List list) {

@@ -20,6 +20,17 @@ import java.util.ArrayList;
 public class Task04 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    ArrayList<String> list = new ArrayList<>();
+    for (int i = 0; i < 5; i++) {
+      list.add(0, reader.readLine());
+    }
+    for (int i = 0; i < 13; i++) {
+      String s = list.get(4);
+      list.remove(4);
+      list.add(0, s);
+    }
+    for(int i =0; i < list.size(); i++)
+      System.out.println(list.get(i)); //напишите тут ваш код
   }
 }

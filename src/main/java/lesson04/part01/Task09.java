@@ -15,26 +15,31 @@ import java.util.List;
  * 4.	Метод getInsertTimeInMs должен вызывать метод insert10000 только один раз.
  * 5.	Метод getInsertTimeInMs должен вернуть время в миллисекундах, которое занимает 10 тысяч вставок в список.
  */
+import java.util.Date;
 
 public class Task09 {
 
-  public static void main(String[] args) {
-    System.out.println(getInsertTimeInMs(new ArrayList()));
-    System.out.println(getInsertTimeInMs(new LinkedList()));
+      public static void main(String[] args) {
+      System.out.println(getInsertTimeInMs(new ArrayList()));
+      System.out.println(getInsertTimeInMs(new LinkedList()));
+    } // напишите тут ваш код
+
+
+
+    public static long getInsertTimeInMs(List list) {
+      Date currentTime = new Date();
+      long secondsA =  currentTime.getTime();// напишите тут ваш код
+      insert10000(list);
+
+    Date newDate = new Date();
+    long secondsB = newDate.getTime();
+    secondsA = secondsB - secondsA;
+    return secondsA;
   }
-
-  public static long getInsertTimeInMs(List list) {
-    // напишите тут ваш код
-
-    insert10000(list);
-
-    // напишите тут ваш код
-    return 0;
-  }
-
   public static void insert10000(List list) {
     for (int i = 0; i < 10000; i++) {
       list.add(0, new Object());
+
     }
   }
 }

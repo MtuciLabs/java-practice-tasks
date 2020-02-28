@@ -3,7 +3,7 @@ package lesson04.part01;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
+/*
  * Создать коллекцию Set (реализация HashSet) с типом элементов String.
  * Добавить в неё 10 строк:
  * арбуз
@@ -26,10 +26,27 @@ import java.util.Set;
  * 3.	Программа должна добавлять в коллекцию 10 строк, согласно условию.
  * 4.	Программа должна выводить 10 строк из коллекции на экран, каждую с новой строки.
  */
-
+import java.util.Iterator;
 public class Task06 {
   public static void main(String[] args) {
-    //напишите тут ваш код
+    HashSet<String> set = new HashSet<>();
+    set.add("арбуз");
+    set.add("банан");
+    set.add("вишня");
+    set.add("груша");
+    set.add("дыня");
+    set.add("ежевика");
+    set.add("женьшень");
+    set.add("земляника");
+    set.add("ирис");
+    set.add("картофель");
+    Iterator<String > iterator =set.iterator();
+
+    while (iterator.hasNext())
+    {
+      String txt=iterator.next();
+      System.out.println(txt);
+    } //напишите тут ваш код
 
   }
 }

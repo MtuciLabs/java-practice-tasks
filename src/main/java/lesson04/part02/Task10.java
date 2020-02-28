@@ -21,16 +21,24 @@ import java.util.List;
 
 public class Task10 {
   public static void main(String[] args) throws Exception {
-    // Считать строки с консоли и объявить ArrayList list тут
-    ArrayList<String> list = null;
-
+    BufferedReader r = new BufferedReader(new InputStreamReader(System.in));// Считать строки с консоли и объявить ArrayList list тут
+    ArrayList<String> list = new ArrayList<>();
+    for (int i = 0; i < 10; i++) {
+      list.add(r.readLine());
+    }
     ArrayList<String> result = doubleValues(list);
 
-    // Вывести на экран result
+    for (String s : result) {
+      System.out.println(s);
+    } // Вывести на экран result
   }
 
   public static ArrayList<String> doubleValues(ArrayList<String> list) {
-    //напишите тут ваш код
-    return null;
+    for (int i = 0; i < list.size(); i++) {
+      list.add(i + 1, list.get(i));
+      i++;
+    }
+    return list;  //напишите тут ваш код
+
   }
 }

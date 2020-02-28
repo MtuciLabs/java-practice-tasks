@@ -18,11 +18,23 @@ import java.io.InputStreamReader;
  * 3.	Переставить M первых строк в конец списка.
  * 4. Выведи список на экран, каждое значение с новой строки.
  */
-
+import java.util.ArrayList;
 public class Task11 {
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-    //напишите тут ваш код
+    int n = Integer.parseInt(reader.readLine());
+    int m = Integer.parseInt(reader.readLine());
+    System.out.println("");
+    ArrayList<String> list = new ArrayList<>();
+    for (int i = 0; i < n; i++) {
+      list.add(reader.readLine());
+    }
+    for (int i = 0; i < m; i++) {
+      list.add(list.get(0));
+      list.remove(0);
+    }
+    for (String s : list) {
+      System.out.println(s);
+    } //напишите тут ваш код
   }
 }

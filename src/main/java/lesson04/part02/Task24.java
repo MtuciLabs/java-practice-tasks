@@ -13,16 +13,34 @@ import java.util.Map;
  * 3.	Метод createMap() должен создавать и возвращать словарь Map с типом элементов String, Integer состоящих из 10 записей по принципу «фамилия» - «зарплата».
  * 4.	Метод removeItemFromMap() должен удалять из словаря всех людей, у которых зарплата ниже 500.
  */
-
+import java.util.Iterator;
 public class Task24 {
 
   public static Map<String, Integer> createMap() {
-    //напишите тут ваш код
-    return null;
+    Map<String, Integer> map = new HashMap<>();
+    map.put("Irina",600);
+    map.put("Masha",400);
+    map.put("Kostya",500);
+    map.put("Stas",100);
+    map.put("Nadya",50);
+    map.put("Nikita",750);
+    map.put("Ira",850);
+    map.put("Andrey",1040);
+    map.put("Egor",40);
+    map.put("Sergey",780);
+    return map; //напишите тут ваш код
+
   }
 
   public static void removeItemFromMap(Map<String, Integer> map) {
-    //напишите тут ваш код
+    Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
+    while (iterator.hasNext()){
+      Map.Entry<String, Integer> pair = iterator.next();
+      String key = pair.getKey();
+      int value = pair.getValue();
+      if (value < 500)
+        iterator.remove();
+    } //напишите тут ваш код
   }
 
   public static void main(String[] args) {

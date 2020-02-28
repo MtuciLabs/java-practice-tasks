@@ -17,12 +17,36 @@ import java.util.ArrayList;
  * 4.	Если есть несколько строк с длиной равной максимальной, то нужно вывести каждую из них
  * с новой строки.
  */
-
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 public class Task04 {
 
   private static ArrayList<String> strings;
-
   public static void main(String[] args) throws Exception {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    strings = new ArrayList<String>();
+
+    for (int i = 0; i < 5; i++) {
+      String name = reader.readLine();
+      strings.add(name);
+    }
+
+    Integer[] lenghtOfList = new Integer[5];
+
+    for (int i = 0; i < 5; i++) {
+      int size = strings.get(i).length();
+      lenghtOfList[i] = size;
+    }
+
+    Arrays.sort(lenghtOfList, Collections.reverseOrder());
+    int max = lenghtOfList[0];
+
+    for (int i = 0; i < 5; i++) {
+      if (strings.get(i).length() == max) {
+        System.out.println(strings.get(i));
+      }
+    }
     //напишите тут ваш код
   }
 }

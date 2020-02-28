@@ -21,10 +21,17 @@ public class Task12 {
   public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-    int maximum = 0;
-    int minimum = 0;
+    int maximum = Integer.MIN_VALUE;
+    int minimum = Integer.MAX_VALUE;
 
-    //напишите тут ваш код
+    int[] arr = new int[20];
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = Integer.parseInt(reader.readLine());
+      if (arr[i] < minimum)
+        minimum = arr[i];
+      if (arr[i] > maximum)
+        maximum = arr[i];
+    } //напишите тут ваш код
 
     System.out.print(maximum + " " + minimum);
   }

@@ -13,17 +13,25 @@ import java.util.Set;
  * 4.	Метод createSet() должен создавать и возвращать множество Set состоящих из 20 различных чисел.
  * 5.	Метод removeAllNumbersGreaterThan10() должен удалять из множества все числа больше 10.
  */
-
+import java.util.HashSet;
+import java.util.Iterator;
 public class Task23 {
 
   public static Set<Integer> createSet() {
-    // напишите тут ваш код
-    return null;
+    HashSet<Integer> list = new HashSet<>();
+    for (int i = 0; i < 20; i++)
+      list.add(i);
+    return list; // напишите тут ваш код
+
   }
 
   public static Set<Integer> removeAllNumbersGreaterThan10(Set<Integer> set) {
-    // напишите тут ваш код
-    return null;
+    Iterator<Integer> iterator = set.iterator();
+    while (iterator.hasNext()) {
+      if (iterator.next() > 10) iterator.remove();
+    }
+    return set; // напишите тут ваш код
+
   }
 
   public static void main(String[] args) {

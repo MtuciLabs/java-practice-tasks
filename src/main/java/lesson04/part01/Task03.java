@@ -24,10 +24,28 @@ import java.io.InputStreamReader;
  * 4.	Программа должна вывести сообщение "В домах с четными номерами проживает больше жителей.",
  * если сумма четных элементов массива больше суммы нечетных.
  */
-
+import java.util.Scanner;
 public class Task03 {
 
   public static void main(String[] args) throws IOException {
+    Scanner scn = new Scanner(System.in);
+    int[] arr = new int[15];
+    int sum1 = 0;
+    int sum2 = 0;
+    for (int i = 0; i < 15; i++) {
+      int ch = scn.nextInt();
+      arr[i] = scn.nextInt();
+
+      if (i % 2 == 0) {
+        sum2 = sum2 + arr[i];
+
+      } else {
+        sum1 = sum1 + arr[i];
+      }
+
+    }
+    if (sum2>sum1) {   System.out.println("В домах с четными номерами проживает больше жителей.");  }
+    else{ System.out.println("В домах с нечетными номерами проживает больше жителей.");  }
     //напишите тут ваш код
   }
 }

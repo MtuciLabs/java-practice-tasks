@@ -3,7 +3,7 @@ package lesson04.part01;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/*
  * Есть коллекция Map<String, String> (реализация HashMap), туда занесли 10 различных строк.
  * Вывести на экран список значений, каждый элемент с новой строки.
  *
@@ -18,21 +18,24 @@ public class Task07 {
 
   public static void main(String[] args) {
     Map<String, String> map = new HashMap<>();
-    map.put("Sim", "Sim");
-    map.put("Tom", "Tom");
-    map.put("Arbus", "Arbus");
-    map.put("Baby", "Baby");
-    map.put("Cat", "Cat");
-    map.put("Dog", "Dog");
-    map.put("Eat", "Eat");
-    map.put("Food", "Food");
-    map.put("Gevey", "Gevey");
-    map.put("Hugs", "Hugs");
+    map.put("Som", "Som");
+    map.put("Max", "Max");
+    map.put("Marry", "Marry");
+    map.put("Boby", "Boby");
+    map.put("Maxim", "Maxim");
+    map.put("Dolly", "Dolly");
+    map.put("Bas", "Bas");
+    map.put("Bad", "Bad");
+    map.put("Book", "Book");
+    map.put("Bully", "Bully");
 
     printValues(map);
   }
 
   public static void printValues(Map<String, String> map) {
-    //напишите тут ваш код
+    for (Map.Entry<String, String> pair : map.entrySet()) {
+      String vol = pair.getValue();
+      System.out.println(vol);
+    } //напишите тут ваш код
   }
 }
